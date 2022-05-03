@@ -1,6 +1,6 @@
 
 
-# History Project 2022
+## Student Projects
 
 - [senya](senya)
 
