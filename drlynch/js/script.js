@@ -81,6 +81,7 @@ monogatari.assets ('images', {
 monogatari.assets ('scenes', {
 
 	'bridge': 'bridge.jpeg',
+	'hand': 'hand.jpeg',
 });
 
 
@@ -92,7 +93,7 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
-		'show background bridge with fadeIn',
+		'show background hand with fadeIn',
 		{'Choice':{
 			'senbazuru':{
 				'Text': 'How many American nurses do you think served in WWI?',
