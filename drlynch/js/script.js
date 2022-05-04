@@ -95,7 +95,7 @@ monogatari.script ({
 		'show background bridge with fadeIn',
 		{'Choice':{
 			'senbazuru':{
-				'Text': 'senbazuru?',
+				'Text': 'How many American nurses do you think served in WWI?',
 				'Do': 'jump senbazuru'
 			},
 		}
