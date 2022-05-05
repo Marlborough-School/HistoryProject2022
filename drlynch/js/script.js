@@ -100,8 +100,8 @@ monogatari.script ({
 	'“She doesn’t count,” a boy said, “She’s a girl.” But Nelle knew that her Aunt Helen’s service ‘counted.’',
 		'show background nurses with fadeIn',
 		{'Choice':{
-			'senbazuru':{
-				'Text': 'How many American nurses do you think served in WWI?',
+			'American nurses in WWI':{
+				'Text': 'American nurses recruited by the Red Cross served in the U.S. Army and also worked in American units of the British and French armies as well',
 				'Do': 'jump senbazuru'
 			},
 		}
@@ -109,7 +109,7 @@ monogatari.script ({
 ],
 
 	'senbazuru':[
-		'Have you ever heard of senbazuru before?',
+		'How many American nurses do you think served in WWI?',
 		{'Choice':{
 			'Y':{
 				'Text': 'Yes',
