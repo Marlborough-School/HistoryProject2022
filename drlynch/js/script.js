@@ -75,12 +75,16 @@ monogatari.assets ('images', {
 	painting3: "painting3.png",
 	rebuild: "hirorebuild.jpeg",
 	sadako: "sadako.jpeg",
+	'boy': 'boy.jpeg',
+	'hand': 'hand.jpeg',
 });
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
 
 	'bridge': 'bridge.jpeg',
+	'nurses': 'Nurses.jpeg',
+	'black': 'black.jpeg',
 });
 
 
@@ -92,10 +96,18 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
-		'show background bridge with fadeIn',
+	'show background black with fadeIn',
+	'show image hand with fadeIn',
+	'When Nelle Fairchild Rote was in fourth grade in the 1930s, the First World War was not yet a distant memory. Nelle’s teacher asked the students if they had a family member who had served in WWI (World War I). Nelle raised her hand and said that she had an aunt who had served overseas – Her name was Helen Fairchild.',
+	'hide image hand with fadeOut',
+	'show image boy with fadeIn',
+	'“She doesn’t count,” a boy said, “She’s a girl.” But Nelle knew that her Aunt Helen’s service ‘counted.’',
+	'',
+	'hide image boy with fadeOut',
+		'show background nurses with fadeIn',
 		{'Choice':{
-			'senbazuru':{
-				'Text': 'How many American nurses do you think served in WWI?',
+			'American nurses in WWI':{
+				'Text': 'American nurses recruited by the Red Cross served in the U.S. Army and some also worked in American units of the British and French armies. CLICK TO CONTINUE',
 				'Do': 'jump senbazuru'
 			},
 		}
@@ -103,14 +115,14 @@ monogatari.script ({
 ],
 
 	'senbazuru':[
-		'Have you ever heard of senbazuru before?',
+		'How many American nurses do you think served in WWI?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes',
+				'Text': 'Around 2,000',
 				'Do': 'jump yesSenbazuru'
 			},
 			'N':{
-				'Text':'No',
+				'Text':'Around 22,000',
 				'Do': 'jump noSenbazuru'
 			},
 		}
@@ -118,18 +130,17 @@ monogatari.script ({
 	],
 
 	'yesSenbazuru':[
-		'show background senbazuru',
-		'That is great! Here is a quick recap just in case you do not remember everything.',
-		'千羽鶴, senbazuru, directly translates to 1000 cranes. An ancient Japanese legend proclaims that anyone who folds a thousand paper cranes will be granted a wish from the gods. In Japan, cranes supposedly live for a thousand years so one origami crane must be made for each year.',
-		'The Thousand Crane Legend gave many hope during hard and trying times.',
+		'show background nurses',
+		'There were actually around 22,000 American nurses who served during WWI - 10,000 of them overseas.',
+		'Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
 	'noSenbazuru':[
-		'show background senbazuru',
-		'No worries, we will learn about it now.',
-		'千羽鶴, senbazuru, directly translates to 1000 cranes. An ancient Japanese legend proclaims that anyone who folds a thousand paper cranes will be granted a wish from the gods. In Japan, cranes supposedly live for a thousand years so one origami crane must be made for each year.',
-		'The Thousand Crane Legend gave many hope during hard and trying times.',
+		'show background nurses',
+		'Correct! There were around 22,000 American nurses who served during WWI, 10,000 of them overseas.',
+		'Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
+
 		'jump choiceScreen',
 	],
 
