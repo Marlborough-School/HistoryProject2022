@@ -94,6 +94,10 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
+	'show background hand with fadeIn',
+	'When Nelle Fairchild Rote was in fourth grade in the 1930s, the First World War was not yet a distant memory. Nelle’s teacher asked the students if they had a family member who had served in WWI (World War I). Nelle raised her hand and said that she had an aunt who had served overseas – Her name was Helen Fairchild.',
+	'show background nurses with fadeIn',
+	'“She doesn’t count,” a boy said, “She’s a girl.” But Nelle knew that her Aunt Helen’s service ‘counted.’',
 		'show background nurses with fadeIn',
 		{'Choice':{
 			'senbazuru':{
