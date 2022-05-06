@@ -72,7 +72,11 @@ monogatari.assets ('images', {
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'duck':'ducksong.jpg',
+	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
+	'grape':'blackgrape.jpeg',
+	'potatocat': 'potatocat.jpeg',
+	'crycat':'crycat2.jpeg',
 });
 
 
@@ -97,95 +101,58 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'Lets go see another example choice screen',
+		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'Lets go see another example choice screen',
+		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background hiroshimanow with fadeIn',
+		'show background duck2 with fadeIn',
 		{'Choice':{
-			'TSF':{
-				'Text': 'The Sasaki Family',
-				'Do': 'jump TheSasakiFamily',
+			'1':{
+				'Text': 'Red Grapes',
+				'Do': 'jump redGrape',
 			},
-			'TBH':{
-				'Text': 'The Bombing of Hiroshima',
-				'Do': 'jump TheBombingHiroshima',
+			'2':{
+				'Text': 'Green Grapes',
+				'Do': 'jump greenGrape',
 			},
-			'A':{
-				'Text': 'The Aftermath',
-				'Do': 'jump Aftermath',
+			'3':{
+				'Text': 'Black Grapes',
+				'Do': 'jump blackGrape',
 			}
 		}
 	}
 	],
 
-	'TheSasakiFamily':[
-		'show background black with fadeIn',
-		'show image sasakiFamily',
-		'The Sasaki’s lived in the city of Hiroshima during the midst of World War Ⅱ. During the war, the Allies dropped numerous bombs on the Japanese, destroying homes and cities. Although Sadako and Masahiro (the two children) often took refuge in bomb shelters, neither sibling ever realized the imminent danger of their living situation.',
-		'Shigeo, father to Sadako and Masahiro, owned a barbershop but was enlisted in the Japanese military after World War Ⅱ started. As a result of this, Sadako and Masahiro’s mother, Fujiko, began to manage the barbershop herself while the children were cared for by their grandmother.',
-		'hide image sasakiFamily',
+	'redGrape':[
+		'show background duck with fadeIn',
+		'Sorry, we have no red grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
 
-	'TheBombingHiroshima':[
-		'show background black with fadeIn',
-		'show image enolaGay',
-		//maybe add sound effects of bomb sirens Here
-		'On August 6, 1945, air raid alarms rang throughout the city of Hiroshima as a singular American plane flew over the city. Sirens rang throughout the city and people rushed to the bomb shelters, but no bombings occured and residents were given the all clear.',
-		'Little did they know that the plane that flew overhead had just reported to the American forces that the weather conditions were ideal for the dropping of the atomic bomb.',
-		'hide image enolaGay with fadeOut',
-		'As the Sasaki family was eating breakfast, they heard cries and shouts from the neighbors. They rushed outside to see the bomber planes flying through the sky. Everyone craned their heads up towards the sky and some even called the planes pretty.',
-		'show image bombCloud with fadeIn',
-		'The Sasaki family were nearly back inside their house when the sky became brighter than it ever had been before. The American planes had just dropped the atomic bomb.',
-		'Sadako was blown into the yard while the rest of the family became stuck under the remains of their home.',
-		'hide image bombCloud',
-		'show image genbakuDome with fadeIn',
-		'The once lively city of Hiroshima was completely flattened and unrecognizable.',
-		'hide image genbakuDome',
-		'show image painting1 with fadeIn',
-		'The atomic bomb released a wave of heat so strong that started fires throughout the city. These fires consumed the fallen buildings and grew larger and larger. Sadako and Masahiro’s mother, Fujiko, knew the fire would kill them if they did not escape soon.',
-		'hide image painting1 with fadeOut',
-		'show image painting2 with fadeIn',
-		'All these drawings were made by Hiroshima survivors.',
-		'hide image painting2',
-		'show image painting3 with fadeIn',
-		'The family walked for hours and eventually a rescue operation truck drove them to Fujiko’s hometown. Miraculously, most of the Sasaki family survived. Sadako and Masahiro’s grandmother had passed away while attempting to retrieve her late husband’s remembrance tablet. Although the worst of the bombing was over, the Sasaki family, grieving and injured, had no idea what they would do next.',
-		'hide image painting3 with fadeOut',
-		'Everything they knew and loved was destroyed.',
+	'greenGrape':[
+		'show background duck with fadeIn',
+		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
 
-	'Aftermath':[
-		'show background black',
-		'show image rebuild with fadeIn',
-		'Despite their bleak circumstances, the Sasaki family did their best to recover. Sadako and Masahiro’s parents suffered from “atomic bomb disease” caused by radiation, but the  children emerged seemingly unscathed. Although conditions in Hiroshima were hardly any better, the family gradually saved enough money to move back. Sadako and Masahiro were able to return to school and life was returning to normal.',
-		'hide image rebuild',
-		'show image sadako with fadeIn',
-		'However, during one winter vacation, Sadako’s face began to swell and lumps appeared on her jawline. A doctor visited and diagnosed her with the “atomic bomb disease”, also known as leukemia. Sadako’s parents did more tests and the results were dire. Malignant cells were found in her bloodstream and it was estimated that she had merely months to live.',
-		'It was then that her father chose to tell her about the ancient Japenese legend, senbazuru.',
-		'"If you fold a thousand paper cranes, your wish will come true."',
-		'Sadako began folding as many cranes as her little hands could manage, in hopes that one day her wish could be granted.',
-		'However, Sadako passed away on October 25th.',
-		'She had managed to fold over thirteen hundred cranes.',
-		'Her wish?',
-		'To live a a normal life, surrounded by her friends and family.',
-		'hide image sadako with fadeOut',
+	'blackGrape':[
+		'show background grape with fadeIn',
+		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background memorial with fadeIn',
+		'show background potatocat with fadeIn',
 		{'Choice':{
 			'Closing':{
-				'Text': 'Closing',
+				'Text': 'Conclusion',
 				'Do': 'jump Closing',
 			}
 		}
@@ -193,10 +160,9 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background statue with fadeIn',
-		'The Sasaki family suffered immensely from the bombing of Hiroshima. They went through incredible hardship and Sadako tragically lost her life due to the radiation from the bombing. Her death and the deaths of all those who lost their lives to the atomic bombings serve as a reminder as to why a third atomic bombing should never occur.',
-		'Sadako’s cranes have become a global symbol of peace and her resilience up until the very end inspires many around the world. Additionally, Masahiro is more than just a survivor of Hiroshima. He chose to spread messages of peace and healing, instead of messages of revenge and retaliation.',
-		'The Sasaki siblings never lost hope even after they lived through the most devestating bombing ever recorded.',
+		'show background crycat with fadeIn',
+		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
+		'Go make your own project now have fun lol',
 		'end'
 	]
 });
