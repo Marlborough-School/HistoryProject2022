@@ -65,14 +65,14 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+'boy':'boy.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'hand':'hand.jpeg',
-	'duck2':'duck2.jpeg',
+	'boy':'boy.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
@@ -85,6 +85,9 @@ monogatari.script ({
 	'Start': [
 		'show background hand with fadeIn',
 		'When Nelle Fairchild Rote was in fourth grade in the 1930s, the First World War was not yet a distant memory. Nelle’s teacher asked the students if they had a family member who had served in WWI (World War I). Nelle raised her hand and said that she had an aunt who had served overseas – Her name was Helen Fairchild.',
+  'show background black with fadeIn',
+	'show image boy with fadeIn',
+	'“She doesn’t count,” a boy said, “She’s a girl.” But Nelle knew that her Aunt Helen’s service ‘counted.’',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
