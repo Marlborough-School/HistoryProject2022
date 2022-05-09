@@ -84,7 +84,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Colette Catherine Marin was a French resistance member who shares the horrific story of her family’s experience of World War II. Colette’s older brother was taken from their home and brought to Camp Mittelbau-Dora, a German concentration camp; he was a resistance member as well. Colette has refused to set foot into Germany for 74 years because she believed that no one should be profifting from morbid tourism and all destruction that happened in the Holocaust.',
+		'Hi project coders. This is senya and this duck will not be your real background. You will replace the background named duck with your background.',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
