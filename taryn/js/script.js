@@ -88,11 +88,11 @@ monogatari.script ({
 		'Do you think there was internal opposition of the Nazi Regime?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Yes, there was internal opposition',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'No, there was no internal opposition',
 				'Do': 'jump noAnswer'
 			},
 		},
@@ -101,13 +101,13 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Correct! Military officials working under Hitler, such as Claus von Stauffenberg, were not all in favor of the Nazi agenda. Some formed resistance groups and attempted to fight back.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'There actually was internal opposition. It was very risky for those working under Hitler to act against Hitler’s agenda, but it did occur. Claus von Stauffenberg was one of those daring individuals.',
 		'jump choiceScreen',
 	],
 
