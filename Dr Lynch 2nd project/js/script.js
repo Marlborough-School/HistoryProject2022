@@ -84,7 +84,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Hi project coders. This is senya and this duck will not be your real background. You will replace the background named duck with your background.',
+		'When Nelle Fairchild Rote was in fourth grade in the 1930s, the First World War was not yet a distant memory. Nelle’s teacher asked the students if they had a family member who had served in WWI (World War I). Nelle raised her hand and said that she had an aunt who had served overseas – Her name was Helen Fairchild.',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
