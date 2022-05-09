@@ -85,6 +85,8 @@ monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
 		'On July 21, 1944, Claus von Stauffenberg stood in a lighted courtyard awaiting execution. “Long live holy Germany,” he shouted just as a fellow conspirator threw himself in front of Stauffenberg and took the bullet meant for him.',
+		'It was a short-lived reprieve however, as he was killed with the next gunshot.',
+		'show background black with fadeIn',
 		'Do you think there was internal opposition of the Nazi Regime?',
 		{'Choice':{
 			'Y':{
