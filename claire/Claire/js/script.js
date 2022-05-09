@@ -84,7 +84,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Colette Catherine Marin was a French resistance member who shares the horrific story of her family’s experience of World War II. Colette’s older brother was taken from their home and brought to Camp Mittelbau-Dora, a German concentration camp; he was a resistance member as well. Colette has refused to set foot into Germany for 74 years because she believed that no one should be profifting from morbid tourism and all destruction that happened in the Holocaust.',
+		'When one hears the familiar name of Anne Frank, people automatically think of the girl who kept a diary during the Holocaust. Rarely do people know the real Anne Frank. ',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
