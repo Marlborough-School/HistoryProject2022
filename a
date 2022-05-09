@@ -1,0 +1,5 @@
+git rm "./Lily J/.DS_Store"
+git rm "./Lily J/lj/.DS_Store" 
+git rm "./Lily J/lj/assets/scenes/.DS_Store"
+git rm "./Lily J/lj/assets/.DS_Store"
+git rm "./Lily J/lj/assets/images/.DS_Store"
