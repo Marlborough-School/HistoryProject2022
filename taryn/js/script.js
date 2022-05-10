@@ -71,9 +71,9 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
+	'firingsquad':'firingsquad.jpg',
+	'nazisalute':'nazisalute.jpeg',
+	'options':'options.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
@@ -83,10 +83,10 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
+		'show background firingsquad with fadeIn',
 		'On July 21, 1944, Claus von Stauffenberg stood in a lighted courtyard awaiting execution. “Long live holy Germany,” he shouted just as a fellow conspirator threw himself in front of Stauffenberg and took the bullet meant for him.',
 		'It was a short-lived reprieve however, as he was killed with the next gunshot.',
-		'show background black with fadeIn',
+		'show background nazisalute with fadeIn',
 		'Do you think there was internal opposition of the Nazi Regime?',
 		{'Choice':{
 			'Y':{
@@ -102,30 +102,30 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'show background black',
+		'show background nazisalute',
 		'Correct! Military officials working under Hitler, such as Claus von Stauffenberg, were not all in favor of the Nazi agenda. Some formed resistance groups and attempted to fight back.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
+		'show background nazisalute',
 		'There actually was internal opposition. It was very risky for those working under Hitler to act against Hitler’s agenda, but it did occur. Claus von Stauffenberg was one of those daring individuals.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background options with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'Early Opposition',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Conspiring',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'The Plot',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -182,10 +182,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Claus von Stauffenberg: Internal Opposition of the Nazi Regime</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Taryn Gluck
         </p>
 				</center>
 				<br/>
