@@ -65,16 +65,16 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-'boy':'boy.jpeg',
+
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'hand':'hand.jpeg',
-	'boy':'boy.jpeg',
+	'duck':'ducksong.jpg',
+	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
-	'nurses':'nurses.jpeg',
+	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 });
@@ -83,22 +83,16 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background hand with fadeIn',
-		'When Nelle Fairchild Rote was in fourth grade in the 1930s, the First World War was not yet a distant memory. Nelle’s teacher asked the students if they had a family member who had served in WWI (World War I). Nelle raised her hand and said that she had an aunt who had served overseas – Her name was Helen Fairchild.',
-  'show background black with fadeIn',
-	'show image boy with fadeIn',
-	'“She doesn’t count,” a boy said, “She’s a girl.” But Nelle knew that her Aunt Helen’s service ‘counted.’',
-	'show image boy with fadeOut',
-	'show background black with fadeIn',
-	'show background nurses with fadeIn',
-		'How many American nurses do you think served in WWI?',
+		'show background duck with fadeIn',
+		'Hi project coders. This is senya and this duck will not be your real background. You will replace the background named duck with your background.',
+		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Around 2,000',
+				'Text': 'Yes, I do have grapes',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'Around 22,000',
+				'Text': 'No, I do not sell grapes',
 				'Do': 'jump noAnswer'
 			},
 		},
