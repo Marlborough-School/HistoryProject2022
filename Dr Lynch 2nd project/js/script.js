@@ -66,6 +66,7 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 'boy':'boy.jpeg',
+'grave': 'grave.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -88,7 +89,7 @@ monogatari.script ({
   'show background black with fadeIn',
 	'show image boy with fadeIn',
 	'“She doesn’t count,” a boy said, “She’s a girl.” But Nelle knew that her Aunt Helen’s service ‘counted.’',
-	'show image boy with fadeOut',
+	"hide image boy with fadeOut",
 	'show background black with fadeIn',
 	'show background nurses with fadeIn',
 		'How many American nurses do you think served in WWI?',
@@ -107,17 +108,25 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show background nurses with fadeIn',
+		'There were actually around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show background nurses with fadeIn',
+		'Correct! There were around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
+		'show background black with fadeIn',
+		'show image grave with fadeIn',
+		'That story is preserved in a book that Nelle wrote about her aunt, in a bridge named after Helen near her hometown in Pennsylvania, and in a quiet cemetery in France, close to where she served and died during WWI.',
+		'',
+		'hide image grave with fadeOut',
+		'show background black with fadeIn',
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
