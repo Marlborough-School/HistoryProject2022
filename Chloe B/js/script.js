@@ -79,6 +79,7 @@ monogatari.assets ('scenes', {
 	'crycat':'crycat2.jpeg',
 	'Ala Portrait': 'Ala Portrait.png',
 	'grandma':'grandma.jpeg',
+	'Auschwitz':'Auschwitz.jpeg'
 });
 
 
@@ -90,16 +91,15 @@ monogatari.script ({
 		'My Grandmother, Judy(an immigrant from Poland), was a survivor of the Holocaust, along with her siblings and parents. To survive, she faked being Christian, along with her sisters Racheal and Sabina, while her brother, Shmulik, lived in the basement of their home in Poland.',
 		'Her father was sent to a concentration camp in Auschwitz, and her mother was sent to a camp for prisoners after being caught for smuggling food for Jews. Sabina (the older sister of my grandmother) went to great lengths to keep them safe and reveal to no one that they were Jewish.',
 		'Sabina wrote encoded letters to their mother, letting her know that they were still alive. After receiving each letter, their mother would make eye contact with her husband from across the other camp, and signal to him that each of their children were still alive.',
-		'Ala Gertner was similar to my grandmothers mother. She not only experienced life in a concentration camp but played a role in offering as much help as possible to others suffering.',
-		'Example question: Hey bum bum bum got any grapes?',
+		'Over 6 million Jews were killed in the Holocaust. How many survivors do you think are still alive today?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
-				'Do': 'jump yesAnswer'
+				'Text': '40,000',
+				'Do': 'jump noAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
-				'Do': 'jump noAnswer'
+				'Text': '400,000',
+				'Do': 'jump yesAnswer'
 			},
 		},
 	},
