@@ -77,22 +77,28 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+	'anne': 'af.jpg',
+	'school':'school.jpg',
+	'kids': 'kids.jpg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'When one hears the familiar name of Anne Frank, people automatically think of the girl who kept a diary during the Holocaust. Rarely do people know the real Anne Frank. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background anne with fadeIn',
+		'When one hears the familiar name of Anne Frank, people automatically think of the girl who kept a diary during the Holocaust. Rarely do people know the real Anne Frank.',
+		'show background school with fadeIn',
+		'Anne’s diary only consists of entries describing her life in hiding during the Holocaust. The part people know from her diary is merely a snippet of her fascinating life story.',
+		'show background kids with fadeIn',
+		'How many Jewish children died in the Holocaust?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': '1.5 million',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': '150,000',
 				'Do': 'jump noAnswer'
 			},
 		},
@@ -100,14 +106,14 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show background kids',
+		'Correct! There were around 1.5 million children who died in the Holocaust. Many of the children’s stories are not known, however, some children, like Anne Frank, kept diaries or journals which shared what it was like to be a child during the Holocaust.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show background kids',
+		'Actually, there were around 1.5 million children who died in the Holocaust. Many of these children’s stories are not known, however, some children like Anne Frank kept diaries or journals which shared what it was like to be a child during the Holocaust.',
 		'jump choiceScreen',
 	],
 
@@ -180,10 +186,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Anne Frank</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Claire Robichaud
         </p>
 				</center>
 				<br/>

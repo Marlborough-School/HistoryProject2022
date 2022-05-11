@@ -65,41 +65,36 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+'camp':'camp.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
+	'brothers':'brothers.jpeg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
-	'Ala Portrait': 'Ala Portrait.png',
-	'grandma':'grandma.jpeg',
-	'Auschwitz':'Auschwitz.jpeg'
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background grandma with fadeIn',
-		'This is a picture of my grandmother and her husband Henry (with me in the middle).',
-		'My Grandmother, Judy(an immigrant from Poland), was a survivor of the Holocaust, along with her siblings and parents. To survive, she faked being Christian, along with her sisters Racheal and Sabina, while her brother, Shmulik, lived in the basement of their home in Poland.',
-		'Her father was sent to a concentration camp in Auschwitz, and her mother was sent to a camp for prisoners after being caught for smuggling food for Jews. Sabina (the older sister of my grandmother) went to great lengths to keep them safe and reveal to no one that they were Jewish.',
-		'Sabina wrote encoded letters to their mother, letting her know that they were still alive. After receiving each letter, their mother would make eye contact with her husband from across the other camp, and signal to him that each of their children were still alive.',
-		'Over 6 million Jews were killed in the Holocaust. How many survivors do you think are still alive today?',
+		'show background black with fadeIn',
+		'show image camp with fadeIn',
+		'Louis Zamperini was born on January 6th, 1917 in Orlean, New York',
+		'How long did the three survivors spend at sea',
 		{'Choice':{
 			'Y':{
-				'Text': '40,000',
-				'Do': 'jump noAnswer'
+				'Text': '16 days',
+				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': '400,000',
-				'Do': 'jump yesAnswer'
+				'Text': '47 days',
+				'Do': 'jump noAnswer'
 			},
 		},
 	},
@@ -186,10 +181,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Ala Gertner: Holocaust Experience and Uprising Involvement</b>
+        <b>Your Project Title Goes Here</b>
 				<br/>
 				<br/>
-        By: Chloe Barker
+        By: The Duck Selling Lemonade at the Lemonade Stand
         </p>
 				</center>
 				<br/>
