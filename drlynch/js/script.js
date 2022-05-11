@@ -118,10 +118,10 @@ monogatari.script ({
 		'show background black',
 		'show background nurses with fadeIn',
 		'Correct! There were around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
-		'jump choiceScreen',
+		'jump Intro2',
 	],
 
-	'choiceScreen':[
+	'Intro2':[
 		'show background black with fadeIn',
 		'show image grave with fadeIn',
 		'That story is preserved in a book that Nelle wrote about her aunt, in a bridge named after Helen near her hometown in Pennsylvania, and in a quiet cemetery in France, close to where she served and died during WWI.',
@@ -129,6 +129,10 @@ monogatari.script ({
 		'hide image grave with fadeOut',
 		'show background black with fadeIn',
 		'show background duck2 with fadeIn',
+		'jump choiceScreen',
+		],
+	
+	'choiceScreen':[
 		{'Choice':{
 			'1':{
 				'Text': 'Volunteering for the War',
