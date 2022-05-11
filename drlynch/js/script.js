@@ -67,6 +67,8 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 'boy':'boy.jpeg',
 'grave': 'grave.jpeg',
+'truck': 'truck.jpeg',
+
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -79,6 +81,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'Portrait': 'Portrait.jpeg',
+	'truck': 'truck.jpeg',
 });
 
 
@@ -131,7 +134,7 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		'jump choiceScreen',
 		],
-	
+
 	'choiceScreen':[
 		{'Choice':{
 			'1':{
@@ -153,6 +156,10 @@ monogatari.script ({
 	'redGrape':[
 		'show background Portrait with fadeIn',
 		'Helen Fairchild was 32 years old and working as a nurse in a Philadelphia hospital when the U.S. entered WWI in 1917. She immediately volunteered to join a medical reserve unit, which was rapidly called up for overseas duty.',
+		'show background black with fadeIn',
+		'show image truck with fadeIn',
+		'Before leaving for the battlefields of Europe, Helen wrote to her brother in Maine:',
+		'"I suppose mother has written you that our Pennsylvania Hospital Red Cross Unit of which I am a member has been called for service in Europe, so I am here in Philadelphia, waiting for the pokey old government to get things ready for us to go...',
 		'jump choiceScreen',
 	],
 
