@@ -78,6 +78,7 @@ monogatari.assets ('scenes', {
 	'nurses':'nurses.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+	'Portrait': 'Portrait.jpeg',
 });
 
 
@@ -146,13 +147,13 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
+		'show background Portrait with fadeIn',
 		'Helen Fairchild was 32 years old and working as a nurse in a Philadelphia hospital when the U.S. entered WWI in 1917. She immediately volunteered to join a medical reserve unit, which was rapidly called up for overseas duty.',
 		'jump choiceScreen',
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
+		'show background Portait with fadeIn',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
