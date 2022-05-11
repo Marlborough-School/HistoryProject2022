@@ -1,4 +1,4 @@
-/* global monogatari */
+'show background black with fadeIn',/* global monogatari */
 
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
@@ -130,15 +130,15 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'Volunteering for the War',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Nursing Near the Front',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Casualty of the First Modern War',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -194,11 +194,17 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Nurse Helen Fairchild: Hero and Victim of the First Modern War</b>
+				</p>
 				<br/>
-				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Dr. Lynch
         </p>
 				</center>
 				<br/>
