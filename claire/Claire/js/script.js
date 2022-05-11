@@ -80,6 +80,8 @@ monogatari.assets ('scenes', {
 	'anne': 'af.jpg',
 	'school':'school.jpg',
 	'kids': 'kids.jpg',
+	'holocaust':'holocaust.jpg',
+	'frank':'frank.jpg',
 });
 
 
@@ -118,19 +120,23 @@ monogatari.script ({
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background frank with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'The Holocaust',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Anne’s Early Life',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Life in Hiding',
 				'Do': 'jump blackGrape',
+			},
+			'4':{
+				'Text': 'Anne’s experience after getting caught',
+				'Do': 'jump purpleGrape',
 			}
 		}
 	}
