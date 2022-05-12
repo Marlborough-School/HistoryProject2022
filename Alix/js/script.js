@@ -125,33 +125,7 @@ monogatari.script ({
 		'jump nextSlides',
 	],
 
-	'nextSlides':[
-'show background simonwithpics'
-'Simon Wiesenthal, a Jewish survivor of the Holocaust, after being liberated from the concentration camps devoted his life to locating these Nazi criminals who had escaped justice.'
-'show background buczacz'
-'On September 17, 1939, when Wiesenthal was only 30 years old, the Soviet Union invaded Wiesenthal’s birth city of Buczacaz.'
-'show background nonagressionpact'
-'This occurred after Russia and Germany signed the “non-aggression pact” where they declared to not fight each other for the next 10 years and effectively split up Eastern Europe among the two empires.'
-'show background laborcamp'
-'Thus began “the purge” against the Jewish people.'
-'In the next couple of years, Wiesenthal’s stepfather was arrested, his stepbrother was killed, and Simon, his mother, and his wife, Cyla Mueller were deported to the Janowska concentration camp in 1941 and then transferred to the Ostbahn labor camp.'
-'Wiesenthal was able to obtain forged identity papers for his wife, Cyla, so she would not be put to death for being a Jew; however, Simon remained in the camps.'
-'As the Soviet army advanced onto the Eastern Front, German forces began to retreat and during that time SS soldiers transferred Wiesenthal to multiple labor camps.'
-'show background mauthausencamp'
-'The Nazi soldiers and evacuated prisoners began the trek to the Mauthausen death camp in Austria. Most of the prisoners did not survive the journey to Mauthausen, with over half perishing.'
-'Wiesenthal was in very poor shape and on the verge of death when he arrived in Mauthausen; after being nourished with a measly 200 calories a day, 6 foot tall Wiesenthal only weighed 90 pounds (the average weight of a 12-year-old girl).'
-'On May 5, 1945, the concentration camp was liberated by American soldiers and Wiesenthal recovered swiftly; at this point, he decided to devote the rest of his life to tracking down Nazi war criminals and bringing them to justice.'
-'show background youngsimon'
-'Soon after being liberated, Wiesenthal started collecting names of important members of the Nazi party and evidence of the atrocities for the War Crimes Section of the United States Army.'
-'Wiesenthal completed similar work as he later helped the Army’s Office Strategic Services and Counter-Intelligence Corps, led the welfare organization, the Jewish Central Committee in the United States Zone of Austria, and continued to participate and testify in war trials for Nazi criminals.'
-'In 1947, Wiesenthal and thirty volunteers opened the Jewish Historical Documentation Center in Austria that’s purpose was to assemble evidence of Nazi crimes that could be used in future war trials.'
-'But interest in bringing criminals to justice waned as the Cold War captured the world’s attention and eventually all thirty volunteers had left the organization.'
-'show background gestapo'
-'Wiesenthal was forced to close the agency but he decided to keep one file on a certain escaped Nazi: Adolf Eichmann. Eichmann was the head of Gestapato’s Jewish Department (the Nazis’ secret police) and was one of the major organizers of the Holocaust as he oversaw the “Final Solution”, the term used for the mass elimination of the Jews.'
-'show background adolfontrial'
-'Wiesenthal obtained information that Eichmann was spotted in Argentina which he passed along to the Israeli government.'
-'With the help of Wiesenthal and other sources, Israeli soldiers successfully captured Eichmann in 1959 and he was executed in May of 1961.'
-	],
+	
 });
 
 monogatari.component ('main-screen').template (() => {
