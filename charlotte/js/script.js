@@ -65,8 +65,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-	'reniapg1':'reniapg1.jpeg',
 	'reniapg2':'reniapg2.jpeg',
+	'reniapg1':'reniapg1.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
