@@ -77,6 +77,7 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+	'renia': 'renia.jpeg',
 });
 
 
@@ -183,7 +184,7 @@ monogatari.component ('main-screen').template (() => {
         <b>Renia Spiegel: 70 Years in the Future</b>
 				<br/>
 				<br/>
-        By: Charlotte Landis 
+        By: Charlotte Landis
         </p>
 				</center>
 				<br/>
