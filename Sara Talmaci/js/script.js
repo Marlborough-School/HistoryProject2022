@@ -89,13 +89,15 @@ monogatari.script ({
 		'He stopped to look at the low flying plane, seconds later, he felt a big explosion and felt himself thrown to the wall by it.',
 		'BOOM',
 		'The next thing 13 year old Steve remembers is waking up alone in the streets of Hungary.',
-		{'Do you think this moment had an impact or a long term effect on Steve's life?':{
-			'Y':{,
+		'Do you think this moment had an impact or a long term effect on Steve's life?',
+		{'Choice':{
+			'Y':{
 				'Text': 'It sure did and we’ll see how.',
-				'Do': 'jump yesAnswer',},
-			'N':{,
+				'Do': 'jump yesAnswer'
+			},
+			'N':{
 				'Text': 'Close, but it did and we’ll see how.',
-				'Do': 'jump noAnswer',
+				'Do': 'jump noAnswer'
 			},
 		},
 	},
