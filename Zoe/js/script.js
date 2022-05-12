@@ -71,13 +71,13 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'black':'black.jpeg'
+	'black':'black.jpeg',
 	'portrait':'portrait.jpeg',
 	'group':'group.jpeg',
 	'family':'family.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
-);
+});
 
 
 //
