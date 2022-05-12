@@ -67,6 +67,8 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 'boy':'boy.jpeg',
 'grave': 'grave.jpeg',
+'truck': 'truck.jpeg',
+
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -79,6 +81,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'Portrait': 'Portrait.jpeg',
+	'truck': 'truck.jpeg',
 });
 
 
@@ -118,10 +121,10 @@ monogatari.script ({
 		'show background black',
 		'show background nurses with fadeIn',
 		'Correct! There were around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
-		'jump choiceScreen',
+		'jump Intro2',
 	],
 
-	'choiceScreen':[
+	'Intro2':[
 		'show background black with fadeIn',
 		'show image grave with fadeIn',
 		'That story is preserved in a book that Nelle wrote about her aunt, in a bridge named after Helen near her hometown in Pennsylvania, and in a quiet cemetery in France, close to where she served and died during WWI.',
@@ -129,6 +132,10 @@ monogatari.script ({
 		'hide image grave with fadeOut',
 		'show background black with fadeIn',
 		'show background duck2 with fadeIn',
+		'jump choiceScreen',
+		],
+
+	'choiceScreen':[
 		{'Choice':{
 			'1':{
 				'Text': 'Volunteering for the War',
@@ -149,6 +156,10 @@ monogatari.script ({
 	'redGrape':[
 		'show background Portrait with fadeIn',
 		'Helen Fairchild was 32 years old and working as a nurse in a Philadelphia hospital when the U.S. entered WWI in 1917. She immediately volunteered to join a medical reserve unit, which was rapidly called up for overseas duty.',
+		'show background black with fadeIn',
+		'show image truck with fadeIn',
+		'Before leaving for the battlefields of Europe, Helen wrote to her brother in Maine:',
+		'"I suppose mother has written you that our Pennsylvania Hospital Red Cross Unit of which I am a member has been called for service in Europe, so I am here in Philadelphia, waiting for the pokey old government to get things ready for us to go...',
 		'jump choiceScreen',
 	],
 

@@ -79,7 +79,11 @@ monogatari.assets ('scenes', {
 	'crycat':'crycat2.jpeg',
 	'Ala Portrait': 'Ala Portrait.png',
 	'grandma':'grandma.jpeg',
-	'Auschwitz':'Auschwitz.jpeg'
+	'Auschwitz':'Auschwitz.jpeg',
+	'survivors':'survivors.jpg',
+	'Ala2':'Ala2.gif',
+	'Laborcamp':'Laborcamp.png',
+	'sort':'sorting.jpeg',
 });
 
 
@@ -106,71 +110,47 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'show background survivors',
+		'Correct! There are around 400,000 Holocaust surviviors still alive in 2022.',
+		'jump nextSlide',
 	],
 
 	'noAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'show background survivors',
+		'Not quite! There are around 400,000 Holocaust surviviors still alive in 2022.',
+		'jump nextSlide',
 	],
 
-	'choiceScreen':[
-		'show background duck2 with fadeIn',
-		{'Choice':{
-			'1':{
-				'Text': 'Red Grapes',
-				'Do': 'jump redGrape',
-			},
-			'2':{
-				'Text': 'Green Grapes',
-				'Do': 'jump greenGrape',
-			},
-			'3':{
-				'Text': 'Black Grapes',
-				'Do': 'jump blackGrape',
-			}
-		}
-	}
+	'nextSlide':[
+		'show background Ala2 with fadeIn',
+		'Ala Gertner was similar to my grandmothers mother. She not only experienced life in a concentration camp but played a role in offering as much help as possible to others suffering.',
+		'This Pre-war picture of Ala shows the normality that was previously in her life. She was deported in the final transports of Jews from Upper Silesia to Auschwitz.',
+		'jump afterSlide',
 	],
 
-	'redGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+	'afterSlide':[
+		'show background Auschwitz with fadeIn',
+		'Ala came from a wealthy family and was well educated as she attended a school in Bedzin. Her literacy and education allowed her to be an important part of the Sonderkommando Uprising as she was transported to Auschwitz(which is depicted above).',
+		'jump doneSlide',
 	],
 
-	'greenGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+  'doneSlide':[
+	  'show background Laborcamp with fadeIn',
+		'This image depicts the forced harsh labor women had to take on. This specifically shows these women pulling dump cars filled with stones throughout the camp quarry at the Plaszow camp in 1944.',
+		'Ala was assigned to the Weichsel-Union-Metallwerke factory in Auschwitz, a similar forced labor camp, where they experienced extremely strenuous physical tasks.',
+		'jump finishSlide',
 	],
 
-	'blackGrape':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
-		'jump Ending',
+	'finishSlide':[
+		'show background sort with fadeIn',
+		'This image is of more forced labor as Jewish women sort confiscated clothing in the Lodz ghetto.',
+		'In the Weichsel-Union-Metallwerke factory, they were overworked and forced to make weapons for Nazi soldiers and therefore had access to gun powder.',
+		'During her time in this camp, Ala encountered other Jewish women who were not willing to comply with the atrocities within the Holocaust: Roza Robota, Estusia and Hanka Wajcblum, and Regina Safirsztajn.',
+
 	],
 
-	'Ending':[
-		'show background potatocat with fadeIn',
-		{'Choice':{
-			'Closing':{
-				'Text': 'Conclusion',
-				'Do': 'jump Closing',
-			}
-		}
-		}
-	],
 
-	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
-	]
+
 });
 
 monogatari.component ('main-screen').template (() => {
