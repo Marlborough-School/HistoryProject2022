@@ -71,6 +71,12 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
+	'duck':'ducksong.jpg',
+	'duck2':'duck2.jpeg',
+	'black':'black.jpeg',
+	'grape':'blackgrape.jpeg',
+	'potatocat': 'potatocat.jpeg',
+	'crycat':'crycat2.jpeg',
 	'Ala Portrait': 'Ala Portrait.png',
 	'grandma':'grandma.jpeg',
 	'Auschwitz':'Auschwitz.jpeg',
@@ -78,12 +84,6 @@ monogatari.assets ('scenes', {
 	'Ala2':'Ala2.gif',
 	'Laborcamp':'Laborcamp.png',
 	'sort':'sorting.jpeg',
-	'wum':'wum.jpeg',
-	'builtc':'builtc.jpeg',
-	'fire':'fire.png',
-	'current':'currentc.jpeg',
-	'unity':'womenuprisings.png',
-
 });
 
 
@@ -146,49 +146,10 @@ monogatari.script ({
 		'This image is of more forced labor as Jewish women sort confiscated clothing in the Lodz ghetto.',
 		'In the Weichsel-Union-Metallwerke factory, they were overworked and forced to make weapons for Nazi soldiers and therefore had access to gun powder.',
 		'During her time in this camp, Ala encountered other Jewish women who were not willing to comply with the atrocities within the Holocaust: Roza Robota, Estusia and Hanka Wajcblum, and Regina Safirsztajn.',
-	  'jump factorySlide',
-	],
-
-	'factorySlide':[
-		'show background wum with fadeIn',
-		'This is an image of the Weichsel-Union-Metallwerke factory, where Roza first encountered Ala and told her about the resistance movement within Auschwitz. This facility operated from October 1943 to make fuses for artillery projectiles.',
-		'Over 1200 prisoners worked in this factory complex, including Ala. Ala was intent on having a role in this, so she recruited Estusia, Hanka, and Regina due to their direct access to the gunpowder.',
-		'With extra cloth or paper, they wrapped up small bits of gunpowder and hid it on their bodies. This would then be passed to Ala and Roza, and then to the Sonderkommando because their work was associated with the Crematorium IV which was the target of where they intended to create an explosion. However, this was not their only goal. They also planned to attack the SS men in the vicinity.',
-		'jump ncsSlide',
-	],
-
-	'ncsSlide':[
-		'show background builtc with fadeIn',
-		'The image shown above is the Crematorium IV - their target for the attack. Using this gunpowder, these women were able to fight back and make a statement by blowing the gas chambers and crematoria. This created devastating damage, which therefore launched the uprising.',
-		'jump upSlide',
-	],
-
-	'upSlide':[
-		'show background fire with fadeIn',
-		'Because of the “Night and Fog” order Hitler issued on October 7th, 1944, Ala along with her associates involved with the uprising was captured.',
-		'After the Sonderkommando blew up Crematorium IV with the explosives planted, the SS guards infiltrated and attacked those involved. This image shows the fire at Crematorium IV at Birkenau.',
-		'jump moreSlide',
-	],
-
-	'moreSlide':[
-		'show background current with fadeIn',
-		'An investigation was soon held to find out who had been the leader or had conspired in the uprising. This ultimately led back to the four girls: Ala, Roza, Estusia, and Regina.',
-		'They were tortured and questioned for weeks, until their execution date - January 5th, 1945 - for a public hanging in Auschwitz. This image is the current state of the Crematorium IV.',
-		'jump wSlide',
-	],
-
-	'wSlide':[
-		'show background unity with fadeIn',
-		'These women, however, did not work alone: “no less than 30 Jewish female prisoners participated in the gunpowder smuggling, carried out in secrecy during a period of about 7 months” (Harran). Women took the positions of soldiers and fought just as men did.',
-		'While this image is from the Warsaw uprising(Soldiers of the Polish Home Army Womens Auxiliary Services, who were taken captive in 1944) it depicts the unity of women in uprisings similar to the Sonderkommando.',
-		'jump conclusionSlide',
-	],
-
-	'conclusionSlide':[
-	'show background Ala2 with fadeIn',
-	'My grandmother’s family was fortunate enough to survive the Holocaust when millions of others weren’t. My grandmothers mothers role to smuggle food for Jews who were in need played an important part in history, just as Alas role did, to fight against this horrific oppression that was faced.',
 
 	],
+
+
 
 });
 
