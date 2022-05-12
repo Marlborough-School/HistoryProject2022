@@ -66,6 +66,9 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 	'number':'number.jpeg',
+	'sibs':'lefamily.jpeg',
+	'clothes':'clothes.jpeg',
+	'gold':'gold.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -77,9 +80,12 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
-	'lilyebert1':'lilyebert1.jpeg',
-	'crematorium':'crematorium.png',
-	'sibs':'lefamily.jpeg',
+	'lilyebert1': 'lilyebert1.jpeg',
+	'crematorium': 'crematorium.png',
+	'sibs': 'lefamily.jpeg',
+	'clothes': 'clothes.jpeg',
+	'gold': 'gold.jpeg',
+
 
 });
 
@@ -122,6 +128,14 @@ monogatari.script ({
 		'show background black',
 		'show image sibs',
 		' "Lily Ebert was raised in Hungary until she was 20, when the Nazis invaded and she was taken with her mother, brother, and three sisters to Auschwitz concentration camp."',
+		'show background black',
+		'show image clothes',
+		' "Before arriving to the camp, the prisoners were striped of all their possessions and the Nazis confiscated everything that was seen as value. On the train, Lily’s mother told her to switch shoes with her."',
+		'show background black',
+		'show image gold',
+
+
+
 
 	],
 });
