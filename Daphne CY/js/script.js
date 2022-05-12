@@ -66,6 +66,7 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 	'Isoroku':'Portrait.jpg',
+	'americans':'download.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -78,6 +79,10 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'died':'died.jpg',
+	'plan':'plan.jpg',
+	'ship':'ship.jpg',
+
+
 
 });
 
@@ -106,71 +111,52 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'show background died with fadeIn',
+		'There were actually around 2,500 people that died from the Pearl Harbor attack with 1,143 people wounded. All Americans that were killed in this attack were non-combatants. ',
+		'jump intro',
 	],
 
 	'noAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'show background died with fadeIn',
+		'Correct! There were around 2,500 people that died from the Pearl Harbor attack with 1,143 people wounded. All Americans that were killed in this attack were non-combatants. ',
+		'jump intro',
 	],
 
-	'choiceScreen':[
-		'show background duck2 with fadeIn',
-		{'Choice':{
-			'1':{
-				'Text': 'Red Grapes',
-				'Do': 'jump redGrape',
-			},
-			'2':{
-				'Text': 'Green Grapes',
-				'Do': 'jump greenGrape',
-			},
-			'3':{
-				'Text': 'Black Grapes',
-				'Do': 'jump blackGrape',
-			}
-		}
-	}
+	'intro':[
+		'hide image died with fadeOut',
+		'show background black with fadeIn',
+		'show image americans with fadeIn',
+		'In 1926, Yamamoto became a naval officer for the Japanese embassy in Washington D.C. There, he was promoted from vice minister to commander in chief. Before the government decided on war with the U.S., Yamamoto stated that he opposed war with the U.S. because he feared that Japan would go through a prolonged conflict from the war. Once the war was going to happen, Yamamoto argued that he should be the one in charge and went on to command the carriers of the attack without thinking about what the U.S. could do to Japan.',
+		'jump nextSlide',
 	],
 
-	'redGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+	'nextSlide':[
+		'show image americans with fadeIn',
+		'Yamamato was able to command the attack because he supposedly studied at Harvard and was a naval attache in Washington allowing him to understand the U.S. more than others. According to David C. Gompert, Hans Binnendjk, and Bonny Lin, Yamamoto wrote: The only way is to have a powerful air force strike deeply at the enemy’s heart at the very beginning of the war and thus to deal a blow, material and moral, from which it will not be able to recover for some time (10).',
+		'jump body',
 	],
 
-	'greenGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+	'body':[
+		'hide image americans with fadeOut',
+		'show background plan with fadeIn',
+		'He predicted that Japan could only win the war if it did not last for more than two years and after those two years, he could not see a great outcome with this war. ',
+		'jump eight',
 	],
 
-	'blackGrape':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
-		'jump Ending',
+	'eight':[
+		'show background plan with fadeIn',
+		'Yamamoto’s grandson, Gentaro Yamamoto stated that “He never wanted to go to war with the United States. He knew that if we fought with the United States, it would be fatal. But it was the decision of the government and he felt it was his duty — that he had no choice” (Spitzer) (Legacy Still). Yamamoto was left in a state where there was only one option, to fight the enemy. ',
+		'jump nine',
 	],
 
-	'Ending':[
-		'show background potatocat with fadeIn',
-		{'Choice':{
-			'Closing':{
-				'Text': 'Conclusion',
-				'Do': 'jump Closing',
-			}
-		}
-		}
+	'nine' :[
+		'hide background plan with fadeOut',
+		'show background ship with fadeIn',
+		' Despite Yamamoto being familiar with the U.S., he underestimated how strong the U.S. could be. In the beginning, many officers were very optimistic about the war with the U.S., however as time went on, some started wanting to delay the attack and the decision of the war. Nevertheless, it was too late to delay the attack, therefore the decision was made on November 2nd to prepare for the war. ',
+
 	],
 
-	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
-	]
+
 });
 
 monogatari.component ('main-screen').template (() => {
