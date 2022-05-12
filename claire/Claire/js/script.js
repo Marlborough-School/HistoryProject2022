@@ -82,6 +82,7 @@ monogatari.assets ('scenes', {
 	'kids': 'kids.jpg',
 	'holocaust':'holocaust.jpg',
 	'frank':'frank.jpg',
+	'holo' :'holo.jpeg',
 });
 
 
@@ -143,8 +144,8 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'show background holo with fadeIn',
+		'Early in the 1920s the Nazi Party emerged under the leadership of Aldof Hitler, a German man who believed that Germans are more intelligent and stronger than any other race. Hilter not only wanted to remove anyone who opposed him, but also exterminate and take away freedoms from Jewish people, disabled people, and the elderly.',
 		'jump choiceScreen',
 	],
 
@@ -157,8 +158,14 @@ monogatari.script ({
 	'blackGrape':[
 		'show background grape with fadeIn',
 		'You found the grapes! Now we will go the end of the project',
-		'jump Ending',
+		'jump choiceScreen',
 	],
+
+'purpleGrape':[
+	'show background grape with fadeIn',
+	'On August 4, 1944, the Franks and their friends in hiding were caught by tipped-off German police. After being in a holding cell for four days, the arrestees were sent to the Westerbork concentration camp in the Netherlands.',
+	'jump choiceScreen',
+],
 
 	'Ending':[
 		'show background potatocat with fadeIn',
