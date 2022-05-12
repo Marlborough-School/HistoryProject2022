@@ -67,7 +67,7 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 'boy':'boy.jpeg',
 'grave': 'grave.jpeg',
-'truck': 'truck.jpeg',
+'truck': 'truck.jpeg'
 
 });
 
@@ -160,6 +160,7 @@ monogatari.script ({
 		'show image truck with fadeIn',
 		'Before leaving for the battlefields of Europe, Helen wrote to her brother in Maine:',
 		'"I suppose mother has written you that our Pennsylvania Hospital Red Cross Unit of which I am a member has been called for service in Europe, so I am here in Philadelphia, waiting for the pokey old government to get things ready for us to go...',
+		'...I would like to have seen you all but of course, can’t, so save your pennies so you can all come call when I get back. I may have some exciting tales to tell You."',
 		'jump choiceScreen',
 	],
 
@@ -187,7 +188,7 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
+		'show background Portrait with fadeIn',
 		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
 		'Go make your own project now have fun lol',
 		'end'
