@@ -83,6 +83,10 @@ monogatari.assets ('scenes', {
 	'holocaust':'holocaust.jpg',
 	'frank':'frank.jpg',
 	'holo' :'holo.jpeg',
+	'baby':'baby.jpg',
+	'kid':'kid.jpg',
+	'diary':'diary.jpeg',
+	'family':'family.jpeg',
 });
 
 
@@ -150,8 +154,16 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'show background baby with fadeIn',
+		'In Frankfurt, Germany, on June 12, 1929, two reform Jews, Otto Frank and Edith- Frank Hollander, welcomed their second child into the world: Anneliese Marie Frank.',
+		'show background kid with fadeIn',
+		'Anne was a very social child who wanted to be the center of attention, and always came up with games to play like “getting dressed up and playing actors” (Kugel).',
+		'show background school with fadeIn',
+		'In school, Anne disliked subjects like math and science, however, she loved history and writing. Anne’s parents were not strict about her grades; instead, they cared about Anne and Margot’s happiness.',
+		'show background diary with fadeIn',
+		'On Anne’s 13th birthday she was given a diary that she named “Kitty”. In her first journal entry on June 12, 1942, she wrote: “I hope I shall be able to confide in you completely, as I have never been able to do in anyone before” (Frank and Pressler 1).',
+		'show background family with fadeIn',
+		'After Anne’s birthday, Margot got a call-up notice to go to work camp which terrified the Franks. Otto and Edith decided the best decision was for the Franks to flee their home. Anne frantically had to pack up her belongings, however, instead of only packing clothes she packed things that had sentimental value as “memories mean more to me than dresses.”',
 		'jump choiceScreen',
 	],
 
