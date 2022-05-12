@@ -65,7 +65,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+	'reniapg1':'reniapg1.jpeg',
+	'reniapg2':'reniapg2.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -84,16 +85,17 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Hi project coders. This is senya and this duck will not be your real background. You will replace the background named duck with your background.',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background black with fadeIn',
+		'show image reniapg1',
+		'When most people hear the name Renia Spiegel, the idea of a young Polish Jewish girl who wrote in a diary during the Holocaust and is often considered a “Polish Anne Frank” likely doesn’t come to mind. Why should it? Renia’s diary was hidden - untouched for 70 years.',
+		'How many pages do you think Renia’s journal is?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': '700',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': '376',
 				'Do': 'jump noAnswer'
 			},
 		},
@@ -102,13 +104,14 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show image reniapg2',
+		'Yes, Renia wrote over 700 pages and had more than 100 journal entries.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Wrong, try again!',
 		'jump choiceScreen',
 	],
 
@@ -116,15 +119,15 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'Early Life',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'The Przemysl Ghetto',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'The End of Her Story',
 				'Do': 'jump blackGrape',
 			}
 		}
