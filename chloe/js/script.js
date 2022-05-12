@@ -65,7 +65,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+'bedzin':'bedzin.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -83,6 +83,8 @@ monogatari.assets ('scenes', {
 	'fire':'fire.png',
 	'current':'currentc.jpeg',
 	'unity':'womenuprisings.png',
+	'bedzin':'bedzin.png',
+	'black':'black.jpeg',
 
 });
 
@@ -129,9 +131,14 @@ monogatari.script ({
 	],
 
 	'afterSlide':[
+		'show background black with fadeIn',
+		'show image bedzin with fadeIn',
+		'Ala came from a wealthy family and was well educated as she attended a school in Będzin, Poland.',
+		'hide image bedzin with fadeOut',
 		'show background Auschwitz with fadeIn',
-		'Ala came from a wealthy family and was well educated as she attended a school in Bedzin. Her literacy and education allowed her to be an important part of the Sonderkommando Uprising as she was transported to Auschwitz(which is depicted above).',
+		'Her literacy and education allowed her to be an important part of the Sonderkommando Uprising as she was transported to Auschwitz(which is depicted above).',
 		'jump doneSlide',
+
 	],
 
   'doneSlide':[
