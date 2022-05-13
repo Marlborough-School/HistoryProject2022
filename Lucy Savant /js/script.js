@@ -69,6 +69,7 @@ monogatari.assets ('images', {
 	'sibs':'lefamily.jpeg',
 	'clothes':'clothes.jpeg',
 	'gold':'gold.jpeg',
+	'gates':'gates.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -85,7 +86,7 @@ monogatari.assets ('scenes', {
 	'sibs': 'lefamily.jpeg',
 	'clothes': 'clothes.jpeg',
 	'gold': 'gold.jpeg',
-
+	'gates':'gates.jpeg',
 
 });
 
@@ -128,11 +129,19 @@ monogatari.script ({
 		'show background black',
 		'show image sibs',
 		' "Lily Ebert was raised in Hungary until she was 20, when the Nazis invaded and she was taken with her mother, brother, and three sisters to Auschwitz concentration camp."',
+		'hide image sibs',
 		'show background black',
 		'show image clothes',
 		' "Before arriving to the camp, the prisoners were striped of all their possessions and the Nazis confiscated everything that was seen as value. On the train, Lily’s mother told her to switch shoes with her."',
+		'hide image clothes',
 		'show background black',
-		'show image gold',
+		'show background gold',
+		' "In her mother’s shoe, a gold pendant was hidden, which Lily never parted with to this day. This piece of gold might be the only piece of gold that entered Auschwitz and left with its original owner."',
+		'hide background gold',
+		'show background black',
+		'show background gates',
+		' "Upon arrival at Auschwitz, Lily recalls thinking she had arrived at the gates of hell. Everyone was then brought in groups of five in front of Josef Mengele, otherwise known as “the angel of death.” Lily Ebert was brought forth with her family as Mengele sorted every person that was brought into Auschwitz into two groups: one group to the left, and one group to the right. "',
+
 
 
 
