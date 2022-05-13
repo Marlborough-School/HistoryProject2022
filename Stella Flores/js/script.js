@@ -71,10 +71,10 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
+	'plane':'plane.jpeg',
+	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
-	'portrait':'portrait.jpeg',
-	'group':'group.jpeg',
-	'family':'family.jpeg',
+	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 });
@@ -83,16 +83,8 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background portrait with fadeIn',
-		'Odette Sansom, a female spy tortured by the Gestapo duirng World War 2, was the first woman to ever be given the honor of the George Cross.',
-		'show background black with fadeIn',
-		'Sansom’s story starts in her childhood. Odette’s early life was affected by World War II, as Germans had launched an attack through Belgium and into the heart of France right through Sansom’s home in Amiens.',
-		'show background black with fadeIn',
-		'Her father, disturbed at the actions of German soldiers, joined the French army and fought for almost a year before being taken out by a German shell.',
-		'show background portrait with fadeIn',
-		'She worked her way up, finally acting as a courier in the SPINDLE Circuit, a smaller part of the SOE that arranged airdrops of firearms and explosives, which was headed by Peter Churchill. Odette turned out to be a great spy, throwing herself headfirst into every mission she was assigned.',
-		'show background trio with fadeIn',
-		'All was going well until one day she was staying in a hotel with Peter Churchill, when the Gestapo attacked. They burst in through the doors of Sansoms room, holding her at gunpoint.',
+		'show background plane with fadeIn',
+		'As he stepped off the plane, a British politician committed to peace looked at his people, waving him on with hopeful smiles, and said, “I believe it is peace for our time ... peace with honour.” No one wished for this to be true more than Chamberlain himself. Yet peace would prove to be elusive, and Chamberlain would never live to see his dream come to fruition.',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
@@ -123,16 +115,16 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Early Life',
-				'Do': 'jump earlyLife',
+				'Text': 'Red Grapes',
+				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Ravensbruck',
-				'Do': 'jump Ravensbruck',
+				'Text': 'Green Grapes',
+				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Later Life',
-				'Do': 'jump laterLife',
+				'Text': 'Black Grapes',
+				'Do': 'jump blackGrape',
 			}
 		}
 	}
@@ -188,14 +180,14 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Odette Sansom: Mother Turned Spy</b>
+        <b>Your Project Title Goes Here</b>
 				<br/>
 				<br/>
-        By: Zoe Guzin
+        By: The Duck Selling Lemonade at the Lemonade Stand
         </p>
 				</center>
 				<br/>
 
-				<main-menu></main-menu>
+        <main-menu></main-menu>
     `;
 });

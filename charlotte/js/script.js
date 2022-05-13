@@ -65,42 +65,37 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+	'reniapg2':'reniapg2.jpeg',
+	'reniapg1':'reniapg1.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
+	'duck':'ducksong.jpg',
+	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
-	'portrait':'portrait.jpeg',
-	'group':'group.jpeg',
-	'family':'family.jpeg',
+	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+	'renia': 'renia.jpeg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background portrait with fadeIn',
-		'Odette Sansom, a female spy tortured by the Gestapo duirng World War 2, was the first woman to ever be given the honor of the George Cross.',
 		'show background black with fadeIn',
-		'Sansom’s story starts in her childhood. Odette’s early life was affected by World War II, as Germans had launched an attack through Belgium and into the heart of France right through Sansom’s home in Amiens.',
-		'show background black with fadeIn',
-		'Her father, disturbed at the actions of German soldiers, joined the French army and fought for almost a year before being taken out by a German shell.',
-		'show background portrait with fadeIn',
-		'She worked her way up, finally acting as a courier in the SPINDLE Circuit, a smaller part of the SOE that arranged airdrops of firearms and explosives, which was headed by Peter Churchill. Odette turned out to be a great spy, throwing herself headfirst into every mission she was assigned.',
-		'show background trio with fadeIn',
-		'All was going well until one day she was staying in a hotel with Peter Churchill, when the Gestapo attacked. They burst in through the doors of Sansoms room, holding her at gunpoint.',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show image reniapg1',
+		'When most people hear the name Renia Spiegel, the idea of a young Polish Jewish girl who wrote in a diary during the Holocaust and is often considered a “Polish Anne Frank” likely doesn’t come to mind. Why should it? Renia’s diary was hidden - untouched for 70 years.',
+		'How many pages do you think Renia’s journal is?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': '700',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': '376',
 				'Do': 'jump noAnswer'
 			},
 		},
@@ -109,13 +104,14 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show image reniapg2',
+		'Yes, Renia wrote over 700 pages and had more than 100 journal entries.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Wrong, try again!',
 		'jump choiceScreen',
 	],
 
@@ -124,15 +120,15 @@ monogatari.script ({
 		{'Choice':{
 			'1':{
 				'Text': 'Early Life',
-				'Do': 'jump earlyLife',
+				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Ravensbruck',
-				'Do': 'jump Ravensbruck',
+				'Text': 'The Przemysl Ghetto',
+				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Later Life',
-				'Do': 'jump laterLife',
+				'Text': 'The End of Her Story',
+				'Do': 'jump blackGrape',
 			}
 		}
 	}
@@ -188,14 +184,14 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Odette Sansom: Mother Turned Spy</b>
+        <b>Renia Spiegel: 70 Years in the Future</b>
 				<br/>
 				<br/>
-        By: Zoe Guzin
+        By: Charlotte Landis
         </p>
 				</center>
 				<br/>
 
-				<main-menu></main-menu>
+        <main-menu></main-menu>
     `;
 });
