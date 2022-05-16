@@ -79,6 +79,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'renia': 'renia.jpeg',
+	'bigrenia': 'bigrenia.jpeg',
 });
 
 
@@ -116,7 +117,7 @@ monogatari.script ({
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background bigrenia with fadeIn',
 		{'Choice':{
 			'1':{
 				'Text': 'Early Life',
