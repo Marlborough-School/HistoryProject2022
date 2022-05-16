@@ -123,6 +123,7 @@ monogatari.script ({
 		'That is ok.',
 		'The lack of knowledge partially stems from western powers not recognizing China’s efforts during World War I.',
 		'China sent troops to Europe to repair damages, transport weapons, and assemble shells. However, World War I was focused on the Western world and did not acknowledge their efforts.',
+		'hide image WWI with fadeOut',
 		'jump Intro',
 	],
 
