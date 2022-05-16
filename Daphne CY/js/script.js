@@ -67,6 +67,9 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 	'Isoroku':'Portrait.jpg',
 	'americans':'download.jpg',
+	'map':'map.jpg',
+	'route':'route.jpg',
+	'statue':'statue.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -81,6 +84,10 @@ monogatari.assets ('scenes', {
 	'died':'died.jpg',
 	'plan':'plan.jpg',
 	'ship':'ship.jpg',
+	'revenge':'revenge.jpg',
+	'bomb':'bomb.jpg',
+	'plane':'plane.jpg',
+
 
 
 
@@ -150,13 +157,51 @@ monogatari.script ({
 	],
 
 	'nine' :[
-		'hide background plan with fadeOut',
 		'show background ship with fadeIn',
 		' Despite Yamamoto being familiar with the U.S., he underestimated how strong the U.S. could be. In the beginning, many officers were very optimistic about the war with the U.S., however as time went on, some started wanting to delay the attack and the decision of the war. Nevertheless, it was too late to delay the attack, therefore the decision was made on November 2nd to prepare for the war. ',
-
+		'jump ten',
 	],
 
+'ten':[
+	'show background black with fadeIn',
+'show image map with fadeIn',
+'The attack that Japan made indeed sunk many American battleships, aircraft, and people, however, due to America’s quick strategies, they were able to come back and attack Japan. Yamamoto was not able to make his third wave of attack because they were lacking fuel from all the previous attacks. From this, three U.S. aircraft carriers were able to escape.',
+'jump eleven',
+],
 
+'eleven':[
+	'hide image map with fadeOut',
+	'show background revenge with fadeIn',
+	'The United States’ best advantage to revenge on Japan was breaking their naval code allowing them to break Japan’s plans and bring them down. With the break of the code, the U.S. was warned in advance of Japan’s operations. ',
+'jump twelve',
+],
+
+'twelve':[
+	'show background bomb with fadeIn',
+	'When the U.S. attacked back in Hiroshima and Nagasaki in 1945, many Japanese towns and cities were left in ruins and a minimum of 130,000 to a total of 215,000 Japanese citizens died from the attack.',
+	'jump thirteen',
+],
+
+'thirteen':[
+	'show background black with fadeIn',
+	'show image route with fadeIn',
+	'From these code breakings, on April 18, 1943, “18 American P-38s from the 13th Air Force launched from Guadalcanal, flew to Bougainvillea, found the Admirals flight, and shot down his plane killing him” (Admiral Isoroku).',
+	'jump fourteen',
+],
+
+'fourteen':[
+	'hide image route with fadeOut',
+	'show background plane with fadeIn',
+	'Despite Yamamoto’s strategies and his leadership towards attacking the U.S., he was not greatly appreciated or looked upon. When his funeral was held, only about 80 people attended it and no government or military officers attended.',
+	'jump fifteen',
+],
+
+'fifteen':[
+	'show background black with fadeIn',
+	'show image statue with fadeIn',
+	'Although he was underappreciated, his contribution to strategies in the early stages of the attack showed his loyalty to Japan, therefore, showcasing how brave of a leader he was to his country. Nevertheless, films on Yamamoto have been created and shown to the media. Books about Yamamoto have also been published. There is also a statue of him showcased in his hometown. ',
+
+],
 });
 
 monogatari.component ('main-screen').template (() => {
