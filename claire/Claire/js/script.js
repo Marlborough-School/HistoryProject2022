@@ -94,6 +94,8 @@ monogatari.assets ('scenes', {
 	'caught':'caught.jpg',
 	'train':'train.jpg',
 	'cc':'cc.jpg',
+	'women':'women.jpg',
+	'book':'book-cover.jpg'
 });
 
 
@@ -212,10 +214,12 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
+		'show background women with fadeIn',
+		'Although Anne Frank’s life tragically ended during the Holocaust, her memory lives on forever. Her story relates to millions of other Jewish children in the Holocaust, and she brings to life what it was like as a Jewish teenager during this time.',
+		'show background book with fadeIn',
+		'Anne’s story teaches young kids, teens, and adults the discrimination and difficulties Jewish people faced for many years. Anne is able to humanize the struggles encountered during the Holocaust and build empathy for future generations.',
+		'show background anne with fadeIn',
+		'Anne was just a typical girl with a diary that ended up changing how the world viewed the Holocaust, and also inspired millions by being able to keeping her head up during the darkest of times.',
 	]
 });
 
