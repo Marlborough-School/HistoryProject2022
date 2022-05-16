@@ -87,6 +87,8 @@ monogatari.assets ('scenes', {
 	'kid':'kid.jpg',
 	'diary':'diary.jpeg',
 	'family':'family.jpeg',
+	'books':'bookcase.jpeg',
+	'map':'map.jpeg',
 });
 
 
@@ -168,8 +170,12 @@ monogatari.script ({
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
+		'show background books with fadeIn',
+		'The family arrived at the Secret Annex, which was hidden behind a revolving cabinet in the attic of Otto Frank’s business in Amsterdam. Anne and her family were accompanied in hiding by four other people: The Van Pels family and Fritz Pfeffer.',
+		'show background map with fadeIn',
+		'The attic was small and cramped. The days were long and quiet. Anne read lots of books and wrote in her journal to keep herself busy. Anne had difficulties with her family because felt like she was being overlooked and not appreciated. “I can shake off everything as I write; my sorrows disappear, my courage is reborn.”',
+		'show background anne with fadeIn',
+		'“In spite of everything I still believe that people are really good at heart. I simply can’t build up my hopes on a foundation consisting of confusion, misery, and death… I hear the ever approaching thunder, which will destroy us too, I can feel the sufferings of millions and yet, if I look up into the heavens, I think that it will all come right, that this cruelty too will end, and that peace and tranquility will return again.” (Frank and Presler 333).',
 		'jump choiceScreen',
 	],
 

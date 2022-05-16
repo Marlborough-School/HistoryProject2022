@@ -68,6 +68,12 @@ monogatari.assets ('images', {
 'boy':'boy.jpeg',
 'grave': 'grave.jpeg',
 'truck': 'truck.jpeg',
+'wash' : 'wash.jpg',
+'sick' : 'sick.jpeg',
+'desk' : 'desk.jpg',
+'war' : 'war.jpg',
+'bib' : 'bib.jpeg',
+'credits' : 'credits.jpeg',
 
 });
 
@@ -82,6 +88,8 @@ monogatari.assets ('scenes', {
 	'crycat':'crycat2.jpeg',
 	'Portrait': 'Portrait.jpeg',
 	'truck': 'truck.jpeg',
+	'gas': 'gas.jpg',
+	'white': 'white.jpg',
 });
 
 
@@ -131,7 +139,6 @@ monogatari.script ({
 		'',
 		'hide image grave with fadeOut',
 		'show background black with fadeIn',
-		'show background duck2 with fadeIn',
 		'jump choiceScreen',
 		],
 
@@ -160,23 +167,41 @@ monogatari.script ({
 		'show image truck with fadeIn',
 		'Before leaving for the battlefields of Europe, Helen wrote to her brother in Maine:',
 		'"I suppose mother has written you that our Pennsylvania Hospital Red Cross Unit of which I am a member has been called for service in Europe, so I am here in Philadelphia, waiting for the pokey old government to get things ready for us to go...',
+		'...I would like to have seen you all but of course, can’t, so save your pennies so you can all come call when I get back. I may have some exciting tales to tell You."',
+		'hide image truck with fadeOut',
 		'jump choiceScreen',
 	],
 
 	'greenGrape':[
-		'show background Portait with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'show background gas with fadeIn',
+		'Fairchild’s unit arrived in Europe before many American troops could be mobilized. As a result, they treated British troops since Britain was an ally of the U.S. in the war. A major British offensive had begun near Ypres, Belgium, and casualties were high, including many victims of German gas attacks.',
+		'Fairchild first worked at a British Base hospital where many soldiers were suffering from injuries caused by mustard gas. She spent hours washing their burns to try to eliminate all traces of the gas.',
+		'show background black with fadeIn',
+		'show image wash with fadeIn',
+		'In August 1917, Fairchild was sent closer to the front to work in a casualty clearing station. There she tried to keep wounded soldiers alive until they could be transferred to a base hospital. She treated men with missing limbs, with organs damaged by the effects of artillery blasts, and with burns inside and out caused by gas.',
+		'She didn’t pass on these grissly details to her family, but she did indicate the suffering of her patients.',
+		'hide image wash with fadeOut',
+		'show background Portrait with fadeIn',
+		'“If you could only see what the boys here have to go through sometimes,” Helen wrote to her mother, “you would see they need all the comfort possible.”',
+		'show background black with fadeIn',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
+		'show background black with fadeIn',
+		'show image sick with fadeIn',
+		'As winter 1917-1918 set in, however, Nurse Fairchild became ill herself with symptoms that ranged from tonsillitis to indigestion.',
+		'None of these should have caused her death, but in January she succumbed to her illness. An autopsy revealed a fatal liver disease, likely caused by exposure to mustard gas on the men she had been treating.',
+		'hide image sick with fadeOut',
+		'show background black with fadeIn',
+		'show image desk with fadeIn',
+		'Helen Fairchild had been much admired by both her American compatriots and the British soldiers she treated. The Directoress of U.S. Nurses, Margaret Dunlop, wrote of her death, “It was a frightful tragedy to us all as she was one of my most beloved nurses.”',
+		'hide image desk with fadeOut',
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background potatocat with fadeIn',
+		'show background black with fadeIn',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
@@ -187,10 +212,22 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
+		'show background black with fadeIn',
+		'show image war with fadeIn',
+		'Helen Fairchild was a victim of the world’s first modern war - a conflict that involved chemical weapons and other new deadly technologies, such as submarine strikes and  aerial bombardments.',
+		'hide image war with fadeOut',
+		'show background nurses with fadeIn',
+		'The important roles played by women like Fairchild also mark the conflict as modern, though the treatment of women who served in the war was far from equal. Like most women who served, Fairchild found herself in a non-combatant role. Nevertheless, she and many other non-combatants were put in harm’s way by the terrifying new technologies of the war.',
+		'show background Portrait with fadeIn',
+		'While she is remembered for her bravery and service as a wartime nurse, we would not know much about Fairchild if it had not been for her personal letters and her niece’s commitment to honor her service. As a result, she is remembered as a pioneering nurse and a hero of the first modern war.',
+		'show background white with fadeIn',
+		'show image bib with fadeIn',
+		'Bibliography',
+		'hide image bib with fadeOut',
+		'show image credits with fadeIn',
+		'Image Credits',
+		'hide image credits with fadeOut',
+		'end',
 	]
 });
 
@@ -214,7 +251,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<p>
         <b>Nurse Helen Fairchild: Hero and Victim of the First Modern War</b>
-				</p>
+				<br/>
 				<br/>
         By: Dr. Lynch
         </p>
