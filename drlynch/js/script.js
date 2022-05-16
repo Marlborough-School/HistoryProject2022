@@ -1,4 +1,4 @@
-/* global monogatari */
+'show background black with fadeIn',/* global monogatari */
 
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
@@ -62,162 +62,149 @@ monogatari.assets ('videos', {
 
 });
 
-// Define the images used in the game.
+//DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
-	siblings: "SasakiChildren.jpeg",
-	airRaidShelter: "AirRaidShelter.jpeg",
-	sasakiFamily: "sadakomasahiro.jpeg",
-	enolaGay: "enolaGay.jpeg",
-	bombCloud: "hiroshima bomb.jpeg",
-	genbakuDome: "genbakudome.png",
-	painting1: "painting1.png",
-	painting2: "painting2.jpeg",
-	painting3: "painting3.png",
-	rebuild: "hirorebuild.jpeg",
-	sadako: "sadako.jpeg",
+	//'nickname for the image': 'actual name of the image',
+'boy':'boy.jpeg',
+'grave': 'grave.jpeg',
+'truck': 'truck.jpeg',
+'wash' : 'wash.jpg',
+'sick' : 'sick.jpeg',
+'desk' : 'desk.jpg',
+'war' : 'war.jpg',
+'bib' : 'bib.jpeg',
+'credits' : 'credits.jpeg',
+
 });
 
-// Define the backgrounds for each scene.
+//DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
-
-	'bridge': 'bridge.jpeg',
-	'hand': 'hand.jpeg',
-	'nurses': 'Nurses.jpeg',
-	'boy': 'boy.jpeg',
+	//'nickname for the background': 'actual name of the background',
+	'hand':'hand.jpeg',
+	'boy':'boy.jpeg',
+	'black':'black.jpeg',
+	'nurses':'nurses.jpeg',
+	'potatocat': 'potatocat.jpeg',
+	'crycat':'crycat2.jpeg',
+	'Portrait': 'Portrait.jpeg',
+	'truck': 'truck.jpeg',
+	'gas': 'gas.jpg',
+	'white': 'white.jpg',
 });
 
-
-// Define the Characters
-monogatari.characters ({
-
-});
 
 //
 monogatari.script ({
 	'Start': [
-	'show background hand with fadeIn',
-	'When Nelle Fairchild Rote was in 4th grade in the 1930s, the First World War was not yet a distant memory. Nelle’s teacher asked the students if they had a family member who had served in WWI (World War I). Nelle raised her hand and said that she had an aunt who had served overseas – Her name was Helen Fairchild.',
-	'show background boy with fadeIn',
+		'show background hand with fadeIn',
+		'When Nelle Fairchild Rote was in fourth grade in the 1930s, the First World War was not yet a distant memory. Nelle’s teacher asked the students if they had a family member who had served in WWI (World War I). Nelle raised her hand and said that she had an aunt who had served overseas – Her name was Helen Fairchild.',
+  'show background black with fadeIn',
+	'show image boy with fadeIn',
 	'“She doesn’t count,” a boy said, “She’s a girl.” But Nelle knew that her Aunt Helen’s service ‘counted.’',
-		'show background nurses with fadeIn',
-		{'Choice':{
-			'American nurses in WWI':{
-				'Text': 'American nurses recruited by the Red Cross served in the U.S. Army and some also worked in American units of the British and French armies.',
-				'Do': 'jump senbazuru'
-			},
-		}
-	},
-],
-
-	'senbazuru':[
+	"hide image boy with fadeOut",
+	'show background black with fadeIn',
+	'show background nurses with fadeIn',
 		'How many American nurses do you think served in WWI?',
 		{'Choice':{
 			'Y':{
 				'Text': 'Around 2,000',
-				'Do': 'jump yesSenbazuru'
+				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text':'Around 22,000',
-				'Do': 'jump noSenbazuru'
+				'Text': 'Around 22,000',
+				'Do': 'jump noAnswer'
 			},
-		}
+		},
 	},
-	],
+],
 
-	'yesSenbazuru':[
-		'show background nurses',
-		'There were actually around 22,000 American nurses who served during WWI 10,000 of them overseas.,"
-		"Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.,"
+	'yesAnswer':[
+		'show background black',
+		'show background nurses with fadeIn',
+		'There were actually around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
-	'noSenbazuru':[
-		'show background senbazuru',
-		'No worries, we will learn about it now.',
-		'千羽鶴, senbazuru, directly translates to 1000 cranes. An ancient Japanese legend proclaims that anyone who folds a thousand paper cranes will be granted a wish from the gods. In Japan, cranes supposedly live for a thousand years so one origami crane must be made for each year.',
-		'The Thousand Crane Legend gave many hope during hard and trying times.',
-		'jump choiceScreen',
+	'noAnswer':[
+		'show background black',
+		'show background nurses with fadeIn',
+		'Correct! There were around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
+		'jump Intro2',
 	],
+
+	'Intro2':[
+		'show background black with fadeIn',
+		'show image grave with fadeIn',
+		'That story is preserved in a book that Nelle wrote about her aunt, in a bridge named after Helen near her hometown in Pennsylvania, and in a quiet cemetery in France, close to where she served and died during WWI.',
+		'',
+		'hide image grave with fadeOut',
+		'show background black with fadeIn',
+		'jump choiceScreen',
+		],
 
 	'choiceScreen':[
-		'show background hiroshimanow with fadeIn',
 		{'Choice':{
-			'TSF':{
-				'Text': 'The Sasaki Family',
-				'Do': 'jump TheSasakiFamily',
+			'1':{
+				'Text': 'Volunteering for the War',
+				'Do': 'jump redGrape',
 			},
-			'TBH':{
-				'Text': 'The Bombing of Hiroshima',
-				'Do': 'jump TheBombingHiroshima',
+			'2':{
+				'Text': 'Nursing Near the Front',
+				'Do': 'jump greenGrape',
 			},
-			'A':{
-				'Text': 'The Aftermath',
-				'Do': 'jump Aftermath',
+			'3':{
+				'Text': 'Casualty of the First Modern War',
+				'Do': 'jump blackGrape',
 			}
 		}
 	}
 	],
 
-	'TheSasakiFamily':[
+	'redGrape':[
+		'show background Portrait with fadeIn',
+		'Helen Fairchild was 32 years old and working as a nurse in a Philadelphia hospital when the U.S. entered WWI in 1917. She immediately volunteered to join a medical reserve unit, which was rapidly called up for overseas duty.',
 		'show background black with fadeIn',
-		'show image sasakiFamily',
-		'The Sasaki’s lived in the city of Hiroshima during the midst of World War Ⅱ. During the war, the Allies dropped numerous bombs on the Japanese, destroying homes and cities. Although Sadako and Masahiro (the two children) often took refuge in bomb shelters, neither sibling ever realized the imminent danger of their living situation.',
-		'Shigeo, father to Sadako and Masahiro, owned a barbershop but was enlisted in the Japanese military after World War Ⅱ started. As a result of this, Sadako and Masahiro’s mother, Fujiko, began to manage the barbershop herself while the children were cared for by their grandmother.',
-		'hide image sasakiFamily',
+		'show image truck with fadeIn',
+		'Before leaving for the battlefields of Europe, Helen wrote to her brother in Maine:',
+		'"I suppose mother has written you that our Pennsylvania Hospital Red Cross Unit of which I am a member has been called for service in Europe, so I am here in Philadelphia, waiting for the pokey old government to get things ready for us to go...',
+		'...I would like to have seen you all but of course, can’t, so save your pennies so you can all come call when I get back. I may have some exciting tales to tell You."',
+		'hide image truck with fadeOut',
 		'jump choiceScreen',
 	],
 
-	'TheBombingHiroshima':[
+	'greenGrape':[
+		'show background gas with fadeIn',
+		'Fairchild’s unit arrived in Europe before many American troops could be mobilized. As a result, they treated British troops since Britain was an ally of the U.S. in the war. A major British offensive had begun near Ypres, Belgium, and casualties were high, including many victims of German gas attacks.',
+		'Fairchild first worked at a British Base hospital where many soldiers were suffering from injuries caused by mustard gas. She spent hours washing their burns to try to eliminate all traces of the gas.',
 		'show background black with fadeIn',
-		'show image enolaGay',
-		//maybe add sound effects of bomb sirens Here
-		'On August 6, 1945, air raid alarms rang throughout the city of Hiroshima as a singular American plane flew over the city. Sirens rang throughout the city and people rushed to the bomb shelters, but no bombings occured and residents were given the all clear.',
-		'Little did they know that the plane that flew overhead had just reported to the American forces that the weather conditions were ideal for the dropping of the atomic bomb.',
-		'hide image enolaGay with fadeOut',
-		'As the Sasaki family was eating breakfast, they heard cries and shouts from the neighbors. They rushed outside to see the bomber planes flying through the sky. Everyone craned their heads up towards the sky and some even called the planes pretty.',
-		'show image bombCloud with fadeIn',
-		'The Sasaki family were nearly back inside their house when the sky became brighter than it ever had been before. The American planes had just dropped the atomic bomb.',
-		'Sadako was blown into the yard while the rest of the family became stuck under the remains of their home.',
-		'hide image bombCloud',
-		'show image genbakuDome with fadeIn',
-		'The once lively city of Hiroshima was completely flattened and unrecognizable.',
-		'hide image genbakuDome',
-		'show image painting1 with fadeIn',
-		'The atomic bomb released a wave of heat so strong that started fires throughout the city. These fires consumed the fallen buildings and grew larger and larger. Sadako and Masahiro’s mother, Fujiko, knew the fire would kill them if they did not escape soon.',
-		'hide image painting1 with fadeOut',
-		'show image painting2 with fadeIn',
-		'All these drawings were made by Hiroshima survivors.',
-		'hide image painting2',
-		'show image painting3 with fadeIn',
-		'The family walked for hours and eventually a rescue operation truck drove them to Fujiko’s hometown. Miraculously, most of the Sasaki family survived. Sadako and Masahiro’s grandmother had passed away while attempting to retrieve her late husband’s remembrance tablet. Although the worst of the bombing was over, the Sasaki family, grieving and injured, had no idea what they would do next.',
-		'hide image painting3 with fadeOut',
-		'Everything they knew and loved was destroyed.',
+		'show image wash with fadeIn',
+		'In August 1917, Fairchild was sent closer to the front to work in a casualty clearing station. There she tried to keep wounded soldiers alive until they could be transferred to a base hospital. She treated men with missing limbs, with organs damaged by the effects of artillery blasts, and with burns inside and out caused by gas.',
+		'She didn’t pass on these grissly details to her family, but she did indicate the suffering of her patients.',
+		'hide image wash with fadeOut',
+		'show background Portrait with fadeIn',
+		'“If you could only see what the boys here have to go through sometimes,” Helen wrote to her mother, “you would see they need all the comfort possible.”',
+		'show background black with fadeIn',
 		'jump choiceScreen',
 	],
 
-	'Aftermath':[
-		'show background black',
-		'show image rebuild with fadeIn',
-		'Despite their bleak circumstances, the Sasaki family did their best to recover. Sadako and Masahiro’s parents suffered from “atomic bomb disease” caused by radiation, but the  children emerged seemingly unscathed. Although conditions in Hiroshima were hardly any better, the family gradually saved enough money to move back. Sadako and Masahiro were able to return to school and life was returning to normal.',
-		'hide image rebuild',
-		'show image sadako with fadeIn',
-		'However, during one winter vacation, Sadako’s face began to swell and lumps appeared on her jawline. A doctor visited and diagnosed her with the “atomic bomb disease”, also known as leukemia. Sadako’s parents did more tests and the results were dire. Malignant cells were found in her bloodstream and it was estimated that she had merely months to live.',
-		'It was then that her father chose to tell her about the ancient Japenese legend, senbazuru.',
-		'"If you fold a thousand paper cranes, your wish will come true."',
-		'Sadako began folding as many cranes as her little hands could manage, in hopes that one day her wish could be granted.',
-		'However, Sadako passed away on October 25th.',
-		'She had managed to fold over thirteen hundred cranes.',
-		'Her wish?',
-		'To live a a normal life, surrounded by her friends and family.',
-		'hide image sadako with fadeOut',
+	'blackGrape':[
+		'show background black with fadeIn',
+		'show image sick with fadeIn',
+		'As winter 1917-1918 set in, however, Nurse Fairchild became ill herself with symptoms that ranged from tonsillitis to indigestion.',
+		'None of these should have caused her death, but in January she succumbed to her illness. An autopsy revealed a fatal liver disease, likely caused by exposure to mustard gas on the men she had been treating.',
+		'hide image sick with fadeOut',
+		'show background black with fadeIn',
+		'show image desk with fadeIn',
+		'Helen Fairchild had been much admired by both her American compatriots and the British soldiers she treated. The Directoress of U.S. Nurses, Margaret Dunlop, wrote of her death, “It was a frightful tragedy to us all as she was one of my most beloved nurses.”',
+		'hide image desk with fadeOut',
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background memorial with fadeIn',
+		'show background black with fadeIn',
 		{'Choice':{
 			'Closing':{
-				'Text': 'Closing',
+				'Text': 'Conclusion',
 				'Do': 'jump Closing',
 			}
 		}
@@ -225,11 +212,22 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background statue with fadeIn',
-		'The Sasaki family suffered immensely from the bombing of Hiroshima. They went through incredible hardship and Sadako tragically lost her life due to the radiation from the bombing. Her death and the deaths of all those who lost their lives to the atomic bombings serve as a reminder as to why a third atomic bombing should never occur.',
-		'Sadako’s cranes have become a global symbol of peace and her resilience up until the very end inspires many around the world. Additionally, Masahiro is more than just a survivor of Hiroshima. He chose to spread messages of peace and healing, instead of messages of revenge and retaliation.',
-		'The Sasaki siblings never lost hope even after they lived through the most devestating bombing ever recorded.',
-		'end'
+		'show background black with fadeIn',
+		'show image war with fadeIn',
+		'Helen Fairchild was a victim of the world’s first modern war - a conflict that involved chemical weapons and other new deadly technologies, such as submarine strikes and  aerial bombardments.',
+		'hide image war with fadeOut',
+		'show background nurses with fadeIn',
+		'The important roles played by women like Fairchild also mark the conflict as modern, though the treatment of women who served in the war was far from equal. Like most women who served, Fairchild found herself in a non-combatant role. Nevertheless, she and many other non-combatants were put in harm’s way by the terrifying new technologies of the war.',
+		'show background Portrait with fadeIn',
+		'While she is remembered for her bravery and service as a wartime nurse, we would not know much about Fairchild if it had not been for her personal letters and her niece’s commitment to honor her service. As a result, she is remembered as a pioneering nurse and a hero of the first modern war.',
+		'show background white with fadeIn',
+		'show image bib with fadeIn',
+		'Bibliography',
+		'hide image bib with fadeOut',
+		'show image credits with fadeIn',
+		'Image Credits',
+		'hide image credits with fadeOut',
+		'end',
 	]
 });
 
@@ -245,11 +243,17 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
 				<p>
         <b>Nurse Helen Fairchild: Hero and Victim of the First Modern War</b>
 				<br/>
 				<br/>
-        By Dr. Lynch
+        By: Dr. Lynch
         </p>
 				</center>
 				<br/>
