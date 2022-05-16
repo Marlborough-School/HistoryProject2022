@@ -65,8 +65,9 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-	'clausyblausy':'clausyblausy.jpeg'
-
+	'clauspicture':'clauspicture.jpeg',
+	'youngboy':'youngboy.jpeg',
+	'trenches':'trenches.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -76,9 +77,9 @@ monogatari.assets ('scenes', {
 	'nazisalute':'nazisalute.jpeg',
 	'options2':'options2.jpeg',
 	'youngboy':'youngboy.jpeg',
-	'letter': 'letter.jpeg',
 	'black':'black.jpeg',
-	'clausfamily':'clausfamily.jpeg'
+	'clausfamily':'clausfamily.jpeg',
+	'letter':'letter.jpeg',
 });
 
 
@@ -135,11 +136,19 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background youngboy with fadeIn',
-		'After undergoing a minor operation as a child, Claus von Stauffenberg stated, “Now I have been quite brave, and now I can be a soldier and go to all the wars when I am grown up.” He stayed true to his word and enlisted in the German army in 1926.',
 		'show background black with fadeIn',
-		'hello',
-
+		'show image youngboy',
+		'After undergoing a minor operation as a child, Claus von Stauffenberg stated, “Now I have been quite brave, and now I can be a soldier and go to all the wars when I am grown up.” He stayed true to his word and enlisted in the German army in 1926.',
+		'hide image youngboy',
+		'show background letter with fadeIn',
+		'As soon as his first year, Stauffenberg began expressing dislike for the Nazi regime in a letter to his father, and the theme carries through his time of service. He later said, “the treatment of the population [in the Soviet Union] by the German civil administration, the lack of political planning for the occupied countries, the treatment of the Jews" were the reasons for his contempt for Hitler (Stauffenberg).',
+		'show background black with fadeIn',
+		'show image clauspicture',
+		'He stated that “the war was a monstrous crime” and “that Hitler must be forcibly removed.”',
+		'hide image clauspicture',
+		'show image trenches',
+		'In 1943, his car was attacked, severely wounding him, resulting in the amputation of his right hand, pinky, and ring finger, and removal of his left eye. His stay at the hospital was a pivotal moment in the conspiracy of the assassination attempt as it was there his Uncle Nux persuaded him to become an active participant in the already existing coup-d’etat conspiracy.',
+		'hide image trenches',
 		'jump choiceScreen',
 
 
