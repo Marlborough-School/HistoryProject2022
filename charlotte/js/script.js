@@ -67,6 +67,8 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 	'reniapg2':'reniapg2.jpeg',
 	'reniapg1':'reniapg1.jpeg',
+	'reniaandmama':'reniaandmama.png',
+	'reniabegmoreinfo':'reniabegmoreinfo.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -79,6 +81,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'renia': 'renia.jpeg',
+	'bigrenia': 'bigrenia.jpeg',
 });
 
 
@@ -103,10 +106,11 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
+		'hide image reniapg1',
 		'show background black',
 		'show image reniapg2',
 		'Yes, Renia wrote over 700 pages and had more than 100 journal entries.',
-		'jump choiceScreen',
+		'jump BegMoreInfo',
 	],
 
 	'noAnswer':[
@@ -115,8 +119,17 @@ monogatari.script ({
 		'jump choiceScreen',
 	],
 
+	'BegMoreInfo':[
+		'show background black',
+		'show image reniabegmoreinfo',
+		'Renia’s journal gave the world a chance to see a piece of what her life was like. Did Renia, whose life was turned upside down by Hitler and the Nazis, manage to lead a normal life and keep her spirit, or did she lose her light after constantly getting little pieces of her life stolen from her? The bigger question is, did Renia’s story end with the happily ever after she wanted for herself, or with tragedy?',
+		'jump choiceScreen',
+	],
+
+
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'hide image reniapg2',
+		'show background bigrenia with fadeIn',
 		{'Choice':{
 			'1':{
 				'Text': 'Early Life',
@@ -135,7 +148,7 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
+		'show image reniaandmama with fadeIn',
 		'Sorry, we have no red grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
