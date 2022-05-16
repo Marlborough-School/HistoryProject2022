@@ -65,6 +65,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
+	'clausyblausy':'clausyblausy.jpeg'
 
 });
 
@@ -73,10 +74,11 @@ monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'firingsquad':'firingsquad.jpg',
 	'nazisalute':'nazisalute.jpeg',
-	'options':'options.jpeg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
-	'crycat':'crycat2.jpeg',
+	'options2':'options2.jpeg',
+	'youngboy':'youngboy.jpeg',
+	'letter': 'letter.jpeg',
+	'black':'black.jpeg',
+	'clausfamily':'clausfamily.jpeg'
 });
 
 
@@ -114,7 +116,7 @@ monogatari.script ({
 	],
 
 	'choiceScreen':[
-		'show background options with fadeIn',
+		'show background options2 with fadeIn',
 		{'Choice':{
 			'1':{
 				'Text': 'Early Opposition',
@@ -133,9 +135,14 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'show background youngboy with fadeIn',
+		'After undergoing a minor operation as a child, Claus von Stauffenberg stated, “Now I have been quite brave, and now I can be a soldier and go to all the wars when I am grown up.” He stayed true to his word and enlisted in the German army in 1926.',
+		'show background black with fadeIn',
+		'hello',
+
 		'jump choiceScreen',
+
+
 	],
 
 	'greenGrape':[
@@ -185,7 +192,7 @@ monogatari.component ('main-screen').template (() => {
         <b>Claus von Stauffenberg: Internal Opposition of the Nazi Regime</b>
 				<br/>
 				<br/>
-        By: Taryn Gluck
+        Taryn Gluck
         </p>
 				</center>
 				<br/>
