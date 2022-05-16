@@ -65,10 +65,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-	'reniapg2':'reniapg2.jpeg',
-	'reniapg1':'reniapg1.jpeg',
-	'reniaandmama':'reniaandmama.png',
-	'reniabegmoreinfo':'reniabegmoreinfo.png',
+
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -80,25 +77,22 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
-	'renia': 'renia.jpeg',
-	'bigrenia': 'bigrenia.jpeg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background black with fadeIn',
-		'show image reniapg1',
-		'When most people hear the name Renia Spiegel, the idea of a young Polish Jewish girl who wrote in a diary during the Holocaust and is often considered a “Polish Anne Frank” likely doesn’t come to mind. Why should it? Renia’s diary was hidden - untouched for 70 years.',
-		'How many pages do you think Renia’s journal is?',
+		'show background duck with fadeIn',
+		'Colette Catherine Marin was a French resistance member who shares the horrific story of her family’s experience of World War II. Colett’s older brother was taken from their home and brought to Camp Mittelbau-Dora, a German concentration camp; he was a resistance member as well. Colette has refused to set foot into Germany for 74 years because she believed that no one should be profifting from morbid tourism and all destruction that happened in the Holocaust.',
+		'How many French resistance members died in WW2?',
 		{'Choice':{
 			'Y':{
-				'Text': '700',
+				'Text': ' 2,000',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': '376',
+				'Text': ' 40,000',
 				'Do': 'jump noAnswer'
 			},
 		},
@@ -106,41 +100,30 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'hide image reniapg1',
 		'show background black',
-		'show image reniapg2',
-		'Yes, Renia wrote over 700 pages and had more than 100 journal entries.',
-		'jump BegMoreInfo',
+		'Actually there were around 40,00 French people that perished in concentration camps throughout World War II.',
+		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'Wrong, try again!',
+		'Yay, Correct!! There were around 40,000 french people that died in WW2',
 		'jump choiceScreen',
 	],
-
-	'BegMoreInfo':[
-		'show background black',
-		'show image reniabegmoreinfo',
-		'Renia’s journal gave the world a chance to see a piece of what her life was like. Did Renia, whose life was turned upside down by Hitler and the Nazis, manage to lead a normal life and keep her spirit, or did she lose her light after constantly getting little pieces of her life stolen from her? The bigger question is, did Renia’s story end with the happily ever after she wanted for herself, or with tragedy?',
-		'jump choiceScreen',
-	],
-
 
 	'choiceScreen':[
-		'hide image reniapg2',
-		'show background bigrenia with fadeIn',
+		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Early Life',
+				'Text': 'Red Grapes',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'The Przemysl Ghetto',
+				'Text': 'Green Grapes',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'The End of Her Story',
+				'Text': 'Black Grapes',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -148,7 +131,7 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show image reniaandmama with fadeIn',
+		'show background duck with fadeIn',
 		'Sorry, we have no red grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
@@ -197,10 +180,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Renia Spiegel: 70 Years in the Future</b>
+        <b>Colette Catherine- Marin, Overcomes her pride and shows the audience raw emotion</b>
 				<br/>
 				<br/>
-        By: Charlotte Landis
+        By: Lily Juda
         </p>
 				</center>
 				<br/>

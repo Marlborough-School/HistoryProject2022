@@ -65,7 +65,9 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+	'family':'family.jpeg',
+	'kid':'kid.jpg',
+	'map':'map.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -89,6 +91,11 @@ monogatari.assets ('scenes', {
 	'family':'family.jpeg',
 	'books':'bookcase.jpeg',
 	'map':'map.jpeg',
+	'caught':'caught.jpg',
+	'train':'train.jpg',
+	'cc':'cc.jpg',
+	'women':'women.jpg',
+	'book':'book-cover.jpg'
 });
 
 
@@ -158,31 +165,41 @@ monogatari.script ({
 	'greenGrape':[
 		'show background baby with fadeIn',
 		'In Frankfurt, Germany, on June 12, 1929, two reform Jews, Otto Frank and Edith- Frank Hollander, welcomed their second child into the world: Anneliese Marie Frank.',
-		'show background kid with fadeIn',
+		'show background black with fadeIn',
+		'show image kid with fadeIn',
 		'Anne was a very social child who wanted to be the center of attention, and always came up with games to play like “getting dressed up and playing actors” (Kugel).',
+		'hide image kid with fadeOut',
 		'show background school with fadeIn',
 		'In school, Anne disliked subjects like math and science, however, she loved history and writing. Anne’s parents were not strict about her grades; instead, they cared about Anne and Margot’s happiness.',
 		'show background diary with fadeIn',
 		'On Anne’s 13th birthday she was given a diary that she named “Kitty”. In her first journal entry on June 12, 1942, she wrote: “I hope I shall be able to confide in you completely, as I have never been able to do in anyone before” (Frank and Pressler 1).',
-		'show background family with fadeIn',
+		'show background black with fadeIn',
+		'show image family with fadeIn',
 		'After Anne’s birthday, Margot got a call-up notice to go to work camp which terrified the Franks. Otto and Edith decided the best decision was for the Franks to flee their home. Anne frantically had to pack up her belongings, however, instead of only packing clothes she packed things that had sentimental value as “memories mean more to me than dresses.”',
+		'hide image family with fadeOut',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
 		'show background books with fadeIn',
 		'The family arrived at the Secret Annex, which was hidden behind a revolving cabinet in the attic of Otto Frank’s business in Amsterdam. Anne and her family were accompanied in hiding by four other people: The Van Pels family and Fritz Pfeffer.',
-		'show background map with fadeIn',
+		'show background black with fadeIn',
+		'show image map with fadeIn',
 		'The attic was small and cramped. The days were long and quiet. Anne read lots of books and wrote in her journal to keep herself busy. Anne had difficulties with her family because felt like she was being overlooked and not appreciated. “I can shake off everything as I write; my sorrows disappear, my courage is reborn.”',
+		'hide image map with fadeOut',
 		'show background anne with fadeIn',
 		'“In spite of everything I still believe that people are really good at heart. I simply can’t build up my hopes on a foundation consisting of confusion, misery, and death… I hear the ever approaching thunder, which will destroy us too, I can feel the sufferings of millions and yet, if I look up into the heavens, I think that it will all come right, that this cruelty too will end, and that peace and tranquility will return again.” (Frank and Presler 333).',
 		'jump choiceScreen',
 	],
 
 'purpleGrape':[
-	'show background grape with fadeIn',
+	'show background caught with fadeIn',
 	'On August 4, 1944, the Franks and their friends in hiding were caught by tipped-off German police. After being in a holding cell for four days, the arrestees were sent to the Westerbork concentration camp in the Netherlands.',
-	'jump choiceScreen',
+	'show background train with fadeIn',
+	'On September 3, 1944, the Franks were forced into a cramped box-car on a one-way train to Auschwitz concentration camp in Poland. The trip was gruesome. When they arrived, the Nazis split up the prisoners by gender, making it the last time Anne saw her father.',
+	'show background cc with fadeIn',
+	'In Auschwitz prisoners suffered and died from starvation, illness, beatings, and gas chambers. In October 1944, Margot and Anne were sent to Bergen-Belsen concentration camp without their mom, and devastatingly both sisters died less than a year later in a gas chamber.',
+	'jump Ending',
 ],
 
 	'Ending':[
@@ -197,10 +214,12 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
+		'show background women with fadeIn',
+		'Although Anne Frank’s life tragically ended during the Holocaust, her memory lives on forever. Her story relates to millions of other Jewish children in the Holocaust, and she brings to life what it was like as a Jewish teenager during this time.',
+		'show background book with fadeIn',
+		'Anne’s story teaches young kids, teens, and adults the discrimination and difficulties Jewish people faced for many years. Anne is able to humanize the struggles encountered during the Holocaust and build empathy for future generations.',
+		'show background anne with fadeIn',
+		'Anne was just a typical girl with a diary that ended up changing how the world viewed the Holocaust, and also inspired millions by being able to keeping her head up during the darkest of times.',
 	]
 });
 

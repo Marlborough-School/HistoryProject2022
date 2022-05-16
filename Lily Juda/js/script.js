@@ -65,7 +65,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+	'ss7': 'ss7.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -77,22 +77,26 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+	'ss7': 'ss7.jpg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Hi project coders. This is senya and this duck will not be your real background. You will replace the background named duck with your background.',
-		'Example question: Hey bum bum bum got any grapes?',
-		{'Choice':{
+		'show background black with fadeIn',
+		'show image ss7 with fadeIn',
+		'Colette Catherine Marin was a French resistance member who shares the horrific story of her family’s experience of World War II. Colett’s older brother was taken from their home and brought to Camp Mittelbau-Dora, a German concentration camp; he was a resistance member as well. Colette has refused to set foot into Germany for 74 years because she believed that no one should be profifting from morbid tourism and all destruction that happened in the Holocaust.',
+		'How many French resistance members died in WW2?',
+		'hide image ss7 with fadeOut',
+
+	 	{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': ' 2,000',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': ' 40,000',
 				'Do': 'jump noAnswer'
 			},
 		},
@@ -101,13 +105,13 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Actually there were around 40,000 French people that perished in concentration camps throughout World War II.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Yay, Correct!! There were around 40,000 french people that died in WW2',
 		'jump choiceScreen',
 	],
 
@@ -180,10 +184,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Colette Catherine- Marin, Overcomes her pride and shows the audience raw emotion</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Lily Juda
         </p>
 				</center>
 				<br/>
