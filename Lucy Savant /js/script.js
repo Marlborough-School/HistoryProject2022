@@ -185,7 +185,7 @@ monogatari.script ({
 		'Now, with the help of her great grandson Dov Forman, she now takes to Tiktok to share her stories as she educates her almost two million followers about the Holocaust and more specifically the terrors that went on at Auschwitz concentration camp.',
 		'show background white',
 		'Bibliography',
-		
+
 
 
 
