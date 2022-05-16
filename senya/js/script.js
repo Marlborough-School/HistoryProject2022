@@ -44,7 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'song': 'song.mp3',
 });
 
 // Define the voice files used in the game.
@@ -75,6 +75,8 @@ monogatari.assets ('images', {
 	painting3: "painting3.png",
 	rebuild: "hirorebuild.jpeg",
 	sadako: "sadako.jpeg",
+	biblio: "Biblio.png",
+	credits: "imagecreds.png",
 });
 
 // Define the backgrounds for each scene.
@@ -96,6 +98,7 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
+		'play music song with loop volume 90',
 		'show background senbazuru with fadeIn',
 		{'Choice':{
 			'senbazuru':{
@@ -227,6 +230,12 @@ monogatari.script ({
 		'The Sasaki family suffered immensely from the bombing of Hiroshima. They went through incredible hardship and Sadako tragically lost her life due to the radiation from the bombing. Her death and the deaths of all those who lost their lives to the atomic bombings serve as a reminder as to why a third atomic bombing should never occur.',
 		'Sadako’s cranes have become a global symbol of peace and her resilience up until the very end inspires many around the world. Additionally, Masahiro is more than just a survivor of Hiroshima. He chose to spread messages of peace and healing, instead of messages of revenge and retaliation.',
 		'The Sasaki siblings never lost hope even after they lived through the most devestating bombing ever recorded.',
+		'show background black',
+		'show image biblio with fadeIn',
+		'bibliography',
+		'hide image biblio',
+		'show image credits with fadeIn',
+		'image credits',
 		'end'
 	]
 });
