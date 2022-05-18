@@ -72,6 +72,8 @@ monogatari.assets ('images', {
 	'hitlermeeting':'hitlermeeting.jpeg',
 	'soldier':'soldier.jpeg',
 	'trousers':'trousers.jpeg',
+	'bibliography':'bibliography.png',
+	'pictures':'pictures.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -86,6 +88,7 @@ monogatari.assets ('scenes', {
 	'letter':'letter.jpeg',
 	'julyplot':'julyplot.jpeg',
 	'attention':'attention.jpeg',
+	'white':'white.jpeg',
 });
 
 
@@ -205,6 +208,13 @@ monogatari.script ({
 		'show background attention with fadeIn',
 		'Claus von Stauffenberg’s bold actions illustrate that internal opposition to the Nazi regime very much existed. They were doing it to show the world that the German military was not entirely complacent and some were trying to fight back.',
 		'The assassination attempt “has given the outside world a glimpse of the deep elements of dissatisfaction that now compose the Nazi Reich.” Not all Nazis fully believed in what they were doing, in fact many did not, and instead were trying fight back.',
+		'show background white',
+		'show image bibliography',
+		'Bibliography',
+		'hide image bibliography',
+		'show image pictures',
+		'Image credits',
+		'hide image pictures',
 		'end'
 	]
 });
