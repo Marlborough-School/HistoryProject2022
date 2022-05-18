@@ -80,7 +80,7 @@ monogatari.assets ('scenes', {
 	'Auschwitz':'Auschwitz.jpeg',
 	'survivors':'survivors.jpg',
 	'Ala2':'Ala2.gif',
-	'Laborcamp':'Laborcamp.png',
+	'Laborcamp':'LaborCamp.png',
 	'sort':'sorting.jpeg',
 	'wum':'wum.jpeg',
 	'builtc':'builtc.jpeg',
@@ -193,8 +193,8 @@ monogatari.script ({
 
 	'wSlide':[
 		'show background unity with fadeIn',
-		'These women, however, did not work alone: “no less than 30 Jewish female prisoners participated in the gunpowder smuggling, carried out in secrecy during a period of about 7 months” (Harran). Women took the positions of soldiers and fought just as men did.',
-		'While this image is from the Warsaw uprising(Soldiers of the Polish Home Army Womens Auxiliary Services, who were taken captive in 1944) it depicts the unity of women in uprisings similar to the Sonderkommando.',
+		'These women, however, did not work alone: “no less than 30 Jewish female prisoners participated in the gunpowder smuggling, carried out in secrecy during a period of about 7 months”. Women took the positions of soldiers and fought just as men did.',
+		'While this image is from the Warsaw uprising (Soldiers of the Polish Home Army Womens Auxiliary Services, who were taken captive in 1944) it depicts the unity of women in uprisings similar to the Sonderkommando.',
 		'jump finSlide',
 
 
