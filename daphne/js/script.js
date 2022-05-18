@@ -70,6 +70,9 @@ monogatari.assets ('images', {
 	'map':'map.jpg',
 	'route':'route.jpg',
 	'statue':'statue.jpg',
+	'bib':'bib.jpg',
+	'citation':'citation.jpg',
+
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -87,6 +90,7 @@ monogatari.assets ('scenes', {
 	'revenge':'revenge.jpg',
 	'bomb':'bomb.jpg',
 	'plane':'plane.jpg',
+	'white':'white.jpg',
 
 
 
@@ -200,8 +204,24 @@ monogatari.script ({
 	'show background black with fadeIn',
 	'show image statue with fadeIn',
 	'Although he was underappreciated, his contribution to strategies in the early stages of the attack showed his loyalty to Japan, therefore, showcasing how brave of a leader he was to his country. Nevertheless, films on Yamamoto have been created and shown to the media. Books about Yamamoto have also been published. There is also a statue of him showcased in his hometown. ',
-
+	'jump sixteen',
 ],
+
+'sixteen':[
+	'show background white with fadeIn',
+	'show image bib with fadeIn',
+	'Bibliography',
+	'jump seventeen',
+],
+
+'seventeen':[
+	'hide image bib with fadeOut',
+	'show background white with fadeIn',
+	'show image citation with fadeIn',
+	'Image Citations',
+],
+
+
 });
 
 monogatari.component ('main-screen').template (() => {

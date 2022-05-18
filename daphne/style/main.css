@@ -45,7 +45,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background-image: url("../assets/images/Portrait.jpg");
+	background-image: url("../assets/scenes/ship.jpg");
 	color:black;
 }
 
