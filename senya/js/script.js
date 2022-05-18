@@ -44,7 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'song': 'song.mp3',
 });
 
 // Define the voice files used in the game.
@@ -54,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-
+	'bomb': 'bombsound.mp3',
 });
 
 // Define the videos used in the game.
@@ -75,6 +75,9 @@ monogatari.assets ('images', {
 	painting3: "painting3.png",
 	rebuild: "hirorebuild.jpeg",
 	sadako: "sadako.jpeg",
+	biblio: "Biblio.png",
+	credits: "imagecreds.png",
+	music: "music.png",
 });
 
 // Define the backgrounds for each scene.
@@ -84,7 +87,8 @@ monogatari.assets ('scenes', {
 	'black': 'black.jpeg',
 	'senbazuru': 'senbazuru.jpeg',
 	'hiroshimanow': 'hiroshimanow.jpeg',
-	'statue': 'sadako.jpeg'
+	'statue': 'sadako.jpeg',
+	'white': 'white.png',
 });
 
 
@@ -96,6 +100,7 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
+		'play music song with loop volume 40',
 		'show background senbazuru with fadeIn',
 		{'Choice':{
 			'senbazuru':{
@@ -173,9 +178,11 @@ monogatari.script ({
 		'Little did they know that the plane that flew overhead had just reported to the American forces that the weather conditions were ideal for the dropping of the atomic bomb.',
 		'hide image enolaGay with fadeOut',
 		'As the Sasaki family was eating breakfast, they heard cries and shouts from the neighbors. They rushed outside to see the bomber planes flying through the sky. Everyone craned their heads up towards the sky and some even called the planes pretty.',
+		'play sound bomb',
 		'show image bombCloud with fadeIn',
 		'The Sasaki family were nearly back inside their house when the sky became brighter than it ever had been before. The American planes had just dropped the atomic bomb.',
 		'Sadako was blown into the yard while the rest of the family became stuck under the remains of their home.',
+		'stop sound bomb',
 		'hide image bombCloud',
 		'show image genbakuDome with fadeIn',
 		'The once lively city of Hiroshima was completely flattened and unrecognizable.',
@@ -227,6 +234,15 @@ monogatari.script ({
 		'The Sasaki family suffered immensely from the bombing of Hiroshima. They went through incredible hardship and Sadako tragically lost her life due to the radiation from the bombing. Her death and the deaths of all those who lost their lives to the atomic bombings serve as a reminder as to why a third atomic bombing should never occur.',
 		'Sadako’s cranes have become a global symbol of peace and her resilience up until the very end inspires many around the world. Additionally, Masahiro is more than just a survivor of Hiroshima. He chose to spread messages of peace and healing, instead of messages of revenge and retaliation.',
 		'The Sasaki siblings never lost hope even after they lived through the most devestating bombing ever recorded.',
+		'show background white',
+		'show image biblio with fadeIn',
+		'bibliography',
+		'hide image biblio',
+		'show image credits with fadeIn',
+		'image credits',
+		'hide image credits with fadeOut',
+		'show image music with fadeIn',
+		'music credits',
 		'end'
 	]
 });
