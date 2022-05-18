@@ -64,7 +64,7 @@ monogatari.assets ('videos', {
 
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
-	//'nickname for the image': 'actual name of the image',
+	'pic2': 'pic2.jpeg',
 
 });
 
@@ -72,7 +72,6 @@ monogatari.assets ('images', {
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'plane':'plane.jpeg',
-	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
@@ -84,7 +83,11 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background plane with fadeIn',
-		'As he stepped off the plane, a British politician committed to peace looked at his people, waving him on with hopeful smiles, and said, “I believe it is peace for our time ... peace with honour.” No one wished for this to be true more than Chamberlain himself. Yet peace would prove to be elusive, and Chamberlain would never live to see his dream come to fruition.',
+		'As he stepped off the plane, a British politician looked at his people, waving him on with hopeful smiles, and said, “I believe it is peace for our time ... peace with honour.” Yet peace would prove to be elusive, and Chamberlain would never live to see his dream come to fruition.',
+		'show background black with fadeIn',
+		'show image pic2 with fadeIn',
+		'Born in Birmingham, England, in 1869, Arthur Neville Chamberlain was a successful businessman and local politician. In 1918 he was elected to Parliament as a member of the Conservative Party, and in 1937, Chamberlain was elected as Britain’s prime minister.',
+		'hide image pic2 with fadeOut',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
