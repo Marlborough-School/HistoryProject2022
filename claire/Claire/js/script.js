@@ -67,6 +67,7 @@ monogatari.assets ('images', {
 	'family':'family.jpeg',
 	'kid':'kid.jpg',
 	'map':'map.jpeg',
+	'ottoa':'otto.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -94,7 +95,8 @@ monogatari.assets ('scenes', {
 	'train':'train.jpg',
 	'cc':'cc.jpg',
 	'women':'women.jpg',
-	'book':'book-cover.jpg'
+	'book':'book-cover.jpg',
+	'conclusion':'conclusion.jpg',
 });
 
 
@@ -202,7 +204,7 @@ monogatari.script ({
 ],
 
 	'Ending':[
-		'show background potatocat with fadeIn',
+		'show background conclusion with fadeIn',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
@@ -217,12 +219,14 @@ monogatari.script ({
 		'Although Anne Frank’s life tragically ended during the Holocaust, her memory lives on forever. Her story relates to millions of other Jewish children in the Holocaust, and she brings to life what it was like as a Jewish teenager during this time.',
 		'show background book with fadeIn',
 		'Anne’s story teaches young kids, teens, and adults the discrimination and difficulties Jewish people faced for many years. Anne is able to humanize the struggles encountered during the Holocaust and build empathy for future generations.',
-		'show background anne with fadeIn',
+		'show background black with fadeIn',
+		'show image ottoa with fadeIn',
 		'play music otto with volume 100',
 		'Otto Frank gives remarks regarding his daughter’s legacy.',
+		'hide image ottoa with fadeOut',
 		'show background anne with fadeIn',
 		'Anne was just a typical girl with a diary that ended up changing how the world viewed the Holocaust, and also inspired millions by being able to keeping her head up during the darkest of times.',
-	]
+	],
 });
 
 monogatari.component ('main-screen').template (() => {
