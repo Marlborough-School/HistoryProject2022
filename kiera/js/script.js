@@ -80,12 +80,14 @@ monogatari.assets ('images', {
 	'mao':'mao.jpeg',
 	'sunset':'ChinaConclusion.jpeg',
 	'bib':'bib.jpeg',
+	'ic':'ic.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'black':'black.jpeg',
+	'tiananmen':'Tiananmen.jpeg',
 });
 
 
@@ -237,6 +239,9 @@ monogatari.script ({
 		'show background black with fadeIn',
 		'show image bib',
 		'Here is the bibliography.',
+		'hide image bib',
+		'show image ic with fadeIn',
+		'Here are the image credits.',
 		'Thank you so much for watching and reading. I hope you learned a little more about Chinese history.',
 		'end'
 	]
