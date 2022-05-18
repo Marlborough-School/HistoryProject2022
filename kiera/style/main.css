@@ -45,7 +45,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background-image: url("../assets/scenes/tiananmen.jpeg");
+	background-image: url("../assets/scenes/Tiananmen.jpeg");
 	color:black;
 }
 

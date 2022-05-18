@@ -66,9 +66,9 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 	'Cflag':'Chinaflag.png',
-	'WWI':'ChinaWWI.jpeg',
+	'WWI':'workers.jpeg',
 	'CDX':'ChenDuxiu.jpeg',
-	'protest':'CCPearlydays.jpeg',
+	'protest':'1919students.jpeg',
 	'world':'worldmap.jpeg',
 	'ny':'newyouth.jpeg',
 	'fa':'fa.jpeg',
@@ -78,6 +78,8 @@ monogatari.assets ('images', {
 	'1976':'1976.jpeg',
 	'ccpflag':'ccpflag.jpeg',
 	'mao':'mao.jpeg',
+	'sunset':'ChinaConclusion.jpeg',
+	'bib':'bib.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -222,17 +224,19 @@ monogatari.script ({
 
 	'Ending':[
 		'show background black with fadeIn',
-		'show image CDX',
+		'show image sunset',
 		'Chen Duxiu led China into modern society through starting multiple movements.',
 		'He incorporated Western beliefs and ideals into China to transform it into the country that it is today.',
 		'He used his enthusiasm for the written language to create multiple news outlets.',
 		'Although many were shut down by the Chinese government, he continued to resist them and was able to inspire the youth of China to speak out against their government.',
-		'hide image CDX with fadeOut',
+		'hide image sunset with fadeOut',
 		'jump Closing',
 	],
 
 	'Closing':[
 		'show background black with fadeIn',
+		'show image bib',
+		'Here is the bibliography.',
 		'Thank you so much for watching and reading. I hope you learned a little more about Chinese history.',
 		'end'
 	]
