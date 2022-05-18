@@ -71,6 +71,8 @@ monogatari.assets ('images', {
 	'reniabegmoreinfo':'reniabegmoreinfo.png',
 	'reniawhee': 'reniawhee.jpeg',
 	'renialgbtq':'renialgbtq.jpeg',
+	'przghettosquare':'przghettosquare.jpeg',
+	'zyg': 'zyg.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -84,7 +86,8 @@ monogatari.assets ('scenes', {
 	'crycat':'crycat2.jpeg',
 	'renia': 'renia.jpeg',
 	'bigrenia': 'bigrenia.jpeg',
-	'hitler': 'hitler.jpeg'
+	'hitler': 'hitler.jpeg',
+	'przghetto':'przghetto.jpeg',
 });
 
 
