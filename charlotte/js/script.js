@@ -69,6 +69,8 @@ monogatari.assets ('images', {
 	'reniapg1':'reniapg1.jpeg',
 	'reniaandmama':'reniaandmama.png',
 	'reniabegmoreinfo':'reniabegmoreinfo.png',
+	'reniawhee': 'reniawhee.jpeg',
+	'renialgbtq':'renialgbtq.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -82,6 +84,7 @@ monogatari.assets ('scenes', {
 	'crycat':'crycat2.jpeg',
 	'renia': 'renia.jpeg',
 	'bigrenia': 'bigrenia.jpeg',
+	'hitler': 'hitler.jpeg'
 });
 
 
@@ -115,8 +118,8 @@ monogatari.script ({
 
 	'noAnswer':[
 		'show background black',
-		'Wrong, try again!',
-		'jump choiceScreen',
+		'Actually, Renia wrote over 700 pages and had more than 100 journal entries.',
+		'jump BegMoreInfo',
 	],
 
 	'BegMoreInfo':[
@@ -129,6 +132,7 @@ monogatari.script ({
 
 	'choiceScreen':[
 		'hide image reniapg2',
+		'hide image reniabegmoreinfo',
 		'show background bigrenia with fadeIn',
 		{'Choice':{
 			'1':{
@@ -148,10 +152,26 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show image reniaandmama with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'show background hitler with fadeIn',
+		'In the early 1920s, a new political party called the Nazi Party, grew dominant under the rule of leader Adolf Hitler, who was sworn in as Germany’s chancellor in 1933. Hitler, who believed in the concept of a superior race, believed he had to remove anyone with opposing beliefs, especially Jewish people, in order to transform Germany into the powerful country he wanted it to be.',
+		'jump earlylifept2',
+	],
+
+	'earlylifept2':[
+		'show background black',
+		'show image reniawhee with fadeIn',
+		'Renia began documenting her life in a diary in 1939 at age 15. She was living with her grandparents in Przemysl, missing her mother, father, and younger sister. Despite her challenging living situation, Reina had a relatively normal life: she wrote about school, her friends, and her crushes.',
+		'jump earlylifept3',
+	],
+
+	'earlylifept3':[
+		'show background black',
+		'hide image reniawhee',
+		'show image renialgbtq with fadeIn',
+		'One crush was on her teacher, Mrs. Brühla. Though Renia’s sexual orientation was never explicitly stated, being part of the LGBTQ+ community was highly frowned upon at the time, so Renia writing about having a crush on a woman shows her resilience.',
 		'jump choiceScreen',
 	],
+
 
 	'greenGrape':[
 		'show background duck with fadeIn',
