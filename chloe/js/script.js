@@ -66,6 +66,10 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 'bedzin':'bedzin.png',
+'ic':'imagec.png',
+'bib':'bib.png',
+'letter':'letter.jpg',
+'lettertwo':'lettertwo.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -85,6 +89,9 @@ monogatari.assets ('scenes', {
 	'unity':'womenuprisings.png',
 	'bedzin':'bedzin.png',
 	'black':'black.jpeg',
+	'as':'alasala.jpg',
+	'white':'wb.png',
+
 
 });
 
@@ -188,12 +195,47 @@ monogatari.script ({
 		'show background unity with fadeIn',
 		'These women, however, did not work alone: “no less than 30 Jewish female prisoners participated in the gunpowder smuggling, carried out in secrecy during a period of about 7 months” (Harran). Women took the positions of soldiers and fought just as men did.',
 		'While this image is from the Warsaw uprising(Soldiers of the Polish Home Army Womens Auxiliary Services, who were taken captive in 1944) it depicts the unity of women in uprisings similar to the Sonderkommando.',
-		'jump conclusionSlide',
+		'jump finSlide',
+
+
+	],
+
+	'finSlide':[
+	'show background black with fadeIn',
+	'show image letter with fadeIn',
+	'This is a letter written by Ala to her friend Sala Garncarz.',
+	'jump filSlide',
+
+	],
+
+	'filSlide':[
+	'show background black with fadeIn',
+	'show image lettertwo with fadeIn',
+	'In this particular letter Ala states: If it weren’t for these dire straits, things would be different Sala, believe me!. Ala hints at the important role she plays but also mentions how their friendship is greatly valued.',
+	'jump conclusionSlide',
+
 	],
 
 	'conclusionSlide':[
-	'show background Ala2 with fadeIn',
+	'show background as with fadeIn',
+	'Ala’s literacy, education, and German fluency plays this important part in the uprising, and her trusted friend Sala(whom she met during her time in Geppersdorf - a labor camp in the Falkenberg district of Germany) was separated from her when Ala worked in the Weichsel-Union-Metallwerke factory.',
 	'My grandmother’s family was fortunate enough to survive the Holocaust when millions of others weren’t. My grandmothers mothers role to smuggle food for Jews who were in need played an important part in history, just as Alas role did, to fight against this horrific oppression that was faced.',
+	'jump imgcreditSlide',
+	],
+
+	'imgcreditSlide':[
+	'show background white with fadeIn',
+	'show image ic with fadeIn',
+	'Image Credits',
+	'jump biblSlide',
+
+	],
+
+	'biblSlide':[
+	'show background white with fadeIn',
+	'show image bib with fadeIn',
+	'Bibliography',
+
 
 	],
 
