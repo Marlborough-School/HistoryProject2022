@@ -44,6 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
+'unbroken':'unbroken.mp3',
 
 });
 
@@ -83,6 +84,7 @@ monogatari.assets ('images', {
 'visit':'visit.jpeg',
 'torch':'torch.jpeg',
 'bib':'bib.jpeg',
+'imagecite':'imagecite.jpeg',
 'hook':'hook.jpeg',
 
 });
@@ -102,6 +104,7 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
+		'play music unbroken',
 		'show background black with fadeIn',
 		'show image hook with fadeIn',
 		'Interviewer: You had the opportunity to meet Adolph Hitler and to shake hands with the Fuhrer. What are your memories of the German leader?',
@@ -156,7 +159,7 @@ monogatari.script ({
 		'hide image plane',
 		'show background black with fadeIn',
 		'show image crash with fadeIn',
-		'1843 the Green Hornet crashed killing eight of the eleven passengers and stranding the remaining three in the Pacific ocean, 850 miles from Oahu.',
+		'In 1843 the Green Hornet crashed killing eight of the eleven passengers and stranding the remaining three in the Pacific ocean, 850 miles from Oahu.',
 
 		'hide image crash',
 		'show background black with fadeIn',
@@ -192,6 +195,7 @@ monogatari.script ({
 
 	'nextSlides':[
 		'hide image boat',
+		'hide image hook',
 		'show background black with fadeIn',
 		'show image boat with fadeIn',
 		'After 33 days at sea, McNamara died. On July 15th, 1943, their 47th day, Zamperini and Phillips reached the Marshall Islands and were taken prisoner by the Japanese Navy. Zamperini was partially nursed back to health in Kwajalein Atoll before being transported to his first Prisoner of War Camp at Ofuna',
@@ -233,14 +237,17 @@ monogatari.script ({
 		],
 
 		'nextPage':[
+		'hide image pow2',
 		'show background black with fadeIn',
 		'show image pow3 with fadeIn',
 		'After a year at Ofuna, Zamperini was transferred to a second POW camp called Omori located in Tokyo Bay. ',
 
+		'hide image pow3',
 		'show background black with fadeIn',
 		'show image bird with fadeIn',
 		'It was here that Zamperini met his biggest tormenter. Mutshiro Watanabe, nicknamed “the Bird”, was a particularly cruel and ruthless Japanese corporal who soon became obsessed with tormenting Zamperini specifically. ',
 
+		'hide image bird',
 		'show background black with fadeIn',
 		'show image pow4 with fadeIn',
 		'Omori’s prisoners did their part to fight back. At worksites, the POWs switched mailing labels, rewrote addresses, and threw dirt into gas tanks. They smuggled back sugar and other goods in socks and purposefully mishandled shipments and Japanese officers’ luggage.',
@@ -248,18 +255,23 @@ monogatari.script ({
 		],
 
 'nextLast':[
+		'hide image hook',
+		'hide image pow4',
 		'show background black with fadeIn',
 		'show image after with fadeIn',
-		'	On August 15th, 1945, only nine days after the infamous Hiroshima attack, the prisoners received the news they had been desperately waiting for-the war was over.',
+		'On August 15th, 1945, only nine days after the infamous Hiroshima attack, the prisoners received the news they had been desperately waiting for-  the war was over.',
 
+		'hide image after',
 		'show background black with fadeIn',
 		'show image award with fadeIn',
 		'Back at home, Zamperini received three awards in recognition of his wartime experience. Yet his vivid nightmares forced him to turn to alcohol as he felt his life could never return to normal.',
 
+		'hide image award',
 		'show background black with fadeIn',
 		'show image billy with fadeIn',
 		'At one of his lowest points, Zamperini heard a sermon by Billy Graham, a prominent Christian figure. After hearing Billy Graham talk, Zamperini felt he had a second chance at his life. The two remained lifelong friends afterward.',
 
+		'hide image billy',
 		'show background black with fadeIn',
 		'show image visit with fadeIn',
 		'Zamperini believed, “...when you hate somebody, you don’t hurt them in the least. All you’re doing is hurting yourself. But if you can forgive—and if it’s true—you’ll feel good.” With this in mind, Zamperini visited his captors in Japan to offer his forgiveness.',
@@ -268,20 +280,34 @@ monogatari.script ({
 	],
 
 	'Ending':[
+		'hide image hook',
+		'hide image visit',
 		'show background black with fadeIn',
 		'show image torch with fadeIn',
-		'In 1998, Zamperini once again returned to Japan, this time to carry the torch at the Nagano Winter Olympics Louis Zamperini’s story is one of perseverance, strength, survival, and forgiveness, and most importantly illustrates why you should never stop fighting for yourself.',
+		'In 1998, Zamperini once again returned to Japan, this time to carry the torch at the Nagano Winter Olympics',
+		'Louis Zamperini’s story is one of perseverance, strength, survival, and forgiveness, and most importantly illustrates why you should never stop fighting for yourself.',
 		'jump Closing'
 			],
 
 
 	'Closing':[
+		'hide image hook',
+		'hide image torch',
 		'show background pow3 with fadeIn',
 		'Thank you for watching!',
 
 		'show background white with fadeIn',
 		'show image bib with fadeIn',
 		'Annotated Bibliography',
+
+		'hide image bib',
+		'show background white with fadeIn',
+		'show image imagecite with fadeIn',
+		'Image Citations',
+
+		'hide image imagecite',
+		'show background black with fadeIn',
+		'Music from movie "Unbroken" created to illustrate the story of Louis Zamperini.',
 
 		'end'
 	]
