@@ -64,7 +64,8 @@ monogatari.assets ('videos', {
 
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
-	//'nickname for the image': 'actual name of the image',
+	'bib1':'bib1.jpeg',
+	'bib2':'bib2.jpeg',//'nickname for the image': 'actual name of the image',
 
 });
 
@@ -85,12 +86,13 @@ monogatari.assets ('scenes', {
 	'simonwithpics':'simonwithpics.jpeg',
 	'nonagressionpact':'nonagressionpact.jpeg',
 	'gestapo':'gestapo.jpeg',
-	'adolffakepapers':'adolffakepapers.jpeg',
 	'simoncenter':'simoncenter.jpeg',
-	'adolffakepapers': 'adolffakepapers.jpeg',
 	'nazitrial':'nazitrial.jpeg',
-	'laborcamp':'laborcamo.jpeg',
+	'laborcamp':'laborcamp.jpeg',
 	'youngsimon':'youngsimon.jpeg',
+	'adolfontrial':'adolfontrial.jpeg',
+	'simontestifying':'simontestifying.jpeg',
+	'jews':'jews.jpeg',
 
 });
 
@@ -125,7 +127,54 @@ monogatari.script ({
 		'jump nextSlides',
 	],
 
-	
+'nextSlides':[
+	'show background youngsimon',
+'Simon Wiesenthal, a Jewish survivor of the Holocaust, after being liberated from the concentration camps devoted his life to locating these Nazi criminals who had escaped justice.',
+'show background buczacz',
+'On September 17, 1939, when Wiesenthal was only 30 years old, the Soviet Union invaded Wiesenthal’s birth city of Buczacaz.',
+'show background nonagressionpact',
+'This occurred after Russia and Germany signed the “non-aggression pact” where they declared to not fight each other for the next 10 years and effectively split up Eastern Europe among the two empires.',
+'show background jews',
+'Thus began “the purge” against the Jewish people. In the next couple of years, Wiesenthal’s stepfather was arrested, his stepbrother was killed, and Simon, his mother, and his wife, Cyla Mueller were deported to the Janowska concentration camp in 1941 and then transferred to the Ostbahn labor camp.',
+'Wiesenthal was able to obtain forged identity papers for his wife, Cyla, so she would not be put to death for being a Jew; however, Simon remained in the camps.',
+'show background laborcamp',
+'As the Soviet army advanced onto the Eastern Front, German forces began to retreat and during that time SS soldiers transferred Wiesenthal to multiple labor camps.',
+'The Nazi soldiers and evacuated prisoners began the trek to the Mauthausen death camp in Austria. Most of the prisoners did not survive the journey to Mauthausen, with over half perishing.',
+'Wiesenthal was in very poor shape and on the verge of death when he arrived in Mauthausen; after being nourished with a measly 200 calories a day, 6 foot tall Wiesenthal only weighed 90 pounds (the average weight of a 12-year-old girl).',
+'show background mauthausen',
+'On May 5, 1945, the concentration camp was liberated by American soldiers and Wiesenthal recovered swiftly; at this point, he decided to devote the rest of his life to tracking down Nazi war criminals and bringing them to justice.',
+'show background simontestifying',
+'Soon after being liberated, Wiesenthal started collecting names of important members of the Nazi party and evidence of the atrocities for the War Crimes Section of the United States Army.',
+'Wiesenthal completed similar work as he later helped the Army’s Office Strategic Services and Counter-Intelligence Corps, led the welfare organization, the Jewish Central Committee in the United States Zone of Austria, and continued to participate and testify in war trials for Nazi criminals.',
+'In 1947, Wiesenthal and thirty volunteers opened the Jewish Historical Documentation Center in Austria that’s purpose was to assemble evidence of Nazi crimes that could be used in future war trials.',
+'But interest in bringing criminals to justice waned as the Cold War captured the world’s attention and eventually all thirty volunteers had left the organization.',
+'Wiesenthal was forced to close the agency but he decided to keep one file on a certain Nazi: Adolf Eichmann.',
+'show background gestapo',
+'Eichmann was the head of Gestapato’s Jewish Department (the Nazis’ secret police) and was one of the major organizers of the Holocaust as he oversaw the “Final Solution”, the term used for the mass elimination of the Jews.',
+'Wiesenthal obtained information that Eichmann was spotted in Argentina, using fake identity papers, which he passed along to the Israeli government.',
+'show background adolfontrial',
+'With the help of Wiesenthal and other sources, Israeli soldiers successfully captured Eichmann in 1959 and he was executed in May of 1961.',
+'show background simonnazi',
+'Encouraged by Eichmann’s capture, Wiesenthal reopened the Jewish Historical Documentation Center and continued to track escaped Nazis.',
+'Wiesenthal did not directly follow and arrest these war criminals but his main job of assembling and analyzing evidence was vital for their capture to take place.',
+'By the end of his life, Wiesenthal had aided in the arrest of over 1000 Nazi war criminals.',
+'show background simoncenter',
+'Wiesenthal’s legacy as a Nazi hunter lives on to this day, not only through his many memoirs, but also through one of his most notable lasting achievements: the Simon Wiesenthal Center.',
+'Founded in 1977, this international organization teaches tolerance, educates about the Holocaust, tracks anti-semitism and Neo-Nazi groups around the world, and fights for human rights.',
+'show background simonwithpics',
+'Wiesenthal pledged the importance of never forgetting and repeating a similar appalling event and said, “The history of man is the history of crimes, and history can repeat. So information is a defense. Through this we can build, we must build a defense against repetition." (Baltimore Jewish Times, 1989)',
+'Wiesenthal was motivated by his experience to help others and make the world a more just and humane place by fighting against the oppressive forces that committed horrible atrocities.',
+'show background black with fadeIn',
+'show image bib1 with fadeIn',
+'Bibliography',
+'hide image bib1 with fadeOut',
+'show background black with fadeIn',
+'show image bib2 with fadeIn',
+'Bibliography',
+'hide image bib2 with fadeOut',
+
+],
+
 });
 
 monogatari.component ('main-screen').template (() => {
