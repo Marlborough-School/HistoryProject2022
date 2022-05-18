@@ -45,7 +45,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background-image: url("../assets/scenes/ss7.jpg");
+	background-image: url("../assets/images/ss7.jpg");
 	color:black;
 }
 

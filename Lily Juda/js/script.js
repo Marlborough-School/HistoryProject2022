@@ -66,6 +66,8 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 	'ss7': 'ss7.jpg',
+	'ss5': 'ss5.jpg',
+	'ss2': 'ss2.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -78,6 +80,9 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'ss7': 'ss7.jpg',
+	'ss5': 'ss5.jpg',
+	'ss2': 'ss2.jpg',
+
 });
 
 
@@ -86,9 +91,10 @@ monogatari.script ({
 	'Start': [
 		'show background black with fadeIn',
 		'show image ss7 with fadeIn',
-		'Colette Catherine Marin was a French resistance member who shares the horrific story of her family’s experience of World War II. Colett’s older brother was taken from their home and brought to Camp Mittelbau-Dora, a German concentration camp; he was a resistance member as well. Colette has refused to set foot into Germany for 74 years because she believed that no one should be profifting from morbid tourism and all destruction that happened in the Holocaust.',
+		'Colette Catherine Marin was a French resistance member who shares the horrific story of her family’s experience of World War II. Coletteß’s older brother was taken from their home and brought to Camp Mittelbau-Dora, a German concentration camp; he was a resistance member as well. Colette has refused to set foot into Germany for 74 years because she believed that no one should be profifting from morbid tourism and all destruction that happened in the Holocaust.',
 		'How many French resistance members died in WW2?',
 		'hide image ss7 with fadeOut',
+		'show image ss5 with fadeIn',
 
 	 	{'Choice':{
 			'Y':{
@@ -104,30 +110,32 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'show background black',
+		'show image ss5 with fadeIn',
 		'Actually there were around 40,000 French people that perished in concentration camps throughout World War II.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
+		'show image ss5 with fadeIn',
 		'Yay, Correct!! There were around 40,000 french people that died in WW2',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'hide image ss5 with fadeOut',
+		'show background black with fadeIn',
+		'show image ss11 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'Early Life',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Time of Impact',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Later in Life',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -135,8 +143,11 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'show background black with fadeIn',
+		'show image ss2 with fadeIn',
+		'Colette had been a member of the resistance from a very young age, and she was always sharp. She understood that it was a large commitment. She teaches us a lesson that once we start something we can never turn back and she related this to the core values of the French Resistance and that the fighter gave her all into ending the war and fighting for what they believed.',
+		'“You stepped in and there was no turning back”(Colette Cathrine-Marin).',
+		'hide image ss2 with fadeOut',
 		'jump choiceScreen',
 	],
 
