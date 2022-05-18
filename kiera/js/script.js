@@ -242,6 +242,7 @@ monogatari.script ({
 		'hide image bib',
 		'show image ic with fadeIn',
 		'Here are the image credits.',
+		'hide image ic',
 		'Thank you so much for watching and reading. I hope you learned a little more about Chinese history.',
 		'end'
 	]
