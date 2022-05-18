@@ -85,7 +85,7 @@ monogatari.assets ('scenes', {
 	'hand':'hand.jpeg',
 	'boy':'boy.jpeg',
 	'black':'black.jpeg',
-	'nurses':'nurses.jpeg',
+	'nurses':'Nurses.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'Portrait': 'Portrait.jpeg',
