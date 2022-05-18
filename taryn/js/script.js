@@ -44,7 +44,10 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'gunshot':'gunshot.mp3',
+	'correct':'correct.mp3',
+	'incorrect':'incorrect.mp3',
+	'asitwas':'asitwas.mp3',
 });
 
 // Define the voice files used in the game.
@@ -97,6 +100,7 @@ monogatari.script ({
 	'Start': [
 		'show background firingsquad with fadeIn',
 		'On July 21, 1944, Claus von Stauffenberg stood in a lighted courtyard awaiting execution. “Long live holy Germany,” he shouted just as a fellow conspirator threw himself in front of Stauffenberg and took the bullet meant for him.',
+		'play music gunshot volume 90',
 		'It was a short-lived reprieve however, as he was killed with the next gunshot.',
 		'show background nazisalute with fadeIn',
 		'Do you think there was internal opposition of the Nazi Regime?',
@@ -114,12 +118,14 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
+		'play music correct volume 90',
 		'show background nazisalute',
 		'Correct! Military officials working under Hitler, such as Claus von Stauffenberg, were not all in favor of the Nazi agenda. Some formed resistance groups and attempted to fight back.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
+		'play music incorrect volume 90',
 		'show background nazisalute',
 		'There actually was internal opposition. It was very risky for those working under Hitler to act against Hitler’s agenda, but it did occur. Claus von Stauffenberg was one of those daring individuals.',
 		'jump choiceScreen',
