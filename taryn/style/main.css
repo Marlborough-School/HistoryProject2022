@@ -46,7 +46,7 @@ button:hover {
 /* Main Menu Styling */
 [data-screen="main"] {
 	background-image: url("../assets/scenes/clausfamily.jpeg");
-	color:black;
+	color:pink;
 }
 
 /* Main Menu Buttons Styling */
@@ -59,7 +59,7 @@ button:hover {
 }
 
 [data-screen="main"] p {
-	background:#FFFFFF99;
+	background:#FFFFFF;
 	margin-left:400px;
 	margin-right:400px;
 	padding-top:20px;
