@@ -69,7 +69,7 @@ monogatari.assets ('images', {
 'boy':'boy.jpeg',
 'grave': 'grave.jpeg',
 'truck': 'truck.jpeg',
-'wash' : 'wash.jpg',
+'wash' : 'Wash.jpg',
 'sick' : 'sick.jpeg',
 'desk' : 'desk.jpg',
 'war' : 'war.jpg',
