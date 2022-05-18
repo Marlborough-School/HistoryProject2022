@@ -134,6 +134,8 @@ monogatari.script ({
 
 
 	'choiceScreen':[
+		'show image reniapg2',
+		'show image reniabegmoreinfo',
 		'hide image reniapg2',
 		'hide image reniabegmoreinfo',
 		'show background bigrenia with fadeIn',
