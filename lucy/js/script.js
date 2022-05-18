@@ -191,6 +191,7 @@ monogatari.script ({
 		'show background white',
 		'show image bib1',
 		'Bibliography',
+		'hide image bib1',
 		'show background white',
 		'show image bib2',
 		'Bibliography',
