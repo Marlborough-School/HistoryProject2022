@@ -44,7 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'otto':'otto.mp3',
 });
 
 // Define the voice files used in the game.
@@ -54,7 +54,6 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-
 });
 
 // Define the videos used in the game.
@@ -218,6 +217,9 @@ monogatari.script ({
 		'Although Anne Frank’s life tragically ended during the Holocaust, her memory lives on forever. Her story relates to millions of other Jewish children in the Holocaust, and she brings to life what it was like as a Jewish teenager during this time.',
 		'show background book with fadeIn',
 		'Anne’s story teaches young kids, teens, and adults the discrimination and difficulties Jewish people faced for many years. Anne is able to humanize the struggles encountered during the Holocaust and build empathy for future generations.',
+		'show background anne with fadeIn',
+		'play music otto with volume 100',
+		'Otto Frank gives remarks regarding his daughter’s legacy.',
 		'show background anne with fadeIn',
 		'Anne was just a typical girl with a diary that ended up changing how the world viewed the Holocaust, and also inspired millions by being able to keeping her head up during the darkest of times.',
 	]
