@@ -54,7 +54,8 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-
+'battle':'battle.mp3',
+'over':'over.mp3',
 });
 
 // Define the videos used in the game.
@@ -73,6 +74,7 @@ monogatari.assets ('images', {
 'desk' : 'desk.jpg',
 'war' : 'war.jpg',
 'bib' : 'bib.jpeg',
+'audio' : 'audio.jpg',
 'credits' : 'credits.jpeg',
 
 });
@@ -174,6 +176,7 @@ monogatari.script ({
 
 	'greenGrape':[
 		'show background gas with fadeIn',
+		'play sound battle volume 100',
 		'Fairchild’s unit arrived in Europe before many American troops could be mobilized. As a result, they treated British troops since Britain was an ally of the U.S. in the war. A major British offensive had begun near Ypres, Belgium, and casualties were high, including many victims of German gas attacks.',
 		'Fairchild first worked at a British Base hospital where many soldiers were suffering from injuries caused by mustard gas. She spent hours washing their burns to try to eliminate all traces of the gas.',
 		'show background black with fadeIn',
@@ -184,6 +187,7 @@ monogatari.script ({
 		'show background Portrait with fadeIn',
 		'“If you could only see what the boys here have to go through sometimes,” Helen wrote to her mother, “you would see they need all the comfort possible.”',
 		'show background black with fadeIn',
+		'stop sound battle',
 		'jump choiceScreen',
 	],
 
@@ -222,11 +226,16 @@ monogatari.script ({
 		'While she is remembered for her bravery and service as a wartime nurse, we would not know much about Fairchild if it had not been for her personal letters and her niece’s commitment to honor her service. As a result, she is remembered as a pioneering nurse and a hero of the first modern war.',
 		'show background white with fadeIn',
 		'show image bib with fadeIn',
+		'play sound over volume 100',
 		'Bibliography',
 		'hide image bib with fadeOut',
 		'show image credits with fadeIn',
 		'Image Credits',
 		'hide image credits with fadeOut',
+		'show image audio with fadeIn',
+		'Audio Credits',
+		'hide image audio with fadeOut',
+		'stop sound over',
 		'end',
 	]
 });
