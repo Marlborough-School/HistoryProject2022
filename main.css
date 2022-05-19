@@ -5,6 +5,8 @@
 
 body {
     background: #ddd;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .thumb {
@@ -13,7 +15,8 @@ body {
 }
 
 p {
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     line-height: 1.6;
 }
 
