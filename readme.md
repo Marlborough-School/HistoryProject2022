@@ -16,5 +16,5 @@ Kessner).
 
 - [Monogatari Visual Novel Engine](https://monogatari.io/)
 - [Marlborough STEM Program](https://stem.marlborough.org/)
-- [Marlborough School](https://www.marlborough.org/
+- [Marlborough School](https://www.marlborough.org/)
 
