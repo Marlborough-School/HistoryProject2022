@@ -76,6 +76,20 @@ monogatari.assets ('scenes', {
 	'trio':'trio.jpeg',
 	'group':'group.jpeg',
 	'family':'family.jpeg',
+	'foch':'foch.jpeg',
+	'fritz':'fritz.jpeg',
+	'hospital':'hospital.jpeg',
+	'inside':'inside.jpeg',
+	'leave':'leave.jpeg',
+	'married':'married.jpeg',
+	'news':'news.jpeg',
+	'old':'old.jpeg',
+	'portrait':'portrait.jpeg',
+	'ravensbruck':'ravensbruck.jpeg',
+	'youth':'youth.jpeg',
+	'dinner':'dinner.jpeg',
+	'bib':'bib.jpeg',
+	'photos':'photos.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 });
@@ -83,7 +97,10 @@ monogatari.assets ('scenes', {
 
 //
 monogatari.script ({
-	'Start': [
+
+
+
+	'Start':[
 		'show background portrait with fadeIn',
 		'Odette Sansom, a female spy tortured by the Gestapo duirng World War 2, was the first woman to ever be given the honor of the George Cross.',
 		'Sansom was a member of the Special Operations Executive. Sansom never believed she would be a spy because before joining the organization, she was a mother to three children and married for many years.',
@@ -107,6 +124,10 @@ monogatari.script ({
 		'show background old with fadeIn',
 		'However, she had been sentenced twice, in both France and Britain. In an interview, she later said that her reaction was humor, saying “For which country will I die? I shall never know.”(New York Post)',
 		'To worsen things, sick and condemned to death, she was brought to Ravensbruck concentration camp.',
+		'jump greenGrape',
+	],
+
+	'greenGrape':[
 		'show background ravensbruck with fadeIn',
 		'The camp had both a crematorium and gas chamber, and was ravaged by disease and the effects of overcrowding and Samson’s ailments got worse.',
 		'show background hospital with fadeIn',
@@ -120,21 +141,20 @@ monogatari.script ({
 		'Hundreds were killed in this process, however, as some were executed to eliminate witnesses of the horrors of Ravensbrück, some were fatally shot while trying to escape, and some were simply too ill to survive the move.',
 		'show background inside with fadeIn',
 		'It was a tragedy completely missed by Sansom, however, as she remained in solitary confinement, completely forgotten about until the very end of the evacuation.',
-		'In the end, it was her false title that saved her life, as she was taken by Fritz Suhren as a hostage. Grabbed from her cell, she was shoved in a car headed to what she believed would be her doom.',
-		'However, this was not the case. Hoping to trade his valuable hostage for his freedom, or at the very least preferential treatment, Suhren drove Sansom towards the American lines. Suhren handed Sansom over to an American officer, but before he could negotiate the terms of his exchange, Sansom told the American officers who Suhren was, and the horrors that he was responsible for, and the Americans took him into custody.',
-		'show background married with fadeIn',
-		'However, she did not stop there. Upon returning to Britain, Sansom continued to work for the SOE, providing valuable details about the horrors of her incarceration, which assisted in war crimes trials, and helping track down female agents who had never returned from France.',
-		'She was also reunited with Peter Churchill, who like Samson had also survived the horrors of concentration camp life. In the midst of this, she reflected upon her marriage as well, ultimately deciding to divorce her husband Roy Sansom and marry Peter Churchill.',
-		'She was reunited with her daughters, who she continued to raise until they left for university, taking back her role as mother.',
-		'She was awarded the Gold Cross in 1946 for her bravery, one of the greatest honors bestowed in Britain. She continued to work in various organizations and charities well into old age, even returning to Ravensbrück to hang a plaque honoring the agents who had lost their lives in captivity.',
-		'A true World War II hero, Odette Sansom will always be remembered for not only her commitment and bravery when faced with great adversity, but also as a mother, - the role she always describes as being at the very heart of her thoughts and actions.',
+		'Will Sansom make it out of Ravensbruck?',
+		'jump Question',
+	],
+
+	'Question': [
+
+
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Yes, she will.',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'No, she will not.',
 				'Do': 'jump noAnswer'
 			},
 		},
@@ -143,7 +163,9 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'In the end, it was her false title that saved her life, as she was taken by Fritz Suhren as a hostage. Grabbed from her cell, she was shoved in a car headed to what she believed would be her doom.',
+				'However, this was not the case. Hoping to trade his valuable hostage for his freedom, or at the very least preferential treatment, Suhren drove Sansom towards the American lines. Suhren handed Sansom over to an American officer, but before he could negotiate the terms of his exchange, Sansom told the American officers who Suhren was, and the horrors that he was responsible for, and the Americans took him into custody.',
+
 		'jump choiceScreen',
 	],
 
@@ -159,6 +181,7 @@ monogatari.script ({
 			'1':{
 				'Text': 'Early Life',
 				'Do': 'jump earlyLife',
+
 			},
 			'2':{
 				'Text': 'Ravensbruck',
@@ -171,19 +194,6 @@ monogatari.script ({
 		}
 	}
 	],
-
-	'redGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
-	],
-
-	'greenGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
-	],
-
 	'blackGrape':[
 		'show background grape with fadeIn',
 		'You found the grapes! Now we will go the end of the project',
@@ -201,11 +211,16 @@ monogatari.script ({
 		}
 	],
 
-	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
+	'laterLife':[
+		  'show background married with fadeIn',
+			'However, she did not stop there. Upon returning to Britain, Sansom continued to work for the SOE, providing valuable details about the horrors of her incarceration, which assisted in war crimes trials, and helping track down female agents who had never returned from France.',
+			'She was also reunited with Peter Churchill, who like Samson had also survived the horrors of concentration camp life. In the midst of this, she reflected upon her marriage as well, ultimately deciding to divorce her husband Roy Sansom and marry Peter Churchill.',
+			'She was reunited with her daughters, who she continued to raise until they left for university, taking back her role as mother.',
+			'She was awarded the Gold Cross in 1946 for her bravery, one of the greatest honors bestowed in Britain. She continued to work in various organizations and charities well into old age, even returning to Ravensbrück to hang a plaque honoring the agents who had lost their lives in captivity.',
+			'A true World War II hero, Odette Sansom will always be remembered for not only her commitment and bravery when faced with great adversity, but also as a mother, - the role she always describes as being at the very heart of her thoughts and actions.',
+			'show background bib with fadeIn',
+			'show background photos with fadeIn',
+		  'end',
 	]
 });
 

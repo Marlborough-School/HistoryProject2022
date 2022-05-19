@@ -134,6 +134,8 @@ monogatari.script ({
 
 
 	'choiceScreen':[
+		'show image reniapg2',
+		'show image reniabegmoreinfo',
 		'hide image reniapg2',
 		'hide image reniabegmoreinfo',
 		'show background bigrenia with fadeIn',
@@ -177,8 +179,8 @@ monogatari.script ({
 
 
 	'greenGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'show background przghetto with fadeIn',
+		'On September 1st, 1939, Germany invaded Poland, causing Renia, Ariana, and their Grandfather to flee to Lwow less than a week later. Renia wrote about how poor the conditions were in Lwow, however, she felt that worrying about the safety of her family was worse than the physical suffering: “This life is terrible. We’re yellow, pale, from this cellar life—from the lack of water, comfortable beds and sleep. But the horrible thoughts are much worse” (Spiegel).',
 		'jump choiceScreen',
 	],
 
