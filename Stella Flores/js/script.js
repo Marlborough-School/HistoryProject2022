@@ -89,7 +89,7 @@ monogatari.script ({
 		'Born in Birmingham, England, in 1869, Arthur Neville Chamberlain was a successful businessman and local politician. In 1918 he was elected to Parliament as a member of the Conservative Party, and in 1937, Chamberlain was elected as Britain’s prime minister.',
 		'hide image pic2 with fadeOut',
 		'When Chamberlain was Prime Minister, he created many Acts to help the British people. Which one of these Acts did he NOT create?',
-			{'Choice':{
+		{'Choice':{
 			'Y':{
 				'Text': 'Yes, I do have grapes',
 				'Do': 'jump yesAnswer'
