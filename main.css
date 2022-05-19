@@ -13,4 +13,23 @@ p {
     line-height: 1.6;
 }
 
+br {
+    clear: both;
+}
+
+figure {
+  border: 1px #cccccc solid;
+  display: table;
+  float: left;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  display: table-caption;
+  caption-side: bottom;
+
+}
 
