@@ -118,15 +118,15 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Slide 5',
+				'Text': 'Page 5',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Slide 6',
+				'Text': 'Page 6',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Slide 7',
+				'Text': 'Page 7',
 				'Do': 'jump blackGrape',
 			}
 		},
@@ -141,14 +141,26 @@ monogatari.script ({
 
 	'greenGrape':[
 		'show background duck with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'Chamberlain was able to convince Hitler to meet in Berchtesgaden, Germany to discuss Czechoslovakia. In transcripts of Chamberlain and Hitler’s meeting in early September 1938, Hitler stated that he recognized that it might be “impossible to bring them [Germans living in Czechoslovakia] into the Reich”.',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
 		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
-		'jump Ending',
+		'Chamberlain saw this as an opportunity to keep England out of conflict. He persuaded Hitler, Édouard Daladier, (the French Prime Minister) and his foreign minister to accept a proposal that Germany would be allowed to annex the areas of Czechoslovakia, with a population that was more than 50% German-speaking (known as the Sudetenland). This territory was then expected to be turned over to Hitler’s authority. The Czechoslovakians were not consulted and they initially rejected the proposal, but were forced to accept the terms as they could not defeat Germany alone.',
+		'jump page8',
+	],
+
+	'page8':[
+		'show background grape with fadeIn',
+		'In September 1938, Chamberlain flew back to Germany and met Hitler in Bad Godesberg, Germany to further the peace plan, only to find Hitler had new demands, which contradicted their previous conversation in Berchtesgaden. Hitler wanted the Czechoslovakians evacuated from the area in 6 days and the annexed part of Czechoslovakia to be occupied by the German army.',
+		'jump page9',
+	],
+
+  'page9':[
+		'show background grape with fadeIn',
+		'Chamberlain hoped to avoid a war over Czechoslovakia by conceding to Hitler’s new demands yet again, and despite this red flag, Chamberlain submitted the new proposal to the Czechoslovakians, the British, and the French, all of whom eventually accepted (after initially rejecting) Hitler’s new terms.',
+  'jump Ending',
 	],
 
 	'Ending':[
@@ -159,7 +171,7 @@ monogatari.script ({
 				'Do': 'jump Closing',
 			}
 		}
-		}
+	}
 	],
 
 	'Closing':[
