@@ -160,8 +160,14 @@ monogatari.script ({
   'page9':[
 		'show background grape with fadeIn',
 		'Chamberlain hoped to avoid a war over Czechoslovakia by conceding to Hitler’s new demands yet again, and despite this red flag, Chamberlain submitted the new proposal to the Czechoslovakians, the British, and the French, all of whom eventually accepted (after initially rejecting) Hitler’s new terms.',
-  'jump Ending',
+  'jump page10',
 	],
+
+	  'page10':[
+			'show background grape with fadeIn',
+			'Peace was finally reached on September 29, 1938, when the leaders of Germany, Great Britain, France, and Italy, allowed German annexation of the Sudetenland, with the signing of the Munich Agreement.',
+	  'jump Ending',
+		],
 
 	'Ending':[
 		'show background potatocat with fadeIn',
