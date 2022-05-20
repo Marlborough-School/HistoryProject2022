@@ -116,7 +116,7 @@ monogatari.script ({
 
 	'choiceScreen':[
 		'show background duck2 with fadeIn',
-
+		{'Choice':{
 			'1':{
 				'Text': 'Slide 5',
 				'Do': 'jump redGrape',
@@ -129,8 +129,8 @@ monogatari.script ({
 				'Text': 'Slide 7',
 				'Do': 'jump blackGrape',
 			}
-		}
-	}
+		},
+	},
 	],
 
 	'redGrape':[
