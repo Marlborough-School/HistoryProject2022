@@ -135,7 +135,7 @@ monogatari.script ({
 
 	'redGrape':[
 		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'By April 1938, his efforts to improve the lives of his citizens became overshadowed by Adolf Hitler, Germanys Chancellor.',
 		'jump choiceScreen',
 	],
 
