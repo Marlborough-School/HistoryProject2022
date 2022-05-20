@@ -44,6 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
+	'song':'別れのブルース　淡谷のり子.mp3',
 
 });
 
@@ -65,106 +66,147 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+'nancyandmitz': 'nancyandmitz.jpeg',
+'bibliography':'bibliography.jpeg',
+'credits':'credits.jpeg',
+'kids':'kids.jpeg',
+'family':'family.jpeg',
+'yes':'yes.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
+	'titleSlide':'titleslide.jpeg',
+	'nAncy':'nancy.jpeg',
+	'title':'title.jpeg',
+	'mItz':'mitz.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+	'black': 'black.jpeg',
+	'no':'no.jpeg',
+	'family':'family.jpeg',
+	'sadchild':'sadchild.jpeg',
+	'pool':'pool.jpeg',
+	'tumbleweeds':'tumbleweeds.jpeg',
+	'white':'white.jpeg',
+
+
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'February 19, 1942, the day the lives of all Japanese-Americans living in the west-coast changed forever. ',
+		'play music song with loop volume 90',
+		'show background titleSlide with fadeIn',
+		'February 19, 1942, the day the lives of all Japanese-Americans living in the west-coast changed forever.',
 		'Do you know what occurred February 19, 1942?',
 		{'Choice':{
 			'Y':{
-				'text': 'Yes',
+				'Text': 'Yes',
 				'Do': 'jump yesAnswer'
-			}, 'As you already know, as a response to the attack on Pearl Harbor by the Japanese, the United States viewed anybody of Japanese descent as a war threat. This led President Roosevelt to establish the Executive Order 9066 which forced all people of Japanese descent to be relocated into internment camps.',
-		}, 
-			'N':{noAnswer}
+			},
+			'N':{
 				'Text': 'No',
 				'Do': 'jump noAnswer'
-			},'As a response to the attack on Pearl Harbor by the Japanese, the United States viewed anybody of Japanese descent as a war threat. This led President Roosevelt to establish the Executive Order 9066 which forced all people of Japanese descent to be relocated into internment camps.',
+			},
 		},
 	},
 ],
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show image yes',
+		'As you already know, as a response to the attack on Pearl Harbor by the Japanese, the United States viewed anybody of Japanese descent as a war threat. This led President Roosevelt to establish the Executive Order 9066 which forced all people of Japanese descent to be relocated into internment camps.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show background no',
+		'As a response to the attack on Pearl Harbor by the Japanese, the United States viewed anybody of Japanese descent as a war threat. This led President Roosevelt to establish the Executive Order 9066 which forced all people of Japanese descent to be relocated into internment camps.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'hide image yes',
+		'show background black',
+		'show image kids with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
-				'Do': 'jump redGrape',
+				'Text': 'Nancy Shiozaki',
+				'Do': 'jump nancyShiozaki',
 			},
 			'2':{
-				'Text': 'Green Grapes',
-				'Do': 'jump greenGrape',
+				'Text': 'Mitz Shiozaki',
+				'Do': 'jump mitzShiozaki',
 			},
-			'3':{
-				'Text': 'Black Grapes',
-				'Do': 'jump blackGrape',
-			}
+
 		}
 	}
 	],
 
-	'redGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+	'nancyShiozaki':[
+		'hide image kids',
+		'show background black',
+		'show image family',
+		'When Nancy Shiozaki was 2 years old and Mitz Shiozaki was 7 years old, they were both relocated as young children with their families because they were Japanese American.',
+		'“After we grew up and have our own families, we feel bad for our families, we were just kids, we were playing. They went through stressful times, and never talked about it; Probably because of Japanese stigma, “Shikataganai” (It is what it is)” (Nancy Shiozaki)',
+		'hide image family',
+		'show background nAncy',
+		'Nancy Shiozaki was approximately 2 years old when this executive order took place. Her family including her parents, her two brothers, Joe and Hideki, and her were forced to relocate to Heart Mountain Camp in Wyoming.',
+		'Due to her young age, she can’t recall many details of this stressful time, but she remembers a story her mother briefly mentioned about a pregnant woman giving birth inside the barrack. Her mother recalls how loud it was because there were no walls but only curtains separating each family.',
+		'show background tumbleweeds',
+		'Nancy was so young that her mother would not let her out of the barracks most of the time because she was afraid that Nancy would get hurt. However she recalls her first memory of stepping outside.',
+		'"I remember the tumbleweeds, they finally let me outside, all I could do was stand there." (N. Shiozaki)',
 		'jump choiceScreen',
 	],
 
-	'greenGrape':[
-		'show background duck with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+	'mitzShiozaki':[
+		'hide image kids',
+		'show background sadchild',
+		'“You can only take what you can carry. It was terrible we were babies. I had two baby sisters 5 & 4; They couldn’t carry anything.” (Mitz Shiozaki)',
+		'show background pool',
+		'Mitz was around 7 years old when his family was relocated. His family was made up of 5 people, his parents, his two sisters, and Mitz; They were relocated to the Poston Relocation Center in Arizona.',
+		'show background pool',
+		'Arizona was very hot, the Colorado River cut through the camp and provided little pools for the young children to learn how to swim.',
+		'Little did Mitz know, these little pools that brought joy to the depressing times, would make him and many other children witness a dark memory.',
+		'Mitz recalls a twin being missing; The other twin was frantically running around the camp looking for his twin brother. Finally, the lifeguard checks the pool.',
+		'Mitz recalls the dreadful memory of everyone who is able to swim well skimming the bottom of the pool to look for the missing twin. Sadly, he was found drowned at the bottom of the pool near the gate because he choked on something that was lodged in his throat.',
+		'show background mItz',
+  	'Mitz remembers the sadness that the children of the camp experienced by losing a friend. But unfortunately, this sadness that overwhelmed the people in the camps was a daily experience.',
+		'Both Nancy and Mitz recall people committing suicide during their time at camp.',
+		'“He sounded and looked really happy and was whistling into the mess hall building. I went to mess hall and ate, once I left, I found out that the man had committed suicide. He jumped off the building and grabbed onto the electrical wire.” (Mitz Shiozaki). ',
+		'jump choiceScreen2 closing',
 	],
-
-	'blackGrape':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
-		'jump Ending',
-	],
-
-	'Ending':[
-		'show background potatocat with fadeIn',
+	'choiceScreen2':[
+		'show background black',
+		'show image kids with fadeIn',
 		{'Choice':{
-			'Closing':{
-				'Text': 'Conclusion',
-				'Do': 'jump Closing',
-			}
+			'1':{
+				'Text': 'Closing',
+				'Do': 'jump closing2',
+			},
+
 		}
-		}
+	}
 	],
 
-	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
+	'closing2':[
+		'hide image kids',
+		'show background black',
+		'show image nancyandmitz',
+		'Both Mitz and Nancy, as well as all the families who were relocated were a victim to the effects of WWII. They did not deserve anything that happened to them, they were innocent kids. Their stories exemplify how World Wars can impact people who have nothing to do with the war. For example, both Nancy and Mitz are citizens of the United States yet they are punished for something the Japanese Military chose to do.',
+		'Though they lived through tragic times and faced discriminations as children, Nancy and Mitz are kind and loving towards people regardless of who they are. We learn that it is important to share their stories so it does not happen again, and to continue to talk about it to build awareness.',
+		'“Definitely wrong. They took citizens who did nothing wrong and moved them. It was a confined freedom and we lost everything.” (M. Shiozaki)',
+		'show background white',
+		'show image bibliography',
+		'bibliography',
+		'show background white',
+		'show image credits',
+		'image credits',
+		'end',
 	]
 });
 
@@ -181,10 +223,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Japanese Internment; Dark History with Japanese-Americans</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Hana Speaks
         </p>
 				</center>
 				<br/>
