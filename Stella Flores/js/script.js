@@ -91,7 +91,7 @@ monogatari.script ({
 		'When Chamberlain was Prime Minister, he created many Acts to help the British people. Which one of these Acts did he NOT create?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'The Factory Act',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
