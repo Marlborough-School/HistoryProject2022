@@ -166,7 +166,32 @@ monogatari.script ({
 	  'page10':[
 			'show background grape with fadeIn',
 			'Peace was finally reached on September 29, 1938, when the leaders of Germany, Great Britain, France, and Italy, allowed German annexation of the Sudetenland, with the signing of the Munich Agreement.',
-	  'jump Ending',
+	  'jump slide11',
+		],
+
+		'slide11':[
+			'show background duck2 with fadeIn',
+			'What was the name of Chamberlain’s most famous speech?',
+			{'Choice':{
+				'1':{
+					'Text': '“Peace in our Time”',
+					'Do': 'jump page12',
+				},
+				'2':{
+					'Text': '“A Day for Peace”',
+					'Do': 'jump page12',
+				},
+				'3':{
+					'Text': '“Peace At Last”',
+					'Do': 'jump page12',
+				}
+			},
+		},
+		],
+		'page12':[
+			'show background grape with fadeIn',
+			'The following day, on September 30, 1938, Chamberlain gave his infamous “Peace in our Time” speech, in which he stated that, "We regard the agreement signed last night … as symbolic of the desire … never to go to war with one another again”. Chamberlain received over 10,000 letters and telegrams thanking him for averting war.',
+		'jump Ending',
 		],
 
 	'Ending':[
