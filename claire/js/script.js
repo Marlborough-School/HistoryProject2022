@@ -70,6 +70,11 @@ monogatari.assets ('images', {
 	'kid':'kid.jpg',
 	'map':'map.jpeg',
 	'ottoa':'otto.jpg',
+	'sources':'sources.jpeg',
+	'image1':'image1.jpeg',
+	'image2':'image2.jpeg',
+	'audio':'audio.jpeg',
+	'oimage':'oimage.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -99,6 +104,8 @@ monogatari.assets ('scenes', {
 	'women':'women.jpg',
 	'book':'book-cover.jpg',
 	'conclusion':'conclusion.jpg',
+	'white':'white.jpeg',
+	'quote':'quote.jpg',
 });
 
 
@@ -230,6 +237,25 @@ monogatari.script ({
 		'hide image ottoa with fadeOut',
 		'show background anne with fadeIn',
 		'Anne was just a typical girl with a diary that ended up changing how the world viewed the Holocaust. She also inspired millions by being able to keeping her head up during the darkest of times.',
+		'show background white with fadeIn',
+		'show image sources with fadeIn',
+		'Bibliography',
+		'hide image sources with fadeOut',
+		'show background white with fadeIn',
+		'show image oimage with fadeIn',
+		'Image credits',
+		'hide image oimage with fadeOut',
+		'show background white with fadeIn',
+		'show image image2 with fadeIn',
+		'Image credits continued',
+		'hide image image2 with fadeOut',
+		'show background white with fadeIn',
+		'show image audio with fadeIn',
+		'Audio credits',
+		'hide image audio with fadeOut',
+		'show background quote with fadeIn',
+		'Thank you!',
+
 	],
 });
 
