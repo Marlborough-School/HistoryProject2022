@@ -55,7 +55,7 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'nazi':'nazi.mp3',
-	'bells':'bells.mp3',
+	'rally':'rally.mp3',
 });
 
 // Define the videos used in the game.
@@ -186,12 +186,10 @@ monogatari.script ({
 	'blackGrape':[
 		'show background books with fadeIn',
 		'The family arrived at the Secret Annex, which was hidden behind a revolving cabinet in the attic of Otto Frank’s business in Amsterdam. Anne and her family were accompanied in hiding by four other people: The Van Pels family and Fritz Pfeffer.',
-		'play sound bells volume 100',
 		'show background black with fadeIn',
 		'show image map with fadeIn',
-		'The attic was small and cramped. The days were long and quiet. To keep busy and distract herself from the crazy world around her, Anne read lots of books and wrote in her diary. She also often found reassurance in the sound of the Westerkerk bells that rang every 15 minutes. Anne explained in her diary, “I can shake off everything as I write; my sorrows disappear, my courage is reborn.”',
+		'The attic was small and cramped. The days were long and quiet. To keep busy, Anne read lots of books and wrote in her diary. Anne experienced difficulties with her family because she felt like she was being overlooked and not appreciated. Anne wrote in her diary, “I can shake off everything as I write; my sorrows disappear, my courage is reborn.”',
 		'hide image map with fadeOut',
-		'stop sound bells',
 		'show background anne with fadeIn',
 		'Anne wrote, “In spite of everything I still believe that people are really good at heart… I hear the ever approaching thunder, which will destroy us too, I can feel the sufferings of millions and yet, if I look up into the heavens, I think that it will all come right, that this cruelty too will end, and that peace and tranquility will return again.”',
 		'jump choiceScreen',
