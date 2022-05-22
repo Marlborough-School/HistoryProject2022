@@ -84,7 +84,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Hi project coders. This is senya and this duck will not be your real background. You will replace the background named duck with your background.',
+		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
