@@ -65,7 +65,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	'pic2': 'pic2.jpeg',
-
+	'pic4': 'pic4.jpeg',
+	'pic5': 'pic5.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -88,6 +89,7 @@ monogatari.script ({
 		'show image pic2 with fadeIn',
 		'Born in Birmingham, England, in 1869, Arthur Neville Chamberlain was a successful businessman and local politician. In 1918 he was elected to Parliament as a member of the Conservative Party, and in 1937, Chamberlain was elected as Britain’s prime minister.',
 		'hide image pic2 with fadeOut',
+  	'show background plane with fadeIn',
 		'When Chamberlain was Prime Minister, he created many Acts to help the British people. Which one of these Acts did he NOT create?',
 		{'Choice':{
 			'Y':{
@@ -146,13 +148,14 @@ monogatari.script ({
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
+		'show image pic4 with fadeIn',
 		'Chamberlain saw this as an opportunity to keep England out of conflict. He persuaded Hitler, Édouard Daladier, (the French Prime Minister) and his foreign minister to accept a proposal that Germany would be allowed to annex the areas of Czechoslovakia, with a population that was more than 50% German-speaking (known as the Sudetenland). This territory was then expected to be turned over to Hitler’s authority. The Czechoslovakians were not consulted and they initially rejected the proposal, but were forced to accept the terms as they could not defeat Germany alone.',
 		'jump page8',
 	],
 
 	'page8':[
-		'show background grape with fadeIn',
+		'hide image pic4 with fadeOut',
+		'show image pic5 with fadeIn',
 		'In September 1938, Chamberlain flew back to Germany and met Hitler in Bad Godesberg, Germany to further the peace plan, only to find Hitler had new demands, which contradicted their previous conversation in Berchtesgaden. Hitler wanted the Czechoslovakians evacuated from the area in 6 days and the annexed part of Czechoslovakia to be occupied by the German army.',
 		'jump page9',
 	],
