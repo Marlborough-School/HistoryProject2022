@@ -66,9 +66,10 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	'pic2': 'pic2.jpeg',
 	'pic4': 'pic4.jpeg',
-	'pic5': 'pic5.jpeg',
+	'pic1': 'pic1.jpeg',
 	'biblio1':'biblio1.jpeg',
 	'biblio2':'biblio2.jpeg',
+	'pic11':'pic11.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -109,6 +110,7 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
+		'show image pic11 black',
 		'Because he was such a compassionate person, when Chamberlain became Prime Minister, he initially focused on improving the lives of English workers. He instituted the Factories Act, which restricted the number of hours that children and women worked. He supported the Holiday with Pay Act, which gave workers a paid week off.',
 		'jump choiceScreen',
 	],
@@ -158,7 +160,7 @@ monogatari.script ({
 
 	'page8':[
 		'hide image pic4 with fadeOut',
-		'show image pic5 with fadeIn',
+		'show image pic1 with fadeIn',
 		'In September 1938, Chamberlain flew back to Germany and met Hitler in Bad Godesberg, Germany to further the peace plan, only to find Hitler had new demands, which contradicted their previous conversation in Berchtesgaden. Hitler wanted the Czechoslovakians evacuated from the area in 6 days and the annexed part of Czechoslovakia to be occupied by the German army.',
 		'jump page9',
 	],
