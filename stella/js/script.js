@@ -70,6 +70,7 @@ monogatari.assets ('images', {
 	'biblio1':'biblio1.jpeg',
 	'biblio2':'biblio2.jpeg',
 	'pic11':'pic11.jpeg',
+	'hitler':'hitler.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -117,6 +118,7 @@ monogatari.script ({
 
 	'noAnswer':[
 		'show background black',
+		'show image pic11 black',
 		'Because he was such a compassionate person, when Chamberlain became Prime Minister, he initially focused on improving the lives of English workers. He instituted the Factories Act, which restricted the number of hours that children and women worked. He supported the Holiday with Pay Act, which gave workers a paid week off.',
 		'jump choiceScreen',
 	],
@@ -141,7 +143,8 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
+		'show background black with fadeIn',
+		'show image hitler',
 		'By April 1938, his efforts to improve the lives of his citizens became overshadowed by Adolf Hitler, Germanys Chancellor.',
 		'jump choiceScreen',
 	],
