@@ -236,7 +236,7 @@ monogatari.script ({
 		'Otto Frank gives remarks regarding his daughter’s legacy.',
 		'hide image ottoa with fadeOut',
 		'show background anne with fadeIn',
-		'Anne was just a typical girl with a diary that ended up changing how the world viewed the Holocaust. She also inspired millions by being able to keeping her head up during the darkest of times.',
+		'Anne was just a typical girl with a diary that ended up changing how the world viewed the Holocaust. She also inspired millions by being able to keep her head up during the darkest of times.',
 		'show background white with fadeIn',
 		'show image sources with fadeIn',
 		'Bibliography',
