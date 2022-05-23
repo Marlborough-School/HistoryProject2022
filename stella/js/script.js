@@ -164,19 +164,16 @@ monogatari.script ({
 	],
 
   'page9':[
-		'show background grape with fadeIn',
 		'Chamberlain hoped to avoid a war over Czechoslovakia by conceding to Hitler’s new demands yet again, and despite this red flag, Chamberlain submitted the new proposal to the Czechoslovakians, the British, and the French, all of whom eventually accepted (after initially rejecting) Hitler’s new terms.',
   'jump page10',
 	],
 
 	  'page10':[
-			'show background grape with fadeIn',
 			'Peace was finally reached on September 29, 1938, when the leaders of Germany, Great Britain, France, and Italy, allowed German annexation of the Sudetenland, with the signing of the Munich Agreement.',
 	  'jump slide11',
 		],
 
 		'slide11':[
-			'show background duck2 with fadeIn',
 			'What was the name of Chamberlain’s most famous speech?',
 			{'Choice':{
 				'1':{
@@ -195,37 +192,31 @@ monogatari.script ({
 		},
 		],
 		'page12':[
-			'show background grape with fadeIn',
 			'The following day, on September 30, 1938, Chamberlain gave his infamous “Peace in our Time” speech, in which he stated that, "We regard the agreement signed last night … as symbolic of the desire … never to go to war with one another again”. Chamberlain received over 10,000 letters and telegrams thanking him for averting war.',
 		'jump page13',
 		],
 
 		'page13':[
-			'show background grape with fadeIn',
 			'During his speech, he recognized and thanked the British people for sending in letters of their, “support, approval, and gratitude,” saying that “the settlement of the Czechoslovakian problem, which has now been achieved is, . . . only the prelude to a larger settlement in which all Europe may find peace”. Once Hitler invaded and occupied Poland, Chamberlain could no longer support his peace at all costs’ approach. In September 1939, Chamberlain declared war on Germany.',
 		'jump page14',
 		],
 
 		'page14':[
-			'show background grape with fadeIn',
 			"Once Winston Churchill became prime minister, many came to view Chamberlain as a symbol of weakness associated with pacifism. They believed that he had been duped by Hitler into inaction for too long, allowing Germany to become stronger. Chamberlain resigned in May 1940, after British efforts failed to liberate Norway from German rule. Chamberlain served in Winston Churchill’s cabinet as lord president of the council. Shortly after Chamberlain's resignation, he was diagnosed with bowel cancer, and passed away on November 9, 1940 at 71.",
 		'jump page15',
 		],
 
 		'page15':[
-			'show background grape with fadeIn',
 			'Chamberlain was so dedicated to keeping England out of another war, that he failed to recognize that any attempt to appease Hitler was futile. Sadly, he never lived to see the Allies win World War II and create the lasting peace that Chamberlain himself had sought.',
 		'jump page16',
 		],
 
 		'page16':[
-			'show background grape with fadeIn',
 			'While some people may see Chamberlain as weak for trying to placate Hitler, this is an unfair assessment. It is easy to judge Chamberlain through the lens of what Hitler ultimately did. But before the world knew that Hitler would never stop his invasions, peace was an admirable goal.',
 		'jump page17',
 		],
 
 	'page17':[
-		'show background potatocat with fadeIn',
 		"Chamberlain’s biggest mistake was not realizing that he was dealing with one of the greatest power hungry monsters in history. While Chamberlain was an honorable man, Hitler was a sociopath. As such, Chamberlain's biggest flaw was not seeking peace at all costs. Rather, it was underestimating Hitler’s nature, greed, and thirst for ultimate power.",
 		'jump Closing',
 	],
