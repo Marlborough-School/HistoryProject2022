@@ -67,6 +67,8 @@ monogatari.assets ('images', {
 	'pic2': 'pic2.jpeg',
 	'pic4': 'pic4.jpeg',
 	'pic5': 'pic5.jpeg',
+	'biblio1':'biblio1.jpeg',
+	'biblio2':'biblio2.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -77,6 +79,7 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+
 });
 
 
@@ -218,24 +221,21 @@ monogatari.script ({
 		'page16':[
 			'show background grape with fadeIn',
 			'While some people may see Chamberlain as weak for trying to placate Hitler, this is an unfair assessment. It is easy to judge Chamberlain through the lens of what Hitler ultimately did. But before the world knew that Hitler would never stop his invasions, peace was an admirable goal.',
-		'jump Ending',
+		'jump page17',
 		],
 
-	'Ending':[
+	'page17':[
 		'show background potatocat with fadeIn',
-		{'Choice':{
-			'Closing':{
-				'Text': 'Conclusion',
-				'Do': 'jump Closing',
-			}
-		}
-	}
+		"Chamberlain’s biggest mistake was not realizing that he was dealing with one of the greatest power hungry monsters in history. While Chamberlain was an honorable man, Hitler was a sociopath. As such, Chamberlain's biggest flaw was not seeking peace at all costs. Rather, it was underestimating Hitler’s nature, greed, and thirst for ultimate power.",
+		'jump Closing',
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
+		'show image biblio1 with fadeIn',
+		' ',
+		'hide image biblio1',
+		'show image biblio2 with fadeIn',
+		' ',
 		'end'
 	]
 });
