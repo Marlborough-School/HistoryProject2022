@@ -71,6 +71,8 @@ monogatari.assets ('images', {
 	'biblio2':'biblio2.jpeg',
 	'pic11':'pic11.jpeg',
 	'hitler':'hitler.jpeg',
+	'pic6':'pic6.jpeg',
+	'pic8':'pic8.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -121,10 +123,10 @@ monogatari.script ({
 		'show image pic11 black',
 		'Because he was such a compassionate person, when Chamberlain became Prime Minister, he initially focused on improving the lives of English workers. He instituted the Factories Act, which restricted the number of hours that children and women worked. He supported the Holiday with Pay Act, which gave workers a paid week off.',
 		'jump choiceScreen',
+		'hide image pic11 black',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
 				'Text': 'Page 5',
@@ -150,13 +152,13 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
+		'show background black with fadeIn',
+		'show image pic6',
 		'Chamberlain was able to convince Hitler to meet in Berchtesgaden, Germany to discuss Czechoslovakia. In transcripts of Chamberlain and Hitler’s meeting in early September 1938, Hitler stated that he recognized that it might be “impossible to bring them [Germans living in Czechoslovakia] into the Reich”.',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show image pic4 with fadeIn',
 		'Chamberlain saw this as an opportunity to keep England out of conflict. He persuaded Hitler, Édouard Daladier, (the French Prime Minister) and his foreign minister to accept a proposal that Germany would be allowed to annex the areas of Czechoslovakia, with a population that was more than 50% German-speaking (known as the Sudetenland). This territory was then expected to be turned over to Hitler’s authority. The Czechoslovakians were not consulted and they initially rejected the proposal, but were forced to accept the terms as they could not defeat Germany alone.',
 		'jump page8',
 	],
