@@ -100,7 +100,7 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
-		'play music song with loop volume 40 fade 20',
+		'play music song with loop volume 40 fade 10',
 		'show background senbazuru with fadeIn',
 		{'Choice':{
 			'senbazuru':{
