@@ -189,7 +189,6 @@ monogatari.script ({
 		"'One sees the most hideous sights imaginable, men with their jaws blown off, arms and legs mutilated and when one goes into the room one is horrified at the suffering… which is ghastly'",
 		'Chisholm and Knocker would go out into the field and pick up any soldiers that needed care or were close to dying. Chisholm described walking through the fields hearing men crying out for help and knowing she could not save them all. ',
 		'In the beginning some soldiers were opposed to having women in the war, but Mairi formed bonds with the soliders she helped. Making her job even harder when choosing who to help in the war.',
-		'hide image help',
 		'jump choiceScreen',
 	],
 
