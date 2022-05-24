@@ -74,6 +74,7 @@ monogatari.assets ('images', {
 	'ss1': 'ss1.jpg',
 	'ss3': 'ss3.jpg',
 	'ss12': 'ss12.jpg',
+	'bib': 'bib.jpg',
 
 });
 
@@ -95,6 +96,7 @@ monogatari.assets ('scenes', {
 	'ss1': 'ss1.jpg',
 	'ss3': 'ss3.jpg',
 	'ss12': 'ss12.jpg',
+	'bib': 'bib.jpg',
 
 
 });
@@ -210,8 +212,13 @@ monogatari.script ({
 	'Closing':[
 		'show background black',
 		'Colette is a very strong woman that is a very stubborn person with a lot of pride and the lesson she tries to teach Lucie and the viewers of her documentary is to remember that even after many years you can still fight for what you believe and do what is best for yourself and not others around you.',
-		' She is an example of this, because when she went back to Germany she was doing to help others gain knowledge, even though she does not agree with morid tourism and the tours of concentration camps and she knew that knowledge was more important and went to Germany with her head held high.',
+		'show image bib with fadeIn',
+		'She is an example of this, because when she went back to Germany she was doing to help others gain knowledge, even though she does not agree with morid tourism and the tours of concentration camps and she knew that knowledge was more important and went to Germany with her head held high.',
+
+
 		'end'
+
+
 	]
 });
 
