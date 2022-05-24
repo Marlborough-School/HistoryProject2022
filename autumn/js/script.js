@@ -72,9 +72,15 @@ monogatari.assets ('images', {
 'trenches':'trenches.jpeg',
 'help': 'help.jpeg',
 'pervyse':'pervyse.jpeg',
-'help 2':'help 2.jpeg',
 'solo':'solo.jpeg',
-'Mairi':'Mairi-crop.jpg'
+'Mairi':'Mairi-crop.jpg',
+'nose 2':'nose2.jpeg',
+'poster':'poster.jpeg',
+'mask':'mask.jpg',
+'men':'men.jpg',
+'seesaw':'seesaw.jpg',
+'cited':'cited.jpeg',
+'medal': 'medal.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -83,12 +89,14 @@ monogatari.assets ('scenes', {
 	'trenches':'trenches.jpeg',
 	'ambulance':'ambulance.jpeg',
 	'poster':'poster.jpeg',
-	'help': 'help.jpeg',
 	'profile':'profile.jpeg',
 	'pervyse':'pervyse.jpeg',
-	'help 2':'help 2.jpeg',
+	'nose2':'nose2.jpeg',
 	'E&M':'E&M.jpeg',
-
+	'men':'men.jpg',
+	'seesaw':'seesaw.jpg',
+	'cited':'cited.jpeg',
+	'medal': 'medal.jpg',
 });
 
 
@@ -169,32 +177,35 @@ monogatari.script ({
 		'show image pervyse',
 		'She and Elsie Knocker had a base called the house of Pervyse, which was close to the trenches, leading to easy and close access to the front. Elsie and Mairi were supposed to live further away from the war since it would be dangerous to live near the battlegrounds.',
 		'hide image pervyse',
+		'hide image help',
 		'jump choiceScreen',
-		'show image ambulance',
-		'show background black',
 
 
 	],
 
 	'greenGrape':[
-		'hide image help',
-		'hide image ambulance',
-		'show image help 2',
 		'In the beginning, while Knocker and Chisholm were carrying soldiers to the ambulance they noticed that most soldiers were dying because of shock. They knew that most lives could be saved if soldiers received care sooner and they lived closer to the soldiers.',
 		'Chisholm and Knocker put their own safety at risk to help others, and they oftentimes worked in dangerous conditions, with harmful gases. These harmful gases caused her serious long-term health problems, causing her heart to become weaker.',
-		'One sees the most hideous sights imaginable, men with their jaws blown off, arms and legs mutilated and when one goes into the room one is horrified at the suffering… which is ghastly',
+		"'One sees the most hideous sights imaginable, men with their jaws blown off, arms and legs mutilated and when one goes into the room one is horrified at the suffering… which is ghastly'",
 		'Chisholm and Knocker would go out into the field and pick up any soldiers that needed care or were close to dying. Chisholm described walking through the fields hearing men crying out for help and knowing she could not save them all. ',
+		'In the beginning some soldiers were opposed to having women in the war, but Mairi formed bonds with the soliders she helped. Making her job even harder when choosing who to help in the war.',
+		'hide image help',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
 		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
-		'jump Ending',
+		'show image medal',
+		'After the war,Chisholm and Knocker receive awards for their bravery, but women in Britain also received the right to vote.',
+		'show image men',
+		'When the war ended, Knocker and Chisholm received tons of publicity and recognition. Chisholm received the Belgian Queen Elisabeth Medal, Victory Medal, British War Medal, 1914 Star, Military Medal, Knight Cross of the Order of Léopold II with palm, and Officer of the Order of St.John of Jerusalem.',
+		'show image solo',
+		'Even today, there’s a statue of Chisholm and Knocker in the garden of the Hotel Ariane in Ypres, Belgium. Mairi Chisholm is a catalyst for women in WWI, and women in medicine, which inspired new gender norms.',
+		'jump Closing',
 	],
 
 	'Ending':[
-		'show background potatocat with fadeIn',
+		'show image profile with fadeIn',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
@@ -205,10 +216,12 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'Looking back at Mairi Chisholm’s life, her bravery to be on the front lines at eighteen years old is amazing.',
-		'show background',
+		'show background solo with fadeIn',
+		'Looking back at Mairi Chisholm’s life, her bravery to be on the front lines at eighteen years old is inspiring.',
 		'Chisholm’s ability to break gender norms by working in a predominantly male-dominated field and make an impact allowed other women to play a bigger role in society.',
+		'The recognition and praise she received are well deserved, and her work and legacy will continue to get remembered.',
+		'show background black',
+		'show image Cited',
 		'end'
 	]
 });
