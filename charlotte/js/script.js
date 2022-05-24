@@ -75,6 +75,7 @@ monogatari.assets ('images', {
 	'zyg': 'zyg.jpeg',
 	'elizabeth': 'elizabeth.jpeg',
 	'reniaclosing': 'reniaclosing.jpeg',
+	'diary2': 'diary2.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -90,9 +91,9 @@ monogatari.assets ('scenes', {
 	'bigrenia': 'bigrenia.jpeg',
 	'hitler': 'hitler.jpeg',
 	'przghetto':'przghetto.jpeg',
-	'diary': 'diary.jpeg',
 	'reniatheend': 'reniatheend.jpeg',
 	'biblio': 'biblio.jpeg',
+	'diary': 'diary.jpeg',
 });
 
 
@@ -201,8 +202,10 @@ monogatari.script ({
 	'blackGrape':[
 		'show background przghetto',
 		'Zygmunt managed to sneak Renia and Ariana out of the ghetto before the Nazis invaded it the next day to deport Jews to death camps. He hid Renia and his parents in the attic of a tenement house, while he took Ariana to stay with a friend. Despite Zygmunt’s efforts, On July 30, German soldiers discovered Renia and Zygmunt’s parents, killing them all. Zygmunt, in a state of shock and disarray, gave Renia’s diary a final entry:',
-		'show background diary',
+		'show background black',
+		'show image diary2',
 		'“Three shots! Three lives lost! It happened last night at 10:30 p.m. Fate decided to take my dearest ones away from me. My life is over. All I can hear are shots, shots shots....My dearest Renusia, the last chapter of your diary is complete.”',
+		'hide image diary2',
 		'show image elizabeth',
 		'Now the question is, why was the journal not read until 70 years after she wrote it? Ariana, who survived the Holocaust, recieved the diary from Zygmunt, but she couldn’t bring herself to read out of sadness. She locked it away, and it wasn’t until Ariana’s daughter Alexandra had to know what it said, that it was finally scanned and read. The book was published in 2016, and finally, Renia got her voice back.',
 		'hide image elizabeth',
