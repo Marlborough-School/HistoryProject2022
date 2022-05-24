@@ -89,12 +89,10 @@ monogatari.assets ('scenes', {
 	'trenches':'trenches.jpeg',
 	'ambulance':'ambulance.jpeg',
 	'poster':'poster.jpeg',
-	'help': 'help.jpeg',
 	'profile':'profile.jpeg',
 	'pervyse':'pervyse.jpeg',
 	'nose2':'nose2.jpeg',
 	'E&M':'E&M.jpeg',
-	'mask':'mask.jpg',
 	'men':'men.jpg',
 	'seesaw':'seesaw.jpg',
 	'cited':'cited.jpeg',
@@ -186,36 +184,27 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
-
 		'In the beginning, while Knocker and Chisholm were carrying soldiers to the ambulance they noticed that most soldiers were dying because of shock. They knew that most lives could be saved if soldiers received care sooner and they lived closer to the soldiers.',
-		'hide image nose',
-		'show image mask',
 		'Chisholm and Knocker put their own safety at risk to help others, and they oftentimes worked in dangerous conditions, with harmful gases. These harmful gases caused her serious long-term health problems, causing her heart to become weaker.',
-	  'hide image poster',
-		'show image poster',
-		'show background black',
-		""'One sees the most hideous sights imaginable, men with their jaws blown off, arms and legs mutilated and when one goes into the room one is horrified at the suffering… which is ghastly'"",
+		"'One sees the most hideous sights imaginable, men with their jaws blown off, arms and legs mutilated and when one goes into the room one is horrified at the suffering… which is ghastly'",
 		'Chisholm and Knocker would go out into the field and pick up any soldiers that needed care or were close to dying. Chisholm described walking through the fields hearing men crying out for help and knowing she could not save them all. ',
-		'show image seesaw',
 		'In the beginning some soldiers were opposed to having women in the war, but Mairi formed bonds with the soliders she helped. Making her job even harder when choosing who to help in the war.',
-		'hide image help',
-		'hide image nose',
-		'hide image mask',
-		'hide image poster',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
 		'show background grape with fadeIn',
-		'show image '
+		'show image medal',
 		'After the war,Chisholm and Knocker receive awards for their bravery, but women in Britain also received the right to vote.',
+		'show image men',
 		'When the war ended, Knocker and Chisholm received tons of publicity and recognition. Chisholm received the Belgian Queen Elisabeth Medal, Victory Medal, British War Medal, 1914 Star, Military Medal, Knight Cross of the Order of Léopold II with palm, and Officer of the Order of St.John of Jerusalem.',
+		'show image solo',
 		'Even today, there’s a statue of Chisholm and Knocker in the garden of the Hotel Ariane in Ypres, Belgium. Mairi Chisholm is a catalyst for women in WWI, and women in medicine, which inspired new gender norms.',
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background potatocat with fadeIn',
+		'show image profile with fadeIn',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
@@ -230,8 +219,8 @@ monogatari.script ({
 		'Looking back at Mairi Chisholm’s life, her bravery to be on the front lines at eighteen years old is inspiring.',
 		'Chisholm’s ability to break gender norms by working in a predominantly male-dominated field and make an impact allowed other women to play a bigger role in society.',
 		'The recognition and praise she received are well deserved, and her work and legacy will continue to get remembered.''
-		'show background',
-		'show image cited',
+		'show background black',
+		'show image Cited',
 		'end'
 	]
 });
