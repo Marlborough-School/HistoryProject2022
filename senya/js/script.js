@@ -100,7 +100,7 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
-		'play music song with loop volume 40',
+		'play music song with loop volume 40 fade 10',
 		'show background senbazuru with fadeIn',
 		{'Choice':{
 			'senbazuru':{
@@ -191,7 +191,7 @@ monogatari.script ({
 		'The atomic bomb released a wave of heat so strong that started fires throughout the city. These fires consumed the fallen buildings and grew larger and larger. Sadako and Masahiro’s mother, Fujiko, knew the fire would kill them if they did not escape soon.',
 		'hide image painting1 with fadeOut',
 		'show image painting2 with fadeIn',
-		'All these drawings were made by Hiroshima survivors.',
+		'Every piece of art shown here was created by Hiroshima survivors.',
 		'hide image painting2',
 		'show image painting3 with fadeIn',
 		'The family walked for hours and eventually a rescue operation truck drove them to Fujiko’s hometown. Miraculously, most of the Sasaki family survived. Sadako and Masahiro’s grandmother had passed away while attempting to retrieve her late husband’s remembrance tablet. Although the worst of the bombing was over, the Sasaki family, grieving and injured, had no idea what they would do next.',
@@ -207,7 +207,7 @@ monogatari.script ({
 		'hide image rebuild',
 		'show image sadako with fadeIn',
 		'However, during one winter vacation, Sadako’s face began to swell and lumps appeared on her jawline. A doctor visited and diagnosed her with the “atomic bomb disease”, also known as leukemia. Sadako’s parents did more tests and the results were dire. Malignant cells were found in her bloodstream and it was estimated that she had merely months to live.',
-		'It was then that her father chose to tell her about the ancient Japenese legend, senbazuru.',
+		'It was then that her father chose to tell her about the ancient Japanese legend, senbazuru.',
 		'"If you fold a thousand paper cranes, your wish will come true."',
 		'Sadako began folding as many cranes as her little hands could manage, in hopes that one day her wish could be granted.',
 		'However, Sadako passed away on October 25th.',
@@ -233,7 +233,7 @@ monogatari.script ({
 		'show background statue with fadeIn',
 		'The Sasaki family suffered immensely from the bombing of Hiroshima. They went through incredible hardship and Sadako tragically lost her life due to the radiation from the bombing. Her death and the deaths of all those who lost their lives to the atomic bombings serve as a reminder as to why a third atomic bombing should never occur.',
 		'Sadako’s cranes have become a global symbol of peace and her resilience up until the very end inspires many around the world. Additionally, Masahiro is more than just a survivor of Hiroshima. He chose to spread messages of peace and healing, instead of messages of revenge and retaliation.',
-		'The Sasaki siblings never lost hope even after they lived through the most devestating bombing ever recorded.',
+		'The Sasaki siblings never lost hope even after they lived through the most devastating bombing ever recorded.',
 		'show background white',
 		'show image biblio with fadeIn',
 		'bibliography',

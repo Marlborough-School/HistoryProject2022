@@ -88,10 +88,10 @@ monogatari.script ({
 		'show image pic2 with fadeIn',
 		'Born in Birmingham, England, in 1869, Arthur Neville Chamberlain was a successful businessman and local politician. In 1918 he was elected to Parliament as a member of the Conservative Party, and in 1937, Chamberlain was elected as Britain’s prime minister.',
 		'hide image pic2 with fadeOut',
-		'Example question: Hey bum bum bum got any grapes?',
+		'When Chamberlain was Prime Minister, he created many Acts to help the British people. Which one of these Acts did he NOT create?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'The Factory Act',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
@@ -183,10 +183,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Chamberlain: The Peaceful Politician of World War II</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Stella Flores
         </p>
 				</center>
 				<br/>
