@@ -163,7 +163,6 @@ monogatari.script ({
 	'page9':[
 		'show background pic1 with fadeIn',
 		'Chamberlain hoped to avoid a war over Czechoslovakia by conceding to Hitler’s new demands yet again, and despite this red flag, Chamberlain submitted the new proposal to the Czechoslovakians, the British, and the French, all of whom eventually accepted (after initially rejecting) Hitler’s new terms.',
-		'hide image pic1 with fadeOut',
 		'jump page10',
 	],
 
@@ -176,7 +175,6 @@ monogatari.script ({
 		],
 
 		'slide11':[
-			'show background black with fadeIn',
 			'What was the name of Chamberlain’s most famous speech?',
 			{'Choice':{
 				'1':{
