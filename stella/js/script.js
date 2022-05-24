@@ -77,6 +77,7 @@ monogatari.assets ('images', {
 	'pic7':'pic7.jpeg',
 	'pic9':'pic9.jpeg',
 	'pic10':'pic10.jpeg',
+	'pic3':'pic3.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -228,7 +229,10 @@ monogatari.script ({
 		],
 
 		'page16':[
+			'show background black with fadeIn',
+			'show image pic3 black with fadeIn',
 			'While some people may see Chamberlain as weak for trying to placate Hitler, this is an unfair assessment. It is easy to judge Chamberlain through the lens of what Hitler ultimately did. But before the world knew that Hitler would never stop his invasions, peace was an admirable goal.',
+			'hide image pic3 with fadeOut',
 		'jump page17',
 		],
 
