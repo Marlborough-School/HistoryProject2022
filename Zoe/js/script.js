@@ -180,12 +180,12 @@ monogatari.script ({
 		{'Choice':{
 			'1':{
 				'Text': 'Early Life',
-				'Do': 'jump earlyLife',
+				'Do': 'jump Start',
 
 			},
 			'2':{
 				'Text': 'Ravensbruck',
-				'Do': 'jump Ravensbruck',
+				'Do': 'jump greenGrape',
 			},
 			'3':{
 				'Text': 'Later Life',
