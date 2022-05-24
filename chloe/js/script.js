@@ -91,7 +91,8 @@ monogatari.assets ('scenes', {
 	'black':'black.jpeg',
 	'as':'alasala.jpg',
 	'white':'wb.png',
-
+	'let':'let.png',
+	'slet':'slet.png',
 
 });
 
@@ -133,7 +134,7 @@ monogatari.script ({
 	'nextSlide':[
 		'show background Ala2 with fadeIn',
 		'Ala Gertner was similar to my grandmothers mother. She not only experienced life in a concentration camp but played a role in offering as much help as possible to others suffering.',
-		'This Pre-war picture of Ala shows the normality that was previously in her life. She was deported in the final transports of Jews from Upper Silesia to Auschwitz.',
+		'This Pre-war picture of Ala shows the normality that was previously in her life. She was deported in the final transports of Jews from Upper Silesia, in Poland to Auschwitz.',
 		'jump afterSlide',
 	],
 
@@ -143,15 +144,15 @@ monogatari.script ({
 		'Ala came from a wealthy family and was well educated as she attended a school in Będzin, Poland.',
 		'hide image bedzin with fadeOut',
 		'show background Auschwitz with fadeIn',
-		'Her literacy and education allowed her to be an important part of the Sonderkommando Uprising as she was transported to Auschwitz(which is depicted above).',
+		'Her literacy, education, and German fluency allowed her to be an important part of the Sonderkommando Uprising as she was transported to Auschwitz(depicted above).',
 		'jump doneSlide',
 
 	],
 
   'doneSlide':[
 	  'show background Laborcamp with fadeIn',
-		'This image depicts the forced harsh labor women had to take on. This specifically shows these women pulling dump cars filled with stones throughout the camp quarry at the Plaszow camp in 1944.',
-		'Ala was assigned to the Weichsel-Union-Metallwerke factory in Auschwitz, a similar forced labor camp, where they experienced extremely strenuous physical tasks.',
+		'This image depicts the forced harsh labor women had to take on. This specifically shows these women pulling dump cars filled with stones throughout the camp at the Plaszow camp in 1944.',
+		'Ala was assigned to the Weichsel-Union-Metallwerke factory in Auschwitz where they experienced extremely strenuous physical tasks.',
 		'jump finishSlide',
 	],
 
@@ -159,14 +160,14 @@ monogatari.script ({
 		'show background sort with fadeIn',
 		'This image is of more forced labor as Jewish women sort confiscated clothing in the Lodz ghetto.',
 		'In the Weichsel-Union-Metallwerke factory, they were overworked and forced to make weapons for Nazi soldiers and therefore had access to gun powder.',
-		'During her time in this camp, Ala encountered other Jewish women who were not willing to comply with the atrocities within the Holocaust: Roza Robota, Estusia and Hanka Wajcblum, and Regina Safirsztajn.',
+		'During her time in this camp, Ala encountered other Jewish women who were not willing to comply with the atrocities within the Holocaust: Roza Robota; Estusia and Hanka Wajcblum; and Regina Safirsztajn.',
 	  'jump factorySlide',
 	],
 
 	'factorySlide':[
 		'show background wum with fadeIn',
-		'This is an image of the Weichsel-Union-Metallwerke factory, where Roza first encountered Ala and told her about the resistance movement within Auschwitz. This facility operated from October 1943 to make fuses for artillery projectiles.',
-		'Over 1200 prisoners worked in this factory complex, including Ala. Ala was intent on having a role in this, so she recruited Estusia, Hanka, and Regina due to their direct access to the gunpowder.',
+		'This is an image of the Weichsel-Union-Metallwerke factory, where Roza first encountered Ala and told her about the resistance movement within Auschwitz. This facility operated from 1943 to make fuses for artillery projectiles.',
+		'Over 1200 prisoners worked in this factory complex, including Ala. Ala was intent on having a role in this, so she recruited Estusia Hanka, and Regina due to their direct access to the gunpowder.',
 		'With extra cloth or paper, they wrapped up small bits of gunpowder and hid it on their bodies. This would then be passed to Ala and Roza, and then to the Sonderkommando because their work was associated with the Crematorium IV which was the target of where they intended to create an explosion. However, this was not their only goal. They also planned to attack the SS men in the vicinity.',
 		'jump ncsSlide',
 	],
@@ -194,23 +195,21 @@ monogatari.script ({
 	'wSlide':[
 		'show background unity with fadeIn',
 		'These women, however, did not work alone: “no less than 30 Jewish female prisoners participated in the gunpowder smuggling, carried out in secrecy during a period of about 7 months”. Women took the positions of soldiers and fought just as men did.',
-		'While this image is from the Warsaw uprising (Soldiers of the Polish Home Army Womens Auxiliary Services, who were taken captive in 1944) it depicts the unity of women in uprisings similar to the Sonderkommando.',
+		'While this image is from the Warsaw uprising (also in 1944) it depicts the unity of women in uprisings similar to the Sonderkommando.',
 		'jump finSlide',
 
 
 	],
 
 	'finSlide':[
-	'show background black with fadeIn',
-	'show image letter with fadeIn',
-	'This is a letter written by Ala to her friend Sala Garncarz.',
+	'show background let with fadeIn',
+	'This is a letter written by Ala to her trusted friend Sala.',
 	'jump filSlide',
 
 	],
 
 	'filSlide':[
-	'show background black with fadeIn',
-	'show image lettertwo with fadeIn',
+	'show background slet with fadeIn',
 	'In this particular letter Ala states: If it weren’t for these dire straits, things would be different Sala, believe me!. Ala hints at the important role she plays but also mentions how their friendship is greatly valued.',
 	'jump conclusionSlide',
 
@@ -218,8 +217,7 @@ monogatari.script ({
 
 	'conclusionSlide':[
 	'show background as with fadeIn',
-	'Ala’s literacy, education, and German fluency plays this important part in the uprising, and her trusted friend Sala(whom she met during her time in Geppersdorf - a labor camp in the Falkenberg district of Germany) was separated from her when Ala worked in the Weichsel-Union-Metallwerke factory.',
-	'My grandmother’s family was fortunate enough to survive the Holocaust when millions of others weren’t. My grandmothers mothers role to smuggle food for Jews who were in need played an important part in history, just as Alas role did, to fight against this horrific oppression that was faced.',
+	'My grandmother’s family was fortunate enough to survive the Holocaust when millions of others weren’t. My grandmothers mother’s role to smuggle food for Jews played an important part in history, just as Ala did.',
 	'jump imgcreditSlide',
 	],
 
