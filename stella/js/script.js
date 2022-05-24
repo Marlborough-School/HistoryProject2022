@@ -85,7 +85,6 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 	'pic1':'pic1.jpeg',
-
 });
 
 
@@ -169,11 +168,15 @@ monogatari.script ({
 	],
 
 	  'page10':[
+			'show background black with fadeIn',
+			'show image pic4 black with fadeIn',
 			'Peace was finally reached on September 29, 1938, when the leaders of Germany, Great Britain, France, and Italy, allowed German annexation of the Sudetenland, with the signing of the Munich Agreement.',
-	  'jump slide11',
+			'hide image pic4 with fadeOut',
+			'jump slide11',
 		],
 
 		'slide11':[
+			'show background black with fadeIn',
 			'What was the name of Chamberlain’s most famous speech?',
 			{'Choice':{
 				'1':{
