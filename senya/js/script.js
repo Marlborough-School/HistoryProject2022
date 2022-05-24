@@ -100,7 +100,7 @@ monogatari.characters ({
 //
 monogatari.script ({
 	'Start': [
-		'play music song with loop volume 40',
+		'play music song with loop volume 40 fade 20',
 		'show background senbazuru with fadeIn',
 		{'Choice':{
 			'senbazuru':{
@@ -191,7 +191,7 @@ monogatari.script ({
 		'The atomic bomb released a wave of heat so strong that started fires throughout the city. These fires consumed the fallen buildings and grew larger and larger. Sadako and Masahiro’s mother, Fujiko, knew the fire would kill them if they did not escape soon.',
 		'hide image painting1 with fadeOut',
 		'show image painting2 with fadeIn',
-		'All these drawings were made by Hiroshima survivors.',
+		'Every piece of art shown here was created by Hiroshima survivors.',
 		'hide image painting2',
 		'show image painting3 with fadeIn',
 		'The family walked for hours and eventually a rescue operation truck drove them to Fujiko’s hometown. Miraculously, most of the Sasaki family survived. Sadako and Masahiro’s grandmother had passed away while attempting to retrieve her late husband’s remembrance tablet. Although the worst of the bombing was over, the Sasaki family, grieving and injured, had no idea what they would do next.',
