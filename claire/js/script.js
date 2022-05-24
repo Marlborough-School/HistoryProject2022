@@ -272,7 +272,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Anne Frank</b>
+        <b>Anne Frank: The Hidden Girl Behind the Diary</b>
 				<br/>
 				<br/>
         By: Claire Robichaud
