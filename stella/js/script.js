@@ -64,15 +64,16 @@ monogatari.assets ('videos', {
 
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
-	'pic2': 'pic2.jpeg',
-	'pic4': 'pic4.jpeg',
-	'pic1': 'pic1.jpeg',
+	'pic2':'pic2.jpeg',
+	'pic4':'pic4.jpeg',
 	'biblio1':'biblio1.jpeg',
 	'biblio2':'biblio2.jpeg',
 	'pic11':'pic11.jpeg',
 	'hitler':'hitler.jpeg',
 	'pic6':'pic6.jpeg',
 	'pic8':'pic8.jpeg',
+	'pic5':'pic5.jpeg',
+	'pic12':'pic12.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -83,6 +84,7 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+	'pic1':'pic1.jpeg',
 
 });
 
@@ -112,67 +114,58 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'show background black',
-		'show image pic11 black',
+		'show background black with fadeIn',
+		'show image pic11 black with fadeIn',
 		'Because he was such a compassionate person, when Chamberlain became Prime Minister, he initially focused on improving the lives of English workers. He instituted the Factories Act, which restricted the number of hours that children and women worked. He supported the Holiday with Pay Act, which gave workers a paid week off.',
-		'jump choiceScreen',
+		'hide image pic11 with fadeOut',
+		'jump page5',
 	],
 
 	'noAnswer':[
-		'show background black',
-		'show image pic11 black',
+		'show background black with fadeIn',
+		'show image pic11 black with fadeIn',
 		'Because he was such a compassionate person, when Chamberlain became Prime Minister, he initially focused on improving the lives of English workers. He instituted the Factories Act, which restricted the number of hours that children and women worked. He supported the Holiday with Pay Act, which gave workers a paid week off.',
-		'jump choiceScreen',
-		'hide image pic11 black',
+		'hide image pic11 with fadeOut',
+		'jump page5',
 	],
 
-	'choiceScreen':[
-		{'Choice':{
-			'1':{
-				'Text': 'Page 5',
-				'Do': 'jump redGrape',
-			},
-			'2':{
-				'Text': 'Page 6',
-				'Do': 'jump greenGrape',
-			},
-			'3':{
-				'Text': 'Page 7',
-				'Do': 'jump blackGrape',
-			}
-		},
-	},
-	],
-
-	'redGrape':[
+	'page5':[
 		'show background black with fadeIn',
-		'show image hitler',
+		'show image hitler black with fadeIn',
 		'By April 1938, his efforts to improve the lives of his citizens became overshadowed by Adolf Hitler, Germanys Chancellor.',
-		'jump choiceScreen',
+		'hide image hitler with fadeOut',
+		'jump page6',
 	],
 
-	'greenGrape':[
+	'page6':[
 		'show background black with fadeIn',
-		'show image pic6',
+		'show image pic6 black with fadeIn',
 		'Chamberlain was able to convince Hitler to meet in Berchtesgaden, Germany to discuss Czechoslovakia. In transcripts of Chamberlain and Hitler’s meeting in early September 1938, Hitler stated that he recognized that it might be “impossible to bring them [Germans living in Czechoslovakia] into the Reich”.',
-		'jump choiceScreen',
+		'hide image pic6 with fadeOut',
+		'jump page7',
 	],
 
-	'blackGrape':[
+	'page7':[
+		'show background black with fadeIn',
+		'show image pic8 black with fadeIn',
 		'Chamberlain saw this as an opportunity to keep England out of conflict. He persuaded Hitler, Édouard Daladier, (the French Prime Minister) and his foreign minister to accept a proposal that Germany would be allowed to annex the areas of Czechoslovakia, with a population that was more than 50% German-speaking (known as the Sudetenland). This territory was then expected to be turned over to Hitler’s authority. The Czechoslovakians were not consulted and they initially rejected the proposal, but were forced to accept the terms as they could not defeat Germany alone.',
+		'hide image pic8 with fadeOut',
 		'jump page8',
 	],
 
 	'page8':[
-		'hide image pic4 with fadeOut',
-		'show image pic1 with fadeIn',
+		'show background black with fadeIn',
+		'show image pic5 black with fadeIn',
 		'In September 1938, Chamberlain flew back to Germany and met Hitler in Bad Godesberg, Germany to further the peace plan, only to find Hitler had new demands, which contradicted their previous conversation in Berchtesgaden. Hitler wanted the Czechoslovakians evacuated from the area in 6 days and the annexed part of Czechoslovakia to be occupied by the German army.',
+		'hide image pic5 with fadeOut',
 		'jump page9',
 	],
 
-  'page9':[
+	'page9':[
+		'show background pic1 with fadeIn',
 		'Chamberlain hoped to avoid a war over Czechoslovakia by conceding to Hitler’s new demands yet again, and despite this red flag, Chamberlain submitted the new proposal to the Czechoslovakians, the British, and the French, all of whom eventually accepted (after initially rejecting) Hitler’s new terms.',
-  'jump page10',
+		'hide image pic1 with fadeOut',
+		'jump page10',
 	],
 
 	  'page10':[
@@ -199,6 +192,8 @@ monogatari.script ({
 		},
 		],
 		'page12':[
+			'show background black with fadeIn',
+			'show image pic12 black with fadeIn',
 			'The following day, on September 30, 1938, Chamberlain gave his infamous “Peace in our Time” speech, in which he stated that, "We regard the agreement signed last night … as symbolic of the desire … never to go to war with one another again”. Chamberlain received over 10,000 letters and telegrams thanking him for averting war.',
 		'jump page13',
 		],
