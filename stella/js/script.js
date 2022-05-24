@@ -76,6 +76,7 @@ monogatari.assets ('images', {
 	'pic12':'pic12.jpeg',
 	'pic7':'pic7.jpeg',
 	'pic9':'pic9.jpeg',
+	'pic10':'pic10.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -219,7 +220,10 @@ monogatari.script ({
 		],
 
 		'page15':[
+			'show background black with fadeIn',
+			'show image pic10 black with fadeIn',
 			'Chamberlain was so dedicated to keeping England out of another war, that he failed to recognize that any attempt to appease Hitler was futile. Sadly, he never lived to see the Allies win World War II and create the lasting peace that Chamberlain himself had sought.',
+			'hide image pic10 with fadeOut',
 		'jump page16',
 		],
 
