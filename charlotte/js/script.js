@@ -73,6 +73,9 @@ monogatari.assets ('images', {
 	'renialgbtq':'renialgbtq.jpeg',
 	'przghettosquare':'przghettosquare.jpeg',
 	'zyg': 'zyg.jpeg',
+	'elizabeth': 'elizabeth.jpeg',
+	'reniaclosing': 'reniaclosing.jpeg',
+	'diary2': 'diary2.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -88,6 +91,9 @@ monogatari.assets ('scenes', {
 	'bigrenia': 'bigrenia.jpeg',
 	'hitler': 'hitler.jpeg',
 	'przghetto':'przghetto.jpeg',
+	'reniatheend': 'reniatheend.jpeg',
+	'biblio': 'biblio.jpeg',
+	'diary': 'diary.jpeg',
 });
 
 
@@ -181,20 +187,38 @@ monogatari.script ({
 	'greenGrape':[
 		'show background przghetto with fadeIn',
 		'On September 1st, 1939, Germany invaded Poland, causing Renia, Ariana, and their Grandfather to flee to Lwow less than a week later. Renia wrote about how poor the conditions were in Lwow, however, she felt that worrying about the safety of her family was worse than the physical suffering: “This life is terrible. We’re yellow, pale, from this cellar life—from the lack of water, comfortable beds and sleep. But the horrible thoughts are much worse” (Spiegel).',
+		'show background black',
+		'show image zyg',
+		'A week later, after Lwow surrendered to Russia, Renia was able to return home to a somewhat normal life. She wrote about the pressure she felt to fall in love with a boy, and how she “felt like a fish out of water” (Spiegel) because she didn’t think boys liked her. However some time later, Renia met a young man named Zygmunt Schwarzer, or Zygus, and they started dating.',
+		'show background black',
+		'show image przghettosquare',
+		'A few years later, on July 14, 1942, the Nazis established a ghetto in Przemysl and commanded the city’s 24,000 Jewish residents to move in by the next day, including Renia, Ariana, and her grandparents.. A survivor of the Przemysl ghetto remembers “a tremendous shortage of food - people were starving and there was no money” (J. Rinde). On July 20, German authorities demanded 1.3 million zloty in 5 days from the ghetto’s residents if they wanted to ensure “peace and quiet”. Slowly, 5 days passed and the residents weren’t able to get the money they needed.',
+		'show background black',
+		'hide image przghettosquare',
+		'hide image zyg',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
+		'show background przghetto',
+		'Zygmunt managed to sneak Renia and Ariana out of the ghetto before the Nazis invaded it the next day to deport Jews to death camps. He hid Renia and his parents in the attic of a tenement house, while he took Ariana to stay with a friend. Despite Zygmunt’s efforts, On July 30, German soldiers discovered Renia and Zygmunt’s parents, killing them all. Zygmunt, in a state of shock and disarray, gave Renia’s diary a final entry:',
+		'show background black',
+		'show image diary2',
+		'“Three shots! Three lives lost! It happened last night at 10:30 p.m. Fate decided to take my dearest ones away from me. My life is over. All I can hear are shots, shots shots....My dearest Renusia, the last chapter of your diary is complete.”',
+		'hide image diary2',
+		'show image elizabeth',
+		'Now the question is, why was the journal not read until 70 years after she wrote it? Ariana, who survived the Holocaust, recieved the diary from Zygmunt, but she couldn’t bring herself to read out of sadness. She locked it away, and it wasn’t until Ariana’s daughter Alexandra had to know what it said, that it was finally scanned and read. The book was published in 2016, and finally, Renia got her voice back.',
+		'hide image elizabeth',
+		'show background reniatheend',
+		'Though it would seem that is where Renia’s story would come to an end, it is just the beginning. Renia’s story needs to be shared because through her words about her experiences readers learn that despite all the suffering the world forced upon her, she kept her head held high through the toughest times. Through her writing, Renia is able to keep telling her story and it will continue to be told as long as people are willing to listen.',
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background potatocat with fadeIn',
+		'show background biblio with fadeIn',
 		{'Choice':{
 			'Closing':{
-				'Text': 'Conclusion',
+				'Text': 'Bibliography',
 				'Do': 'jump Closing',
 			}
 		}
@@ -202,9 +226,9 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
+		'show background black',
+		'show image reniaclosing',
+		'Thank you!',
 		'end'
 	]
 });

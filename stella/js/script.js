@@ -66,8 +66,10 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	'pic2':'pic2.jpeg',
 	'pic4':'pic4.jpeg',
-	'biblio1':'biblio1.jpeg',
-	'biblio2':'biblio2.jpeg',
+	'bib1':'bib1.jpeg',
+	'bib2':'bib2.jpeg',
+	'bib3':'bib3.jpeg',
+	'bib4':'bib4.jpeg',
 	'pic11':'pic11.jpeg',
 	'hitler':'hitler.jpeg',
 	'pic6':'pic6.jpeg',
@@ -240,15 +242,25 @@ monogatari.script ({
 		'show background black with fadeIn',
 		'show image pic7 black with fadeIn',
 		"Chamberlain’s biggest mistake was not realizing that he was dealing with one of the greatest power hungry monsters in history. While Chamberlain was an honorable man, Hitler was a sociopath. As such, Chamberlain's biggest flaw was not seeking peace at all costs. Rather, it was underestimating Hitler’s nature, greed, and thirst for ultimate power.",
+		'hide image pic7 with fadeOut',
 		'jump Closing',
 	],
 
 	'Closing':[
-		'show image biblio1 with fadeIn',
+		'show image bib1 with fadeIn',
 		' ',
-		'hide image biblio1',
-		'show image biblio2 with fadeIn',
+		'hide image bib1',
+		'show image bib2 with fadeIn',
 		' ',
+		'hide image bib2',
+		'show image bib3 with fadeIn',
+		' ',
+		'show image bib3 with fadeIn',
+		' ',
+		'hide image bib3',
+		'show image bib4 with fadeIn',
+		' ',
+		'hide image bib4',
 		'end'
 	]
 });

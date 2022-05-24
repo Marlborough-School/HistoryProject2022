@@ -65,7 +65,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+	'bib':'bib.jpeg',
+	'photos':'photos.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -88,8 +89,6 @@ monogatari.assets ('scenes', {
 	'ravensbruck':'ravensbruck.jpeg',
 	'youth':'youth.jpeg',
 	'dinner':'dinner.jpeg',
-	'bib':'bib.jpeg',
-	'photos':'photos.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 });
@@ -162,16 +161,17 @@ monogatari.script ({
 ],
 
 	'yesAnswer':[
-		'show background black',
-		'In the end, it was her false title that saved her life, as she was taken by Fritz Suhren as a hostage. Grabbed from her cell, she was shoved in a car headed to what she believed would be her doom.',
+		'show background portrait',
+		'Yes! In the end, it was her false title that saved her life, as she was taken by Fritz Suhren as a hostage. Grabbed from her cell, she was shoved in a car headed to what she believed would be her doom.',
 				'However, this was not the case. Hoping to trade his valuable hostage for his freedom, or at the very least preferential treatment, Suhren drove Sansom towards the American lines. Suhren handed Sansom over to an American officer, but before he could negotiate the terms of his exchange, Sansom told the American officers who Suhren was, and the horrors that he was responsible for, and the Americans took him into custody.',
 
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show background portrait',
+		'Suprise, she made it out! In the end, it was her false title that saved her life, as she was taken by Fritz Suhren as a hostage. Grabbed from her cell, she was shoved in a car headed to what she believed would be her doom.',
+		'However, this was not the case. Hoping to trade his valuable hostage for his freedom, or at the very least preferential treatment, Suhren drove Sansom towards the American lines. Suhren handed Sansom over to an American officer, but before he could negotiate the terms of his exchange, Sansom told the American officers who Suhren was, and the horrors that he was responsible for, and the Americans took him into custody.',
 		'jump choiceScreen',
 	],
 
@@ -180,12 +180,12 @@ monogatari.script ({
 		{'Choice':{
 			'1':{
 				'Text': 'Early Life',
-				'Do': 'jump earlyLife',
+				'Do': 'jump Start',
 
 			},
 			'2':{
 				'Text': 'Ravensbruck',
-				'Do': 'jump Ravensbruck',
+				'Do': 'jump greenGrape',
 			},
 			'3':{
 				'Text': 'Later Life',
@@ -218,8 +218,14 @@ monogatari.script ({
 			'She was reunited with her daughters, who she continued to raise until they left for university, taking back her role as mother.',
 			'She was awarded the Gold Cross in 1946 for her bravery, one of the greatest honors bestowed in Britain. She continued to work in various organizations and charities well into old age, even returning to Ravensbrück to hang a plaque honoring the agents who had lost their lives in captivity.',
 			'A true World War II hero, Odette Sansom will always be remembered for not only her commitment and bravery when faced with great adversity, but also as a mother, - the role she always describes as being at the very heart of her thoughts and actions.',
-			'show background bib with fadeIn',
-			'show background photos with fadeIn',
+			'show background black with fadeIn',
+			'show image bib with fadeIn',
+			'Bibliography',
+			'hide image bib with fadeOut',
+			'show background black with fadeIn',
+			'show image photos with fadeIn',
+			'Image Credits',
+			'hide image photos with fadeOut',
 		  'end',
 	]
 });
