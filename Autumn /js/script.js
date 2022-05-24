@@ -68,6 +68,7 @@ monogatari.assets ('images', {
 'racetrack':'racetrack.jpeg',
 'profile':'profile.jpeg',
 'ambulance':'ambulance.jpeg',
+'E&M':'E&M.jpeg',
 'trenches':'trenches.jpeg',
 'help': 'help.jpeg',
 'pervyse':'pervyse.jpeg',
@@ -86,7 +87,7 @@ monogatari.assets ('scenes', {
 	'profile':'profile.jpeg',
 	'pervyse':'pervyse.jpeg',
 	'help 2':'help 2.jpeg',
-	'E&M':'E&M.jpeh',
+	'E&M':'E&M.jpeg',
 
 });
 
@@ -96,9 +97,14 @@ monogatari.script ({
 	'Start': [
 		'show image profile with fadeIn',
 		'When thinking about world wars, people think about predominantly men fighting and risking their lives, but women like Mairi Chisholm, receive little to no recognition for their heroic acts.',
+		'hide image profile',
+		'show image solo',
 		'Mairi Chisholm was 18 years old when she was in the Belgian trenches helping soldiers and driving ambulances.',
 		'Mairi was accompanied by Elsie Knocker, and the army did not always appreciate their presence, but their work was crucial to the soldier’s survival.',
+		'hide image solo',
+		'show image E&M',
 		'“The whole British Army objects to our being here” -Mairi Chisholm.',
+		'hide image E&M',
 		'show background black',
 		'show image racetrack',
 		'What was the reason why Mairi started riding motorcycles?',
@@ -175,6 +181,9 @@ monogatari.script ({
 		'hide image ambulance',
 		'show image help 2',
 		'In the beginning, while Knocker and Chisholm were carrying soldiers to the ambulance they noticed that most soldiers were dying because of shock. They knew that most lives could be saved if soldiers received care sooner and they lived closer to the soldiers.',
+		'Chisholm and Knocker put their own safety at risk to help others, and they oftentimes worked in dangerous conditions, with harmful gases. These harmful gases caused her serious long-term health problems, causing her heart to become weaker.',
+		'One sees the most hideous sights imaginable, men with their jaws blown off, arms and legs mutilated and when one goes into the room one is horrified at the suffering… which is ghastly',
+		'Chisholm and Knocker would go out into the field and pick up any soldiers that needed care or were close to dying. Chisholm described walking through the fields hearing men crying out for help and knowing she could not save them all. ',
 		'jump choiceScreen',
 	],
 
@@ -197,8 +206,9 @@ monogatari.script ({
 
 	'Closing':[
 		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
+		'Looking back at Mairi Chisholm’s life, her bravery to be on the front lines at eighteen years old is amazing.',
+		'show background',
+		'Chisholm’s ability to break gender norms by working in a predominantly male-dominated field and make an impact allowed other women to play a bigger role in society.',
 		'end'
 	]
 });
