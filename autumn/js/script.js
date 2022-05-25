@@ -44,7 +44,8 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+'song':'song.mp3',
+'clap':'clap.mp3',
 });
 
 // Define the voice files used in the game.
@@ -54,7 +55,8 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-
+	'song':'song.mp3',
+	'clap':'clap.mp3',
 });
 
 // Define the videos used in the game.
@@ -73,14 +75,19 @@ monogatari.assets ('images', {
 'help': 'help.jpeg',
 'pervyse':'pervyse.jpeg',
 'solo':'solo.jpeg',
-'Mairi':'Mairi-crop.jpg',
-'nose 2':'nose2.jpeg',
+'bandage':'bandage.jpg',
 'poster':'poster.jpeg',
 'mask':'mask.jpg',
 'men':'men.jpg',
-'seesaw':'seesaw.jpg',
-'cited':'cited.jpeg',
+'seesaw':'seesaw.jpeg',
 'medal': 'medal.jpg',
+'statue':'statue.jpg',
+'drivingcar': 'drivingcar.jpg',
+'Sources':'Sources.jpeg',
+'Credits':'Credits.jpeg',
+'Credits2':'Credits2.jpeg',
+'Credits3':'Credits3.jpeg',
+
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -91,11 +98,10 @@ monogatari.assets ('scenes', {
 	'poster':'poster.jpeg',
 	'profile':'profile.jpeg',
 	'pervyse':'pervyse.jpeg',
-	'nose2':'nose2.jpeg',
+	'bandage':'bandage.jpeg',
 	'E&M':'E&M.jpeg',
 	'men':'men.jpg',
-	'seesaw':'seesaw.jpg',
-	'cited':'cited.jpeg',
+	'seesaw':'seesaw.jpeg',
 	'medal': 'medal.jpg',
 });
 
@@ -115,6 +121,7 @@ monogatari.script ({
 		'hide image E&M',
 		'show background black',
 		'show image racetrack',
+		'play sound song with volume 90',
 		'What was the reason why Mairi started riding motorcycles?',
 		{'Choice':{
 			'Y':{
@@ -138,7 +145,7 @@ monogatari.script ({
 
 	'noAnswer':[
 		'show background black',
-		'False, her mother was against her riding, believing that she should be participating in domestic activities. But her father agreed to gift her a motorcycle because her brother got a motorcycle. She rode and competed in motorcycle rallies, soon her hobby would play a role in her success as a war nurse.',
+		'Not quite, her mother was against her riding, believing that she should be participating in domestic activities. But her father agreed to gift her a motorcycle because her brother got a motorcycle. She rode and competed in motorcycle rallies, soon her hobby would play a role in her success as a war nurse.',
 		'jump choiceScreen',
 	],
 
@@ -169,8 +176,10 @@ monogatari.script ({
 		'hide image ambulance',
 		'hide image profile',
 		'During World War I, there was a push for people to sign up for the war. Originally, Chisholm signed up for the Women’s Emergency Corps, but due to her special talent of being able to drive, she got chosen as a female ambulance driver for the Flying Ambulance Corps.',
-		"A man named Dr. Munro traced me to the Women's Emergency Corps and said, 'Would you like to go out to Flanders?' And I said, 'Yes, I'd love to''",
 		'hide image trenches',
+		'show image drivingcar',
+		"A man named Dr. Munro traced me to the Women's Emergency Corps and said, 'Would you like to go out to Flanders?' And I said, 'Yes, I'd love to''",
+		'hide image drivingcar',
 		'show image help',
 		'This job was grueling and quite gory, Mairi wrote in her diary "I could not believe that I could have stood these sights". Chisholm describes the strength, not only physical but emotional strength she had to have to be a first responder.',
 		'hide image help',
@@ -184,23 +193,36 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
+		'hide image ambulance',
+		'show image help',
 		'In the beginning, while Knocker and Chisholm were carrying soldiers to the ambulance they noticed that most soldiers were dying because of shock. They knew that most lives could be saved if soldiers received care sooner and they lived closer to the soldiers.',
+		'hide image help',
+		'show image mask',
 		'Chisholm and Knocker put their own safety at risk to help others, and they oftentimes worked in dangerous conditions, with harmful gases. These harmful gases caused her serious long-term health problems, causing her heart to become weaker.',
+		'show image bandage',
+		'hide image mask',
 		"'One sees the most hideous sights imaginable, men with their jaws blown off, arms and legs mutilated and when one goes into the room one is horrified at the suffering… which is ghastly'",
-		'Chisholm and Knocker would go out into the field and pick up any soldiers that needed care or were close to dying. Chisholm described walking through the fields hearing men crying out for help and knowing she could not save them all. ',
-		'In the beginning some soldiers were opposed to having women in the war, but Mairi formed bonds with the soliders she helped. Making her job even harder when choosing who to help in the war.',
+		'Chisholm and Knocker would go out into the field and pick up any soldiers that needed care or were close to dying. Chisholm described walking through the fields hearing men crying out for help and knowing she could not save them all.',
+		'hide image bandage',
+		'show image seesaw',
+		'At first some soldiers were opposed to having women in the war, but Mairi formed bonds with the soliders she helped. Making her job even harder when choosing who to help in the war.',
+		'hide image seesaw',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
+		'hide image ambulance',
 		'show image medal',
-		'After the war,Chisholm and Knocker receive awards for their bravery, but women in Britain also received the right to vote.',
+		'After the war, Chisholm and Knocker receive awards for their bravery, but women in Britain also received the right to vote.',
+		'hide image medal',
 		'show image men',
 		'When the war ended, Knocker and Chisholm received tons of publicity and recognition. Chisholm received the Belgian Queen Elisabeth Medal, Victory Medal, British War Medal, 1914 Star, Military Medal, Knight Cross of the Order of Léopold II with palm, and Officer of the Order of St.John of Jerusalem.',
-		'show image solo',
+		'show image statue',
+		'hide image men',
+		'hide image ambulance',
 		'Even today, there’s a statue of Chisholm and Knocker in the garden of the Hotel Ariane in Ypres, Belgium. Mairi Chisholm is a catalyst for women in WWI, and women in medicine, which inspired new gender norms.',
-		'jump Closing',
+		'hide image statue',
+		'jump Ending',
 	],
 
 	'Ending':[
@@ -219,8 +241,16 @@ monogatari.script ({
 		'Looking back at Mairi Chisholm’s life, her bravery to be on the front lines at eighteen years old is inspiring.',
 		'Chisholm’s ability to break gender norms by working in a predominantly male-dominated field and make an impact allowed other women to play a bigger role in society.',
 		'The recognition and praise she received are well deserved, and her work and legacy will continue to get remembered.',
+		'play sounds clap with volume 90',
+		'hide image profile',
 		'show background black',
-		'show image Cited',
+		'show image Sources',
+		'hide image Sources',
+		'show image Credits',
+		'hide image Credits',
+		'show image Credits2',
+		'hide image Credits2',
+		'show image Credits3',
 		'end'
 	]
 });
